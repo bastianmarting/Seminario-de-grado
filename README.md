@@ -1,3 +1,9 @@
+# Seminario de Grado
+
+*Se utiliza la plantilla de reportes FACSO de LISA para la realización de este Seminario de grado.*
+
+El repositorio cuenta con el **Informe de avance 1** en `000-informe-avance-1.qmd`
+
 ## Plantilla de reportes FACSO
 
 ![Equipo LISA 2025](assets/sharing-default.png)
@@ -31,7 +37,7 @@ El despliegue web se puede realizar mediante [**GitHub Pages**](https://www.yout
 
 
 
-- `00-prefacio.qmd` a `06-conclusiones.qmd`: capitulos base del informe.
+- 00-prefacio.qmd a `06-conclusiones.qmd`: capitulos base del informe.
 - `apendices/`: archivos QMD para anexos (`A-encuestas.qmd`, `B-tablas.qmd`).
 - `includes/`: fragmentos HTML/TeX utilizados en cabeceras, portadas, botones y scripts.
 - `reportes-facso-plantilla.tex`: plantilla personalizada para la salida PDF.
