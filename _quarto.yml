@@ -8,12 +8,12 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: Reportes FACSO - Plantilla Quarto
-  subtitle: Tesis, informes e investigaciones
-  output-file: reportes-facso-plantilla
-  repo-url: https://github.com/KAravena/reportesfacsobook_template  #URL del repositorio del libro (cambia segun tu repo)
+  title: Influencia  de las clases sociales en las percepciones de meritocracia: Análisis de la relación entre posición socioeconómica y creencias meritocráticas separando por talento y esfuero.
+  subtitle: Seminario de Grado 2026
+  output-file: reportes-seminario
+  repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)
   author:
-    - name: Nombre Apellido
+    - name: Bastián Javier Martin Gerdes
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
   date: today              # Usa fecha fija (YYYY-MM-DD) si necesitas control editorial
