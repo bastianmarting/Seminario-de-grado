@@ -32,6 +32,7 @@ book:
   page-navigation: true    # Controla flechas siguiente/anterior en la cabecera
   favicon: assets/favicon-2025-20251031.svg  # Apunta al favicon versionado para romper cache
   chapters:
+    - 000-informe-avance-1.qmd
     - index.qmd            # Capitulo inicial o resumen ejecutivo
     - 00-prefacio.qmd
     - 01-introduccion.qmd
@@ -42,7 +43,7 @@ book:
     - 06-conclusiones.qmd
     - references.qmd
     # Para agregar un nuevo capitulo duplica un archivo .qmd y agregalo aqui:
-    # ej: - 07-analisis-cualitativo.qmd
+    
   appendices:
     - apendices/A-encuestas.qmd
     - apendices/B-tablas.qmd

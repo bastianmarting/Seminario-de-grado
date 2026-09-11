@@ -1,4 +1,4 @@
-# Plantilla de reportes FACSO
+## Plantilla de reportes FACSO
 
 ![Equipo LISA 2025](assets/sharing-default.png)
 
