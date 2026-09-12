@@ -45,6 +45,6 @@ Se estimarán dos modelos de Regresión Lineal Múltiple (RLM), uno por cada var
 
 ## Disponibilidad de datos
 
-Se utilizarán datos de la tercera ola del estudio longitudinal chileno sobre sobre meritocracia y preferencias distributivas desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores.
+Se utilizarán datos de la tercera ola del estudio longitudinal chileno sobre meritocracia y preferencias distributivas desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores.
 
 El instrumento de meritocracia corresponde a la batería validada por @castillo_multidimensional_2023a y con un N=1,489.
