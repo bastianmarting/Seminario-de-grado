@@ -8,7 +8,7 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: Influencia  de las clases sociales en las percepciones de meritocracia: Análisis de la relación entre posición socioeconómica y creencias meritocráticas separando por talento y esfuero.
+  title: "Influencia de las clases sociales en las percepciones de meritocracia: Análisis de la relación entre posición socioeconómica y creencias meritocráticas separando por talento y esfuero."
   subtitle: Seminario de Grado 2026
   output-file: reportes-seminario
   repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)

@@ -4,12 +4,43 @@ numbered: true
 ---
 ## Problema de investigación
 
+La meritocracia entendida originalmente como la idea de que las recompensas sociales deben distribuirse según el esfuerzo y el talento individual (coeficiente intelectual) @young_triunfo_ constituye hoy uno de los principios de justicia más extendidos para explicar y legitimar la desigualdad en sociedades democráticas, en especial sociedades con fuertes políticas neoliberales. La distribución de esfuerzo se ve influenciada por diferentes factores, y la del talento en la sociedad, como menciona @rawls_teoria_, a diferencia del esfuerzo, es producto de una distribución arbitraria no controlada por el individuo. Pese a esta relevancia teórica, la investigación cuantitativa sobre meritocracia en Chile ha tratado el esfuerzo y el talento de forma poco diferenciada. 
+
+@castillo_meritocracia_2019 establecieron una distinción metodológica clave entre percepción (cómo opera la sociedad) y preferencia (cómo debería operar) de la meritocracia, y cerraron su estudio señalando explícitamente que los elementos constitutivos más tradicionales de la meritocracia, como son el esfuerzo y el talento, no han sido estudiados por separado.
+
+A esto se suma un matiz cualitativo relevante del cual mencionan @araujo_desafios_2012, quienes sugieren que la relación entre clase social y creencia en el esfuerzo no es homogénea ni estable, sino que varía en su intensidad y sentido, las capas medias experimentarían mayor amargura por una promesa meritocrática incumplida, mientras los sectores populares sostendrían una "confianza forzada" en la educación más que una convicción meritocrática plena. Esto sugiere que la asimetría esfuerzo/talento podría no distribuirse de forma simple entre clases, sino de manera más compleja de lo que la literatura cuantitativa ha asumido hasta ahora.
+
+Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
+
+
 ## Objeto de estudio
+
+Las percepciones y preferencias normativas sobre el esfuerzo y el talento como criterios de recompensa meritocrática, y su variación según la posición de clase social en chile.
 
 ## Pregunta de investigación
 
+¿Difiere la legitimación del esfuerzo y el talento como criterios de recompensa —medida como la brecha entre percepción y preferencia normativa— según la clase social en Chile?
+
 ## Revisión inicial de literatura
+
+El concepto de meritocracia de @young_triunfo_ sintetiza esfuerzo y talento como criterios de asignación de recompensas, pero @rawls_teoria_ cuestiona la equivalencia moral de ambos al señalar que el talento, a diferencia del esfuerzo, es producto de una distribución natural arbitraria no controlada por el individuo.
+
+En el ámbito de investigaciones cuantitativas chilenas, @castillo_meritocracia_2019 distinguen empíricamente percepción y preferencia sobre la meritocracia, encontrando que son dimensiones independientes entre sí, y plantean como agenda futura estudiar esfuerzo y talento por separado explorando los aspectos subjetivos de meritocracia. @atria_economic_2020, desde metodología cualitativa, muestran que las élites económicas anclan el mérito en el talento y las clases medias/bajas en el esfuerzo. @castillo_meritocracia_2023 construyen y validan un instrumento de ocho ítems que opera con la distinción entre percepción y preferencias de meritocracia y aspectos no meritocráticos, pero sin contrastar las diferencias por clase social. 
+
+@araujo_desafios_2012 ya habían profundizado en lo anterior desde un enfoque cualitativo sobre la sociedad chilena, mostrando que la relación entre clase y creencia meritocracia no es homogénea, sino que varía en intensidad (amargura en capas medias, confianza forzada en sectores populares). Mencionan que a través del mérito se evalúa la justicia de la sociedad en cuanto distribución de recompensas basada en el ideal de competencia, influenciada por los ideales neoliberales en chile, que tiene como idea legitimadora el mérito. Pero este logro a través del mérito se ha evidenciado que los individuos reconocen que la sociedad chilena está subjetivamente orientada al logro individual y la meritocracia que lo que objetivamente se revela en las trayectorias de los sujetos.
+
+El debate metodológico se construye, y siguiendo con la línea de @castillo_multidimensional_2023a, en torno a la medición del concepto de meritocracia. Así @traini_suggested_ utiliza principalmente una medida de meritocracia unidimensional, utilizando solamente el esfuerzo, aunque reconocen que la definición clásica integra esfuerzo y talento; esta decisión facilita el análisis comparativo, pero deja fuera de la medición los factores estructurales, las conexiones y el origen social.
+
+La investigación cualitativa de @fercovic_disentangling_2022 amplía aún más el concepto en las narrativas de personas con movilidad ascendente de largo alcance. El esfuerzo aparece junto con apoyo familiar e institucional, suerte y talento o inteligencia, siendo este último el componente menos enfatizado.
 
 ## Propuesta metodológica
 
+Se propone un diseño cuantitativo multivariado. Las variables dependientes se construyen como la diferencia entre el ítem de preferencia y el ítem de percepción, por separado para esfuerzo y para talento (brecha_esfuerzo y brecha_talento). La variable independiente principal es la clase social, operacionalizada mediante el esquema EGP colapsado en categorías (en caso de que el número de casos sea muy bajo, se reconsiderara la integración de clases con el esquema EGP de Goldthorpe). Se incluirán controles sociodemográficos (sexo, edad, nivel educacional).
+
+Se estimarán dos modelos de Regresión Lineal Múltiple (RLM), uno por cada variable dependiente. De forma previa, se realizará una prueba de diferencia de medias entre ambas brechas para evaluar si existe una asimetría general entre esfuerzo y talento antes de introducir clase social como predictor.
+
 ## Disponibilidad de datos
+
+Se utilizarán datos de la tercera ola del estudio longitudinal chileno sobre sobre meritocracia y preferencias distributivas desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores.
+
+El instrumento de meritocracia corresponde a la batería validada por @castillo_multidimensional_2023a y con un N=1,489.
