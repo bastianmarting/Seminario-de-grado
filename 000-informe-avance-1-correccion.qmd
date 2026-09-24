@@ -2,7 +2,7 @@
 title: "Informe de Avance 1"
 numbered: true
 ---
-## Problema de investigación
+## Problema de investigación - Problema general al especifico. (No tan histórico)
 
 
 ## Objeto de estudio
