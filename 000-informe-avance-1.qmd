@@ -4,7 +4,7 @@ numbered: true
 ---
 ## Problema de investigación
 
-La meritocracia entendida originalmente como la idea de que las recompensas sociales deben distribuirse según el esfuerzo y el  talento individual (coeficiente intelectual) @young_triunfo_ constituye hoy uno de los principios de justicia más extendidos para explicar y legitimar la desigualdad en sociedades democráticas, en especial sociedades con fuertes políticas de libre mercado. La distribución de esfuerzo se ve influenciada por diferentes factores, y la del talento en la sociedad no es controlada por el individuo. Pese a esta relevancia teórica, la investigación cuantitativa sobre meritocracia en Chile ha tratado el esfuerzo y el talento de forma poco diferenciada. 
+La meritocracia, entendida originalmente como la idea de que las recompensas sociales deben distribuirse según el esfuerzo y el  talento individual (coeficiente intelectual) @young_triunfo_ constituye hoy uno de los principios de justicia más extendidos para explicar y legitimar la desigualdad en sociedades democráticas, en especial sociedades con fuertes políticas de libre mercado. La distribución de esfuerzo se ve influenciada por diferentes factores, y la del talento en la sociedad no es controlada por el individuo. Pese a esta relevancia teórica, la investigación cuantitativa sobre meritocracia en Chile ha tratado el esfuerzo y el talento de forma poco diferenciada. 
 
 @castillo_meritocracia_2019 establecieron una distinción metodológica clave entre percepción (cómo opera la sociedad) y preferencia (cómo debería operar) de la meritocracia, y cerraron su estudio señalando explícitamente que los elementos constitutivos más tradicionales de la meritocracia, como son el esfuerzo y el talento, no han sido estudiados por separado.
 
