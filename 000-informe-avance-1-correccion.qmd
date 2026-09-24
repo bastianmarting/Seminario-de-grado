@@ -1,0 +1,21 @@
+---
+title: "Informe de Avance 1"
+numbered: true
+---
+## Problema de investigación
+
+
+## Objeto de estudio
+
+
+## Pregunta de investigación
+
+
+## Revisión inicial de literatura
+
+
+## Propuesta metodológica
+
+
+## Disponibilidad de datos
+
