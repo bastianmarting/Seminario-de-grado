@@ -56,3 +56,6 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install R packages
+        run: |
+          Rscript -e 'install.packages(c("knitr","rmarkdown"), repos="https://cloud.r-project.org")'
