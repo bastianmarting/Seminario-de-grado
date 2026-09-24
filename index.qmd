@@ -26,4 +26,4 @@ div[data-when-format="pdf"] { display: none !important; }
 # Abstract {.unnumbered}
 
 Resumen en español (200-300). Expón propósito, método, resultados clave y conclusiones.
-Puede incluir citas como @xie2017bookdown y se actualizarán automáticamente.
+Puede incluir citas como y se actualizarán automáticamente.
