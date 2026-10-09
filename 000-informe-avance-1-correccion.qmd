@@ -4,6 +4,22 @@ numbered: true
 ---
 ## Problema de investigación - Problema general al especifico. (No tan histórico)
 
+- Presenta problema, pregunta, hipótesis / argumento central.
+
+- Primer párrafo: tema, objeto de estudio y factores asociados
+    - Es crucial, el más importante de la introducción. En base a este párrafo el lector toma la decisión si vale la pena seguir leyendo o no, por eso debe estar dirigido a capturar a la audiencia a la que va dirigido.
+**El argumento del seminario va en torno a la contradiccion conceptual de esfuerzo y talento como concepto de meritocracia, comunmente medida a la part o subestimada hasta el punto de dejar de lado en la medicion de meritocraia**
+La meritocracia es uno de los criterios centrales para la distribucion de recompenzas en las sociedades contemporaneas. 
+
+La idea se basa inicialmente en el principio de igualdad de oportunidades, en el cual los individuos a traves del esfuerzo y el talento pueden lograr movilidad social y el exito en ciertas esferas sociales, dejando de lado aspectos no meritocraticos como el genero, clase social, origen familiar, entre otros. Sin embargo 
+
+    - En general comienza describiendo el tema general y su relevancia social (Ej: La desigualdad económica ha ido en aumento los últimos años, acrecentando las brechas de oportunidades entre los más ricos y los más pobres.) 
+**El tema general del seminario se orienta a la contradiccion entre dos conceptos Esfuerz y talento, los cuales deben ser tomados de manera diferentes para redistribuir.** 
+    - Es importante recordar que un problema social es distinto de un problema de investigación. No porque existan “altas tasas de suicidio” significa automáticamente que se requiera investigación. El problema a fundamentar en este caso se relacionaría con cómo han sido investigadas las tasas de suicidio, y cómo esta investigación entonces responde a ese problema.
+    - Una vez enunciado este tema general, se pasa a la definición del objeto de estudio (Ej: la desigualdad económica se puede definir como …. [citas]).
+    - Luego se mencionan los principales elementos/conceptos asociados hasta ahora para explicar el objeto de estudio (Ej: “En la literatura especializada, los principales factores asociados a la desigualdad son la escasez de políticas redistributivas y la corrupción de los gobiernos [citas] ).
+    - Cuando se menciona la literatura especializada se recomienda mencionar la perspectiva disciplinar claramente (ej:“desde las investigaciones sociológicas …”)
+
 Por qué los conceptos se confunden?
 
 Esto constituye un problema, puesto que en la distribucion de recompenzas se menciona el merito, refiriendo a dos conceptos que son diferntes y contradictorios entre si talentos y logros. Se cae así en una falsa equivalencia. 
@@ -13,9 +29,10 @@ El merecimiento no necesita del merito para ser reconocido. porque existen otras
 
 ## Objeto de estudio
 
+La investigacion tiene como objeto de estudio las preferencias normativas sobre meritocracia diferenciada entre esfuerzo y el talento como criterios de recompensa. 
 
 ## Pregunta de investigación
-
+Se plantea la siguiente pregunta de investigación: ¿Difiere la legitimación del esfuerzo y el talento como criterios de recompensa —medida como la brecha entre percepción y preferencia normativa— según la clase social en Chile?
 
 ## Revisión inicial de literatura
 
@@ -24,4 +41,16 @@ El merecimiento no necesita del merito para ser reconocido. porque existen otras
 
 
 ## Disponibilidad de datos
+
+Se utilizarán datos de la encuesta Economía moral de la meritocracia y preferencias redistributivas, especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de @castillo_multidimensional_2023a.
+N = 1,489.
+
+Se utilizarán datos de la encuesta ISSP (The International Social Survey Programme) especificamente datos del módulo Desigualdad Social V del año 2019.
+N = 1,374
+
+Se utilizarán datos de la encuesta ElSOC (Estudio Longitudinal Social de Chile) especificamente datos del módulo ciudadanía y democracia del año 2019.
+N = 2,153
+
+**A Revisar** - Medicion del Merit en - International Social Justice Project - European Social Survey, ronda 9 (2018/19), módulo “Justice and Fairness” - General Social Survey (EE.UU.) - World Values Survey 
+
 
