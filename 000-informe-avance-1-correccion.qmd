@@ -3,16 +3,14 @@ title: "Informe de Avance 1"
 numbered: true
 ---
 ## Problema de investigación - Problema general al especifico. (No tan histórico)
+**El argumento del seminario va en torno a la contradiccion conceptual de esfuerzo y talento como concepto de meritocracia, comunmente medida a la part o subestimada hasta el punto de dejar de lado en la medicion de meritocraia**
 
 - Presenta problema, pregunta, hipótesis / argumento central.
 
 - Primer párrafo: tema, objeto de estudio y factores asociados
     - Es crucial, el más importante de la introducción. En base a este párrafo el lector toma la decisión si vale la pena seguir leyendo o no, por eso debe estar dirigido a capturar a la audiencia a la que va dirigido.
-**El argumento del seminario va en torno a la contradiccion conceptual de esfuerzo y talento como concepto de meritocracia, comunmente medida a la part o subestimada hasta el punto de dejar de lado en la medicion de meritocraia**
 
-La meritocracia es uno de los principios centrales para la distribucion de recompenzas y recursos en las sociedades contemporaneas, y con los que se justifican sus desigualdades. En este sentido la meritocracia no sólo justifica posiciones en la jerarquía social, sino que también se asigna estas recompensas de manera desigual en diferentes esferas sociales como la educacion, posiciones laborales, acceso a la salud y pensiones. Desde la sociología las desigualdades se dan en 
-
-el mercado como principio que organiza el acceso a bienes sociales @polanyi_1997
+La meritocracia, entendida originalmente como la combinacion entre esfuerzo e inteligencia (talento) es uno de los principios centrales para la distribucion de recompenzas y recursos en las sociedades contemporaneas, y con los que se justifican sus desigualdades. En este sentido la meritocracia no sólo justifica posiciones en la jerarquía social, sino que también se asigna estas recompensas de manera desigual en diferentes esferas sociales como la educacion, posiciones laborales, acceso a la salud y pensiones. Desde la sociología se ha intentado responder a la pretunta sobre cómo las sociedades definen como se distribuyen las recomensas y qué le corresponde a cada persona según qué criterios estas asignaciones se consideran legitimas. Así, en sociedades sontemporaneas, la meritocracia se ha consolidaddo como uno de los principios más extendidos para responder a las exigencias de la distribucion. Las recompensas y recursos deben distribuirse según el merito individual y no según el origen social @young_1964. Esta asignacion de recompenzas tiene sentido general, pero no solo organiza distribuciones, sino que legitima desigualdades al presentarlas como justas o merecidas. Esta doble funcion de la meritocracia es muy visible en sociedades donde el mercado se ha extendido como el principal organizador de la vida social, y en especial al acceso de bienes sociales @polanyi_1997 @piketty_capital_2014. En Chile, los accesos a estos bienes están altamente medidados por lógicas de mercado, donde el esfuerzo individual ocupa un papel central en la forma en que las personas interpretan sus trayectorias @araujo_y_martuccelli_soc-chilena_2012. 
 
 La idea se basa inicialmente en el principio de igualdad de oportunidades, en el cual los individuos a traves del esfuerzo y el talento pueden lograr movilidad social y el exito en ciertas esferas sociales, dejando de lado aspectos no meritocraticos como el genero, clase social, origen familiar, entre otros. Sin embargo 
 
@@ -38,7 +36,7 @@ La investigacion tiene como objeto de estudio las preferencias normativas sobre 
 Se plantea la siguiente pregunta de investigación: ¿Difiere la legitimación del esfuerzo y el talento como criterios de recompensa —medida como la brecha entre percepción y preferencia normativa— según la clase social en Chile?
 
 ## Revisión inicial de literatura
-
+debate sobre sociedad meritocratica. 
 
 ## Propuesta metodológica
 
