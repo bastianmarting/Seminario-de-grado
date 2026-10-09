@@ -43,7 +43,7 @@ Se plantea la siguiente pregunta de investigación: ¿Difiere la legitimación d
 
 ## Disponibilidad de datos
 
-Se utilizarán datos de la encuesta Economía moral de la meritocracia y preferencias redistributivas, especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de @castillo_multidimensional_2023a.
+Se utilizarán datos de la encuesta Economía moral de la meritocracia y preferencias redistributivas, especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de castillo_multidimensional_2023a.
 N = 1,489.
 
 Se utilizarán datos de la encuesta ISSP (The International Social Survey Programme) especificamente datos del módulo Desigualdad Social V del año 2019.
