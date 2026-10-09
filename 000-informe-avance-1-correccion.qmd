@@ -9,7 +9,8 @@ numbered: true
 - Primer párrafo: tema, objeto de estudio y factores asociados
     - Es crucial, el más importante de la introducción. En base a este párrafo el lector toma la decisión si vale la pena seguir leyendo o no, por eso debe estar dirigido a capturar a la audiencia a la que va dirigido.
 **El argumento del seminario va en torno a la contradiccion conceptual de esfuerzo y talento como concepto de meritocracia, comunmente medida a la part o subestimada hasta el punto de dejar de lado en la medicion de meritocraia**
-La meritocracia es uno de los criterios centrales para la distribucion de recompenzas en las sociedades contemporaneas. 
+
+La meritocracia es uno de los principios centrales para la distribucion de recompenzas y recursos en las sociedades contemporaneas, y con los que se justifican sus desigualdades. En este sentido la meritocracia no sólo justifica posiciones en la jerarquía social, sino que, también asigna estas recompensas de manera desigual en diferentes esferas sociales como la educacion, posiciones laborales, acceso a la salud y pensiones.
 
 La idea se basa inicialmente en el principio de igualdad de oportunidades, en el cual los individuos a traves del esfuerzo y el talento pueden lograr movilidad social y el exito en ciertas esferas sociales, dejando de lado aspectos no meritocraticos como el genero, clase social, origen familiar, entre otros. Sin embargo 
 
