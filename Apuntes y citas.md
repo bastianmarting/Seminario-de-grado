@@ -3,29 +3,6 @@ title: "Apuntes y citas"
 numbered: true
 ---
 
-
-## De la correción 
-A esto se suma un matiz cualitativo relevante del cual mencionan araujo_desafios_2012, quienes sugieren que la relación entre clase social y creencia en el esfuerzo no es homogénea ni estable, sino que varía en su intensidad y sentido, las capas medias experimentarían mayor amargura por una promesa meritocrática incumplida, mientras los sectores populares sostendrían una "confianza forzada" en la educación más que una convicción meritocrática plena. Esto sugiere que la asimetría esfuerzo/talento podría no distribuirse de forma simple entre clases, sino de manera más compleja de lo que la literatura
-
-Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado, disminucion del papel del estado en los servicios sociales y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
- cuantitativa ha asumido hasta ahora.
-
- Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado, disminucion del papel del estado en los servicios sociales y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
-
-## Rev literatura
-
-En el ámbito de investigaciones cuantitativas chilenas, castillo_meritocracia_2019 distinguen empíricamente percepción y preferencia sobre la meritocracia, encontrando que son dimensiones independientes entre sí, y plantean como agenda futura estudiar esfuerzo y talento por separado explorando los aspectos subjetivos de meritocracia. atria_economic_2020, desde metodología cualitativa, muestran que las élites económicas anclan el mérito en el talento y las clases medias/bajas en el esfuerzo. castillo_multidimensional_2023a construyen y validan un instrumento de ocho ítems que opera con la distinción entre percepción y preferencias de meritocracia y aspectos no meritocráticos, pero sin contrastar las diferencias por clase social. 
-
-araujo_desafios_2012 ya habían profundizado en lo anterior desde un enfoque cualitativo sobre la sociedad chilena, mostrando que la relación entre clase y creencia meritocracia no es homogénea, sino que varía en intensidad (amargura en capas medias, confianza forzada en sectores populares). Mencionan que a través del mérito se evalúa la justicia de la sociedad en cuanto distribución de recompensas basada en el ideal de competencia, influenciada por los ideales neoliberales en chile, que tiene como idea legitimadora el mérito. Pero este logro a través del mérito se ha evidenciado que los individuos reconocen que la sociedad chilena está subjetivamente orientada al logro individual y la meritocracia a lo que objetivamente se revela en las trayectorias de los sujetos.
-
-El debate metodológico se construye, y siguiendo con la línea de castillo_multidimensional_2023a, en torno a la medición del concepto de meritocracia. Así wiesner_effort_ utiliza principalmente una medida de meritocracia unidimensional, utilizando solamente el esfuerzo, aunque reconocen que la definición clásica integra esfuerzo y talento; esta decisión facilita el análisis comparativo, pero deja fuera de la medición los factores estructurales, las conexiones y el origen social.
-
-Aportando a este debate sobre cómo operan estas dimensiones en la opinión pública, spruyt_talent_2015b evalúa empíricamente tres explicaciones populares para los resultados educativos: el talento, el esfuerzo y los antecedentes sociales. Su investigación revela que las personas están mucho más inclinadas a atribuir el éxito escolar al esfuerzo y la dedicación, mientras que el "talento" no es considerado un factor muy importante. Un hallazgo central es que los individuos no parecen distinguir estrictamente entre elementos meritocráticos (esfuerzo, talento) y no meritocráticos (origen social), sino que la división recae entre características "dadas" que escapan al control individual (talento y antecedentes sociales) y los factores que sí pueden ser manipulados (esfuerzo). Además, los resultados muestran una paradoja respecto a las clases: son las personas con mayor nivel educativo quienes más respaldan la explicación estructural basada en los antecedentes sociales, mientras que los grupos con menor educación tienden a recurrir más a la explicación basada en el talento.
-
-Aquí surge una tensión analítica importante frente a los hallazgos de atria_economic_2020. Mientras en Chile es la élite económica la que apela al talento para explicar el éxito, en el estudio de spruyt_talent_2015b son los sectores de menor educación quienes recurren al talento. Esta divergencia se resuelve al diferenciar el contexto estructural y el objeto de justificación: Atria observa a una élite económica en una sociedad altamente desigual que necesita legitimar su riqueza naturalizándola como un don inherente; en contraste, **Spruyt** analiza el sistema educativo europeo, donde los grupos aventajados (altamente educados) adoptan una postura de "paternalismo", reconociendo los factores estructurales del origen social, lo que deja el "trabajo sucio" de la reproducción de privilegios a los sectores menos educados, quienes terminan asumiendo la responsabilidad de su propia desventaja al atribuirla a una falta de talento innato.
-
-La investigación cualitativa de fercovic_disentangling_2022 amplía aún más el concepto en las narrativas de personas con movilidad ascendente de largo alcance. El esfuerzo aparece junto con apoyo familiar e institucional, suerte y talento o inteligencia, siendo este último el componente menos enfatizado.
-
 ## Citas sinteticas de textos
 * 
 *citas pavel jus dist principle*
