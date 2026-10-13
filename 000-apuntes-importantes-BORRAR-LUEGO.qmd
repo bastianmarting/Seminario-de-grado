@@ -1,29 +1,16 @@
 ---
-title: "Informe de Avance 1"
+title: "Apuntes importantes a usar y tomar en cuenta BORRAR LUEGO"
 numbered: true
 ---
-## Problema de investigación
-
-La meritocracia, entendida originalmente como la idea de que las recompensas sociales deben distribuirse según el esfuerzo y el  talento individual (coeficiente intelectual) young_triunfo_ constituye hoy uno de los principios de justicia más extendidos para explicar y legitimar la desigualdad en sociedades democráticas, en especial sociedades con fuertes políticas de libre mercado **citar**. La distribución de esfuerzo se ve influenciada por diferentes factores, y la del talento en la sociedad no es controlada por el individuo. Pese a esta relevancia teórica, la investigación cuantitativa sobre meritocracia en Chile ha tratado el esfuerzo y el talento de forma poco diferenciada. 
-
-castillo_meritocracia_2019 establecieron una distinción metodológica clave entre percepción (cómo opera la sociedad) y preferencia (cómo debería operar) de la meritocracia, y cerraron su estudio señalando explícitamente que los elementos constitutivos más tradicionales de la meritocracia, como son el esfuerzo y el talento, no han sido estudiados por separado.
-
-A esto se suma un matiz cualitativo relevante del cual mencionan araujo_desafios_2012, quienes sugieren que la relación entre clase social y creencia en el esfuerzo no es homogénea ni estable, sino que varía en su intensidad y sentido, las capas medias experimentarían mayor amargura por una promesa meritocrática incumplida, mientras los sectores populares sostendrían una "confianza forzada" en la educación más que una convicción meritocrática plena. Esto sugiere que la asimetría esfuerzo/talento podría no distribuirse de forma simple entre clases, sino de manera más compleja de lo que la literatura cuantitativa ha asumido hasta ahora.
+## De la correción 
+A esto se suma un matiz cualitativo relevante del cual mencionan araujo_desafios_2012, quienes sugieren que la relación entre clase social y creencia en el esfuerzo no es homogénea ni estable, sino que varía en su intensidad y sentido, las capas medias experimentarían mayor amargura por una promesa meritocrática incumplida, mientras los sectores populares sostendrían una "confianza forzada" en la educación más que una convicción meritocrática plena. Esto sugiere que la asimetría esfuerzo/talento podría no distribuirse de forma simple entre clases, sino de manera más compleja de lo que la literatura
 
 Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado, disminucion del papel del estado en los servicios sociales y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
+ cuantitativa ha asumido hasta ahora.
 
+ Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado, disminucion del papel del estado en los servicios sociales y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
 
-## Objeto de estudio
-
-Las percepciones y preferencias normativas sobre el esfuerzo y el talento como criterios de recompensa meritocrática, y su variación según la posición de clase social en Chile.
-
-## Pregunta de investigación
-
-¿Difiere la legitimación del esfuerzo y el talento como criterios de recompensa —medida como la brecha entre percepción y preferencia normativa— según la clase social en Chile?
-
-## Revisión inicial de literatura
-
-El concepto de meritocracia de young_triunfo_ sintetiza esfuerzo y talento como criterios de asignación de recompensas, pero rawls_teoria_ cuestiona la equivalencia moral de ambos al señalar que el talento, a diferencia del esfuerzo, es producto de una distribución natural arbitraria no controlada por el individuo.
+## Rev literatura
 
 En el ámbito de investigaciones cuantitativas chilenas, castillo_meritocracia_2019 distinguen empíricamente percepción y preferencia sobre la meritocracia, encontrando que son dimensiones independientes entre sí, y plantean como agenda futura estudiar esfuerzo y talento por separado explorando los aspectos subjetivos de meritocracia. atria_economic_2020, desde metodología cualitativa, muestran que las élites económicas anclan el mérito en el talento y las clases medias/bajas en el esfuerzo. castillo_multidimensional_2023a construyen y validan un instrumento de ocho ítems que opera con la distinción entre percepción y preferencias de meritocracia y aspectos no meritocráticos, pero sin contrastar las diferencias por clase social. 
 
@@ -37,14 +24,27 @@ Aquí surge una tensión analítica importante frente a los hallazgos de atria_e
 
 La investigación cualitativa de fercovic_disentangling_2022 amplía aún más el concepto en las narrativas de personas con movilidad ascendente de largo alcance. El esfuerzo aparece junto con apoyo familiar e institucional, suerte y talento o inteligencia, siendo este último el componente menos enfatizado.
 
+## Citas sinteticas de textos
+
+
+
+## Pregunta de investigación
+**Dos posibles preguntas: ¨**
+
+¿Quiénes perciben que se premia el esfuerzo y quiénes el talento? 
+    - es más micro 
+    - más hacia el merecimiento
+    -  
+
+¿Percibir que se premia el esfuerzo legitima la desigualdad de forma distinta que percibir que se premia el talento?
+    - Es más macro
+    - se pueden integrar variables meso como Fercovic presentacion en clases de seminario - tendría que revisar literatura que conecte las variables meso con esfuerzo y talento. igual es medio plagio o no sdjfasdf
+    - Revisar varibales e indice de neoliberalismo luego de la literatura. 
+    encaja con @castillo_perceptions_2025
+
+## Revisión inicial de literatura
+
+
 ## Propuesta metodológica
 
-Se propone un diseño cuantitativo multivariado. Las variables dependientes se construyen como la diferencia entre el ítem de preferencia y el ítem de percepción, por separado para esfuerzo y para talento (brecha_esfuerzo y brecha_talento). La variable independiente principal es la clase social, operacionalizada mediante el esquema EGP colapsado en categorías (en caso de que el número de casos sea muy bajo, se reconsiderara la integración de clases con el esquema EGP de Goldthorpe). Se incluirán controles sociodemográficos (sexo, edad, nivel educacional).
-
-Se estimarán dos modelos de Regresión Lineal Múltiple (RLM), uno por cada variable dependiente. De forma previa, se realizará una prueba de diferencia de medias entre ambas brechas para evaluar si existe una asimetría general entre esfuerzo y talento antes de introducir clase social como predictor.
-
 ## Disponibilidad de datos
-
-Se utilizarán datos de la tercera ola del estudio longitudinal chileno sobre meritocracia y preferencias distributivas desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores.
-
-El instrumento de meritocracia corresponde a la batería validada por castillo_multidimensional_2023a y con un N=1,489.

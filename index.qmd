@@ -11,7 +11,7 @@ format:
 ---
 
 ::: {.content-visible when-format="pdf"}
-\small\textbf{Palabras clave:} Sociologia, educacion, Chile
+\small\textbf{Palabras clave:} Sociología, desigualdades, educación, Chile
 \normalsize
 :::
 

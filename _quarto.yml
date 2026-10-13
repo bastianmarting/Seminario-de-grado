@@ -8,7 +8,7 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: "Preferencias meritocraticas: Influencia de las clases sociales en las preferencias de esfuerzo y talento en la distribución de recompensas"
+  title: "Preferencias meritocraticas: percepciones de esfuerzo y talento en la distribución de recompensas"
   subtitle: Seminario de Grado 2026
   output-file: reportes-seminario
   repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)
@@ -33,7 +33,7 @@ book:
   favicon: assets/favicon-2025-20251031.svg  # Apunta al favicon versionado para romper cache
   chapters:
     - 000-informe-avance-1-correccion.qmd
-    - 000-informe-avance-1.qmd
+    - 000-apuntes-importantes-BORRAR-LUEGO.qmd
     - index.qmd            # Capitulo inicial o resumen ejecutivo
     - 00-prefacio.qmd
     - 01-introduccion.qmd
