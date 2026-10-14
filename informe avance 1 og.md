@@ -4,7 +4,8 @@ numbered: true
 ---
 ## De la correción 
 A esto se suma un matiz cualitativo relevante del cual mencionan araujo_desafios_2012, quienes sugieren que la relación entre clase social y creencia en el esfuerzo no es homogénea ni estable, sino que varía en su intensidad y sentido, las capas medias experimentarían mayor amargura por una promesa meritocrática incumplida, mientras los sectores populares sostendrían una "confianza forzada" en la educación más que una convicción meritocrática plena. Esto sugiere que la asimetría esfuerzo/talento podría no distribuirse de forma simple entre clases, sino de manera más compleja de lo que la literatura
-
+"Esta relación es particularmente relevante en el contexto de Chile, donde el modelo económico neoliberal ha sido una fuerza dominante en la configuración de las actitudes públicas hacia la desigualdad y la justicia (Canales Cerón et al., 2021; Mac-Clure et al., 2024)." @castillo_perceptions_2025
+    
 Este problema se inscribe además en el contexto chileno de alta comodificación del bienestar social con reformas de libremercado, disminucion del papel del estado en los servicios sociales y prolongada exposición a un marco ideológico neoliberal, que provee el lenguaje competencia, mérito individual, responsabilidad personal con el que las personas dan sentido a estas creencias.
  cuantitativa ha asumido hasta ahora.
 
