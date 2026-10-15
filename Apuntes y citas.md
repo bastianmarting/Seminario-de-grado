@@ -4,9 +4,15 @@ numbered: true
 ---
 
 ## Citas sinteticas de textos
-  Fercovic
+  Variables independientes posibles posicion social, educacion, educacino de los padres, estatus social.
+    La investigacion empirica dejó de lado el talento @castillo_merit_perc_pref_2019 p.13
+La investigacion conceptual ha dsicutido de manera profunda la inteligencia y el talento, pero no ha discutido el esfuerzo en cabalidad @franetovic_concepciones_2017
+Los factores individuales que buscan explicaciones sobre diferencias meritocraticas
+[@castillo_perceptions_2025] 
 
-"Más que aumentar la movilidad, la meritocracia sigue estando predominantemente vinculada a la repro- ducción de las posiciones de clase o estatus (Breen, 2004; Friedman y Laurison, 2019; Goldthorpe et al., 1980; Goldthorpe, 2003)" ([Fercovic, 2022, p. 120]
+  *Fercovic*
+
+"Más que aumentar la movilidad, la meritocracia sigue estando predominantemente vinculada a la repro- ducción de las posiciones de clase o estatus (Breen, 2004; Friedman y Laurison, 2019; Goldthorpe et al., 1980; Goldthorpe, 2003)" ([Fercovic, 2022, p. 120])
 
 "Sin embargo, las percepciones y creencias de las personas sobre la desigualdad social y los valores meritocráticos merecen atención académica seria. Pueden ser una clave para señalar la legitimidad de un determinado sistema de estratificación, las nociones de justicia social generalmente adheridas, así como el potencial de descontento social asociado a la desigualdad (Kluegel y Smith, 1986)." ([Fercovic, 2022, p. 120]
 
