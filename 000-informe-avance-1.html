@@ -101,7 +101,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b995ce06ea3434b204258ee37a9fa0b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-375c5da54c626d283a6459401a9d31ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -320,23 +320,30 @@ p {
 </section>
 <section id="objeto-de-estudio" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="objeto-de-estudio"><span class="header-section-number">1.2</span> Objeto de estudio</h2>
-<p>La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento y su relación con la justificación de las diferencias salariales.</p>
-<p>Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad <span class="citation" data-cites="pendiente_sonhing_2011">(<a href="references.html#ref-pendiente_sonhing_2011" role="doc-biblioref"><strong>pendiente_sonhing_2011?</strong></a>)</span>.</p>
+<p>La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento.</p>
+<p>Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad <span class="citation" data-cites="sonhing_2011">(<a href="references.html#ref-sonhing_2011" role="doc-biblioref"><strong>sonhing_2011?</strong></a>)</span>. <strong>pendiente por leer</strong></p>
 </section>
 <section id="pregunta-de-investigación" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="pregunta-de-investigación"><span class="header-section-number">1.3</span> Pregunta de investigación</h2>
+<p>Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación.</p>
+<p>¿Qué factores se asocian con que las personas perciban que en Chile se recompensa el esfuerzo y que se recompensa el talento, y son estos factores los mismos para ambas percepciones?</p>
 </section>
 <section id="revisión-inicial-de-literatura" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="revisión-inicial-de-literatura"><span class="header-section-number">1.4</span> Revisión inicial de literatura</h2>
-<p>debate sobre sociedad meritocratica. Merecimiento y desigualdad. debate sobre talentos debate sobre esfuerzo debate sobre merecimiento en ambas</p>
-<p>Legitimidad de las desiguadaldes</p>
+<p>Teórico: debate sobre sociedad meritocratic</p>
+<p>se estudian perepciones porque las evaluaciones descriptivas sobre el funcionamiento de la sociedad tiene un impacto directo en como la ciudadanía juzga y legitima el orden social y el rol del mercado <span class="citation" data-cites="castillo_perceptions_2025">Castillo et&nbsp;al. (<a href="references.html#ref-castillo_perceptions_2025" role="doc-biblioref">2025</a>)</span></p>
+<p>debate sobre talento debate sobre esfuerzo</p>
+<p>Empirico * factores asociados a la percepción meritocrática.</p>
 </section>
 <section id="propuesta-metodológica" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="propuesta-metodológica"><span class="header-section-number">1.5</span> Propuesta metodológica</h2>
+<p>Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.</p>
+<p>Variables dependientes: Percepción de esfuerzo y percepción de talento. Variables independientes (posibles): Movilidad, atribución personal, desigualdad percibida y creencias neoliberales.</p>
+<p>Los datos serán procesados en el programa estadístico RStudio.</p>
 </section>
 <section id="disponibilidad-de-datos" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="disponibilidad-de-datos"><span class="header-section-number">1.6</span> Disponibilidad de datos</h2>
-<p>Se utilizarán datos de la encuesta “Economía Moral de la Meritocracia y Preferencias Redistributivas”, especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de castillo_multidimensional_2023a. N = 1,489.</p>
+<p>Para este trabajo, se utilizarán los datos de la encuesta parte del Fonfecyt regular Nº 1160921 “Economía Moral de la Meritocracia y Preferencias Redistributivas” llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics.</p>
 
 
 <!-- -->
@@ -1604,30 +1611,41 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Una de las líneas de investigación sobre las percepciones meritocráticas se refiere a su relación con las desigualdades económicas. Se suele esperar que en sociedades más desiguales las personas creerían menos en la meritocracia como forma de distribución de recompensas y recursos, pero ocurre lo contrario, a mayor desigualdad mayor es la legitimación en términos de meritocracia <span class="co">[</span><span class="ot">@mijs_paradox_2021, p.9</span><span class="co">]</span>. Así, las percepciones meritocráticas tienen sentido en torno a las explicaciones sobre desigualdad y descontento que se ven permeados por ideales meritocráticos que pueden reducir el apoyo a políticas de redistribución económicas <span class="co">[</span><span class="ot">@lierse_et_al_desigualdades_y_redistribucion_2022</span><span class="co">]</span> y atribuir el éxito y fracaso a factores individuales, presentando las posiciones sociales de las personas como merecidas y legítimas por criterios de desempeño <span class="co">[</span><span class="ot">@meuleman_desert_carin_2020; @mulligan_meritocracy_2023a; @pavel_merit_2024</span><span class="co">]</span>. Sin embargo, hay evidencia que matiza y contrapone el aporte de @mijs_paradox_2021 según el cual en los países más desiguales la legitimación de esta desigualdad es apoyada a través de ideales meritocráticos. Al observar los cambios dentro de cada país, **@ehmes_paradox_2026 encontraron que la desigualdad debilita moderadamente la creencia en la meritocracia y aumenta, sobre todo, el escepticismo entre quienes ya tenían opiniones menos favorables hacia ella. También,** @wiesner_effort_2026 <span class="co">[</span><span class="ot">p.1</span><span class="co">]</span> muestran que la creencia en el esfuerzo frente a las ventajas de origen no va en aumento, y que las personas adhieren simultáneamente a factores meritocráticos y no meritocráticos, lo que denominan una conciencia dual. Ahora bien, las diferencias sobre percepciones de meritocracia podrían depender en como se conceptualiza y miden las creencias meritocráticas <span class="co">[</span><span class="ot">@castillo_et_al_multidimensional_merit_beliefs_2023; @clavero_2023, p. 1186</span><span class="co">]</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objeto de estudio</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento y su relación con la justificación de las diferencias salariales.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad <span class="co">[</span><span class="ot">@pendiente_sonhing_2011</span><span class="co">]</span>.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pregunta de investigación</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad <span class="co">[</span><span class="ot">@sonhing_2011</span><span class="co">]</span>. **pendiente por leer**</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pregunta de investigación</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación.</span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revisión inicial de literatura</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>debate sobre sociedad meritocratica. </span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Merecimiento y desigualdad.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>debate sobre talentos </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>debate sobre esfuerzo</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>debate sobre merecimiento en ambas</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Legitimidad de las desiguadaldes </span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Propuesta metodológica</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>¿Qué factores se asocian con que las personas perciban que en Chile se recompensa el esfuerzo y que se recompensa el talento, y son estos factores los mismos para ambas percepciones?</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Revisión inicial de literatura</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Teórico:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>debate sobre sociedad meritocratic</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>se estudian perepciones porque las evaluaciones descriptivas sobre el funcionamiento de la sociedad tiene un impacto directo en como la ciudadanía juzga y legitima el orden social y el rol del mercado @castillo_perceptions_2025</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>debate sobre talento</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>debate sobre esfuerzo</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Disponibilidad de datos</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Empirico</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>factores asociados a la percepción meritocrática. </span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>Se utilizarán datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas", especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de castillo_multidimensional_2023a.</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>N = 1,489.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Propuesta metodológica</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Variables dependientes: Percepción de esfuerzo y percepción de talento.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Variables independientes (posibles): Movilidad, atribución personal, desigualdad percibida y creencias neoliberales.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Los datos serán procesados en el programa estadístico RStudio. </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Disponibilidad de datos</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Para este trabajo, se utilizarán los datos de la encuesta parte del  Fonfecyt regular Nº 1160921 "Economía Moral de la Meritocracia y Preferencias Redistributivas" llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics. </span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
