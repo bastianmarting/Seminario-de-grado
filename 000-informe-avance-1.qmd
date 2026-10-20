@@ -11,28 +11,39 @@ La meritocracia fue originalmente entendida por @young_1964 como una sátira a u
 Una de las líneas de investigación sobre las percepciones meritocráticas se refiere a su relación con las desigualdades económicas. Se suele esperar que en sociedades más desiguales las personas creerían menos en la meritocracia como forma de distribución de recompensas y recursos, pero ocurre lo contrario, a mayor desigualdad mayor es la legitimación en términos de meritocracia [@mijs_paradox_2021, p.9]. Así, las percepciones meritocráticas tienen sentido en torno a las explicaciones sobre desigualdad y descontento que se ven permeados por ideales meritocráticos que pueden reducir el apoyo a políticas de redistribución económicas [@lierse_et_al_desigualdades_y_redistribucion_2022] y atribuir el éxito y fracaso a factores individuales, presentando las posiciones sociales de las personas como merecidas y legítimas por criterios de desempeño [@meuleman_desert_carin_2020; @mulligan_meritocracy_2023a; @pavel_merit_2024]. Sin embargo, hay evidencia que matiza y contrapone el aporte de @mijs_paradox_2021 según el cual en los países más desiguales la legitimación de esta desigualdad es apoyada a través de ideales meritocráticos. Al observar los cambios dentro de cada país, **@ehmes_paradox_2026 encontraron que la desigualdad debilita moderadamente la creencia en la meritocracia y aumenta, sobre todo, el escepticismo entre quienes ya tenían opiniones menos favorables hacia ella. También,** @wiesner_effort_2026 [p.1] muestran que la creencia en el esfuerzo frente a las ventajas de origen no va en aumento, y que las personas adhieren simultáneamente a factores meritocráticos y no meritocráticos, lo que denominan una conciencia dual. Ahora bien, las diferencias sobre percepciones de meritocracia podrían depender en como se conceptualiza y miden las creencias meritocráticas [@castillo_et_al_multidimensional_merit_beliefs_2023; @clavero_2023, p. 1186]
 
 ## Objeto de estudio
+La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento.
 
-La investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre percepción de que se recompensa esfuerzo y percepción de que se recompensa el talento y su relación con la justificación de las diferencias salariales.
-
-Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad [@pendiente_sonhing_2011].
+Se estudian percepciones porque son las creencias descriptivas las que se asocian a la legitimación de la desigualdad [@sonhing_2011]. **pendiente por leer**
 
 ## Pregunta de investigación
+Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación.
 
+¿Qué factores se asocian con que las personas perciban que en Chile se recompensa el esfuerzo y que se recompensa el talento, y son estos factores los mismos para ambas percepciones?
 
 ## Revisión inicial de literatura
-debate sobre sociedad meritocratica. 
-Merecimiento y desigualdad.
-debate sobre talentos 
-debate sobre esfuerzo
-debate sobre merecimiento en ambas
 
-Legitimidad de las desiguadaldes 
+Teórico:
+debate sobre sociedad meritocratic
+
+se estudian perepciones porque las evaluaciones descriptivas sobre el funcionamiento de la sociedad tiene un impacto directo en como la ciudadanía juzga y legitima el orden social y el rol del mercado @castillo_perceptions_2025
+
+debate sobre talento
+debate sobre esfuerzo
+
+Empirico
+* factores asociados a la percepción meritocrática. 
 
 ## Propuesta metodológica
+Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.
+
+Variables dependientes: Percepción de esfuerzo y percepción de talento.
+Variables independientes (posibles): Movilidad, atribución personal, desigualdad percibida y creencias neoliberales.
+
+Los datos serán procesados en el programa estadístico RStudio. 
+
 
 
 ## Disponibilidad de datos
 
-Se utilizarán datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas", especificamente la tercera ola del estudio longitudinal desarrollada en Chile en 2020, aplicado mediante Qualtrics a participantes recontactados de olas anteriores. El módulo de meritocracia corresponde a la batería validada en el estudio de castillo_multidimensional_2023a.
-N = 1,489.
+Para este trabajo, se utilizarán los datos de la encuesta parte del  Fonfecyt regular Nº 1160921 "Economía Moral de la Meritocracia y Preferencias Redistributivas" llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics. 
 
