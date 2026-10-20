@@ -8,7 +8,7 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: "Preferencias meritocraticas: percepciones de esfuerzo y talento en la distribución de recompensas"
+  title: "Percepciones meritocráticas: percepciones de esfuerzo y talento en la distribución de recompensas sus factores asociados"
   subtitle: Seminario de Grado 2026
   output-file: reportes-seminario
   repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)
