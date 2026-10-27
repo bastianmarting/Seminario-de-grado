@@ -37,11 +37,13 @@ Así, esta investigación tiene como objeto de estudio las percepciones sobre la
 Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación:
 
 ¿En qué medida el estatus social subjetivo, el nivel educacional y la experiencia de movilidad social se asocian con la percepción de que en Chile se recompensa el esfuerzo y el talento, y difieren estas asociaciones entre ambas percepciones?
+
 ## Revisión inicial de literatura
 ### Percepciones meritocráticas 
 #### *Teórico: debate sobre percepciones de una sociedad meritocratica*
 La meritocracia fue originalmente entendida por @young_1964 como una sátira a una sociedad gobernada por élites sustentada en la fórmula de la inteligencia más el esfuerzo. La idea se basa en el principio de igualdad de oportunidades, en el cual los individuos a través del esfuerzo y el talento pueden lograr movilidad social y el éxito en ciertas esferas sociales, dejando de lado factores no meritocráticos como el género, la clase social o el origen familiar [@wooldridge_aristocracy_2021]. El concepto ha sido adoptado como ideal normativo en distintas sociedades para distribuir las recompensas y recursos y junto a ello han surgido críticas respecto a una sociedad que basa la distribución en ideales meritocráticos [@mulligan_meritocracy_2023a; @sardoc_rise_2024]. 
 
+Percibir que una sociedad premia el mérito
 Sandel 
   * critica sobre los puntos de partida de las personas son desiguales 
   * actitudes de los ganadores y perdedores.
