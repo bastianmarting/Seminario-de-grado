@@ -21,17 +21,9 @@ Esta falta de distinción resulta crítica porque esfuerzo y talento remiten a p
 La evidencia disponible sugiere que esta distinción importa. En las preferencias meritocráticas, quienes tienen título universitario apoyan más que se recompensen las habilidades y menos que se recompense el esfuerzo, mientras que la movilidad social se asocia con un mayor apoyo a ambos criterios [@kwon_access_2026]. En las percepciones, incluso cuando esfuerzo y talento se estiman por separado, su asociación con el estatus subjetivo y la educación difiere en magnitud, aunque esas diferencias no han sido puestas a prueba formalmente [@iturra-sanhueza_social_2026, Tabla S3]. En este escenario, el presente estudio busca establecer en qué medida los factores asociados a la percepción de que se recompensa el esfuerzo difieren de aquellos asociados a la percepción de que se recompensa el talento en Chile.
 
 ## Objeto de estudio
-Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad. Percibir que la sociedad no es meritocrática promueve el apoyo a la redistribución [@sonhing_merit_2011; @lierse_et_al_desigualdades_y_redistribucion_2022; @tejero-peregrina_perceived_2025], así mismo, cuanto más se percibe que  que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales [@dubet_nuevo_2023, pp. 32-33]. Las percepciones varían según el estatus social subjetivo de las personas [@castillo_merit_perc_pref_2019; @grau-grau_ilusion_2022; @iturra-sanhueza_social_2026].
-
-
-Además, sus consecuencias difieren según el criterio: percibir que se recompensa el esfuerzo se asocia con preferencias por la justicia de mercado, mientras que la asociación con la percepción de que se recompensa el talento es nula o incluso negativa en relación con[@castillo_perceptions_2025]. Comprender qué factores se asocian a cada una permite entender cómo se reproduce la tolerancia a la desigualdad y la justificación de esta misma a través de la distribución de las recompensas según el esfuerzo o talento individual.
-
+Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad. Percibir que la sociedad no es meritocrática promueve el apoyo a la redistribución [@sonhing_merit_2011; @lierse_et_al_desigualdades_y_redistribucion_2022; @tejero-peregrina_perceived_2025]y, cuanto más se percibe que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales [@dubet_nuevo_2023, pp. 32-33]. demás, sus consecuencias difieren según el criterio: percibir que se recompensa el esfuerzo se asocia con preferencias por la justicia de mercado, mientras que la asociación con la percepción de que se recompensa el talento es nula o incluso negativa [@castillo_perceptions_2025]. Comprender qué factores se asocian a cada una permite entender cómo se reproduce la tolerancia a la desigualdad y sobre qué criterio se justifica en distintas posiciones sociales.
 
 Así, esta investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre la percepción de que se recompensa el esfuerzo y la percepción de que se recompensa el talento.
-
-
-*@sonhing_merit_2011 pendiente por leer en profundidad y desarrollar el apoyo a políticas de redistribución entre otros y lectura específica de @iturra-sanhueza_social_2026*
-
 
 ## Pregunta de investigación
 Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación:
