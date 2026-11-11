@@ -2,18 +2,20 @@
 title: "Informe de Avance 1"
 numbered: true
 ---
+
 ## Problema de investigación
-La meritocracia es una ideología de justicia social y principio de justicia más extendido en las sociedades contemporáneas, proporcionando una base moral para asignar recursos y recompensas escasas de manera proporcional al desempeño individual dejando de lado el origen social [@mijs_unfulfillable_2016; @mulligan_meritocracy_2023a]. Este principio organiza la esfera económica, la educación, el trabajo y beneficios estatales, cumpliendo la función de distribuir y legitimar la desigualdad al reducir el éxito a factores individuales, deja de lado los factores estructurales y presenta las brechas sociales como merecidas [@castillo_merit_perc_pref_2019; @lierse_et_al_desigualdades_y_redistribucion_2022, p. 373]. Desde la sociología la distribución y legitimación basándose en el mérito ha sido estudiada a través de las percepción meritocráticas, es decir, lo que las personas consideran que en la sociedad efectivamente recompensa el esfuerzo y talento [@castillo_merit_perc_pref_2019]. Las investigaciones han presentado que estas percepciones varían según la posición que las personas ocupan y han recorrido en la sociedad, en particular según su estatus social subjetivo, su nivel educacional y si han experimentado movilidad social, pero los factores que pueden influir en percibir que se recompensa el talento o el esfuerzo pueden tener diferencias entre uno y el otro [@iturra-sanhueza_social_2026; @mijs_belief_2022; @mac-clure_justicia_merit_justificacion_desigualdad_2024].
+
+La meritocracia es una ideología de justicia social y principio de justicia más extendido en las sociedades contemporáneas, proporcionando una base moral para asignar recursos y recompensas escasas de manera proporcional al desempeño individual dejando de lado el origen social [@mijs_unfulfillable_2016; @mulligan_meritocracy_2023a]. Este principio organiza la esfera económica, la educación, el trabajo y beneficios estatales, cumpliendo la función de distribuir y legitimar la desigualdad al reducir el éxito a factores individuales, deja de lado los factores estructurales y presenta las brechas sociales como merecidas [@castillo_merit_perc_pref_2019; @lierse_des_redi_2022, p. 373]. Desde la sociología la distribución y legitimación basándose en el mérito ha sido estudiada a través de las percepciones meritocráticas, es decir, lo que las personas consideran que en la sociedad efectivamente recompensa el esfuerzo y talento [@castillo_merit_perc_pref_2019]. Las investigaciones han presentado que estas percepciones varían según la posición que las personas ocupan y han recorrido en la sociedad, en particular según su estatus social subjetivo, su nivel educacional y si han experimentado movilidad social, pero los factores que pueden influir en percibir que se recompensa el talento o el esfuerzo pueden tener diferencias entre uno y el otro [@iturra-sanhueza_social_2026; @mijs_belief_2022; @mac_baroz_merit_des_2024].
 
 La meritocracia fue originalmente entendida por @young_1964 como una sátira a una sociedad gobernada por élites sustentada en la fórmula de la inteligencia más el esfuerzo y las atribuciones sobre recompensas y el tipo de mérito para explicar las posiciones sociales son diferentes. Sin embargo, se ha criticado la incorporación del talento dentro del concepto o medir junto al esfuerzo [@clavero_2023; @sardoc_rise_2024] y la distinción de ambos radicaría en el control que tienen las personas sobre cada uno [@sen_merit_justice_2000; @pavel_merit_2024].
 
-Mientras que el esfuerzo depende en mayor medida de la motivación individual [@franetovic_concepciones_2017, p.5], el talento, entendido como un conjunto de habilidades y capacidades innatas distribuidas de manera azarosa en la sociedad [@wright_preguntas_2010, pp. 50-51; @rawls_teoria_2021; @harden_2021], escapa en mayor medida al control individual, y lo que se percibe como controlable tiende a considerarse más merecido [@meuleman_desert_carin_2020; @castillo_perceptions_2025].  Esta diferencia también cambia el sentido del menosprecio meritocrático, al atribuir una posición baja a la falta de esfuerzo la convierte en una responsabilidad individual, mientras que atribuirle a la falta de talento la presenta como una carencia natural de la persona [@young_1964; @sandel_tirania_2020].
+Mientras que el esfuerzo depende en mayor medida de la motivación individual [@franetovic_concepciones_2017, p.5], el talento, entendido como un conjunto de habilidades y capacidades innatas distribuidas de manera azarosa en la sociedad [@wright_preguntas_2010, pp. 50-51; @rawls_teoria_2021; @harden_2021], escapa en mayor medida al control individual, y lo que se percibe como controlable tiende a considerarse más merecido [@meuleman_desert_carin_2020; @castillo_perceptions_2025]. Esta diferencia también cambia el sentido del menosprecio meritocrático, al atribuir una posición baja a la falta de esfuerzo la convierte en una responsabilidad individual, mientras que atribuirle a la falta de talento la presenta como una carencia natural de la persona [@young_1964; @sandel_tirania_2020].
 
-Esta distinción no es meramente conceptual, sino que personas de diferente estatus tienden a explicar, justificar y dar sentido a sus posiciones en la estructura social basada en el mérito [@friedman_meaning_2024]. En investigaciones cualitativas las élites económicas chilenas explican el acceso a las posiciones superiores por el talento más que por el esfuerzo, mientras que en las clases medias y bajas y en las universidades privadas de masas explican sus posiciones con base al esfuerzo y la perseverancia [@atria_et_al_elites_meritocracia_2020; @quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024]. También, quienes han experimentado movilidad ascendente tienden a destacar su esfuerzo [@jin_meritocracy_2020; @mijs_belief_2022], aunque también pueden reivindicar su talento para distinguirse de sus pares privilegiados [@renteria_telling_2025] y el criterio que privilegian las élites varía entre países con [@warikoo_legitimating_2014; @friedman_meaning_2024; @gogescu_meritocracy_2025].
+Esta distinción no es meramente conceptual, sino que personas de diferente estatus tienden a explicar, justificar y dar sentido a sus posiciones en la estructura social basada en el mérito [@friedman_meaning_2024]. En investigaciones cualitativas las élites económicas chilenas explican el acceso a las posiciones superiores por el talento más que por el esfuerzo, mientras que en las clases medias y bajas y en las universidades privadas de masas explican sus posiciones con base al esfuerzo y la perseverancia [@atria_et_al_elites_meritocracia_2020; @quaresma_merit_u_elites_2024]. También, quienes han experimentado movilidad ascendente tienden a destacar su esfuerzo [@jin_meritocracy_2020; @mijs_belief_2022], aunque también pueden reivindicar su talento para distinguirse de sus pares privilegiados [@renteria_telling_2026] y el criterio que privilegian las élites varía entre países con [@warikoo_legitimating_2014; @friedman_meaning_2024; @gogescu_meritocracy_2025].
 
-Hasta ahora, las percepciones meritocráticas se han analizado predominantemente bajo el marco tradicional de @young_1964 donde el mérito es la suma de inteligencia (talento) y esfuerzo, exceptuando investigaciones cualitativas. Algunos estudios la miden sólo a través del esfuerzo [@mijs_paradox_2021; @ehmes_paradox_2026; @wiesner_effort_2026] y otros suman esfuerzo y talento en un mismo indicador [@castillo_et_al_multidimensional_merit_beliefs_2023; @iturra-sanhueza_social_2026], pero rara vez se analiza el talento por separado. Las encuestas también integran las creencias y percepciones de meritocracia integrando el talento como parte del constructo, o se hace referencia a habilidades y capacidades como variables sustitutivas del concepto[^1]. Así, los factores asociados a la percepción meritocrática se han estimado sobre medidas que no distinguen entre ambos criterios, y no es posible saber si los resultados valen para los dos o solo para uno de ellos. 
+Hasta ahora, las percepciones meritocráticas se han analizado predominantemente bajo el marco tradicional de @young_1964 donde el mérito es la suma de inteligencia (talento) y esfuerzo, exceptuando investigaciones cualitativas. Algunos estudios la miden sólo a través del esfuerzo [@mijs_paradox_2021; @ehmes_paradox_2026; @wiesner_effort_2026] y otros suman esfuerzo y talento en un mismo indicador [@castillo_et_al_multidimensional_merit_beliefs_2023; @iturra-sanhueza_social_2026], pero rara vez se analiza el talento por separado. Las encuestas también integran las creencias y percepciones de meritocracia integrando el talento como parte del constructo, o se hace referencia a habilidades y capacidades como variables sustitutivas del concepto[^000-informe-avance-1-1]. Así, los factores asociados a la percepción meritocrática se han estimado sobre medidas que no distinguen entre ambos criterios, y no es posible saber si los resultados valen para los dos o solo para uno de ellos.
 
-[^1]: La encuesta ISSP (International Social Survey Programme) incluye en su módulo de desigualdad social la importancia de las habilidades naturales para salir adelante: "Get ahead: How important is having natural ability?" [@issp_data]. ELSOC (Estudio Longitudinal Social de Chile) incluye el ítem "En Chile, las personas son recompensadas por su inteligencia y habilidad" [@elsoc_data]. La encuesta CFPS (China Family Panel Studies) pregunta si "The most important factor affecting one's future success is his/her talent" y, en olas enfocadas en el rendimiento educativo, "In your opinion, talent accounts for ______% in achieving a good academic record" [@cfps_data].
+[^000-informe-avance-1-1]: La encuesta ISSP (International Social Survey Programme) incluye en su módulo de desigualdad social la importancia de las habilidades naturales para salir adelante: "Get ahead: How important is having natural ability?" [@issp_data]. ELSOC (Estudio Longitudinal Social de Chile) incluye el ítem "En Chile, las personas son recompensadas por su inteligencia y habilidad" [@elsoc_data]. La encuesta CFPS (China Family Panel Studies) pregunta "The most important factor affecting one's future success is his/her talent" y, en olas enfocadas en el rendimiento educativo, "In your opinion, talent accounts for \_\_\_\_\_\_% in achieving a good academic record" [@cfps_data].
 
 Esta falta de distinción resulta crítica porque esfuerzo y talento remiten a principios de merecimiento diferentes [@sen_merit_justice_2000; @pavel_merit_2024] y se ha criticado la incorporación del talento dentro del concepto [@clavero_2023, p. 1181; @sardoc_rise_2024]. La distinción principal radica en el control que las personas tienen sobre cada uno, mientras el esfuerzo depende en mayor medida de la motivación individual [@franetovic_concepciones_2017, p.5], el talento, entendido como un conjunto de habilidades y capacidades innatas distribuidas de manera azarosa en la sociedad [@wright_preguntas_2010, pp. 50-51; @rawls_teoria_2021; @harden_2021], escapa en mayor medida al control individual, y lo que se percibe como controlable tiende a considerarse más merecido [@meuleman_desert_carin_2020; @castillo_perceptions_2025].
 
@@ -22,27 +24,25 @@ Si esfuerzo y talento son fundamentos distintos de merecimiento, los factores as
 El primero es el estatus social subjetivo, ya que quienes se perciben en posiciones más altas tienden a percibir que la sociedad premia el mérito, lo que legitima su propia posición [@castillo_merit_perc_pref_2019; @iturra-sanhueza_social_2026; @grau-grau_ilusion_2022]
 
 ## Objeto de estudio
+
 La investigación en ciencias sociales distingue entre las preferencias normativas de los individuos sobre cómo debería funcionar la sociedad y sus percepciones descriptivas. Estas percepciones son las descripciones que tienen los individuos sobre cómo funciona la sociedad, y pueden diferir de lo que efectivamente sucede en ella [@castillo_percepcion_2012; @castillo_merit_perc_pref_2019; @assusa_clacso_2024]. Percibir que una sociedad es meritocrática, es decir, que premia el esfuerzo, el talento o ambos, es distinto de preferir que lo sea. De esta manera, los individuos pueden percibir que se premia alguno de estos dos criterios para explicar, justificar y dar sentido a su propia posición en la estructura social, ya sea en ámbitos educativos, el mundo del trabajo y la distribución de recursos y recompensas en general.
 
-Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad en diferentes ámbitos de la vida social. Por un lado, estudiarlas permite conocer en qué medida las personas creen que la sociedad chilena valora los méritos y no las ventajas heredadas, como la riqueza familiar o los contactos, y con qué criterio creen que lo hace [@castillo_et_al_multidimensional_merit_beliefs_2023; @wiesner_effort_2026, p. 1]. También, percibir que la sociedad no es meritocrática se asocia con un mayor apoyo a la redistribución [@sonhing_merit_2011; @lierse_et_al_desigualdades_y_redistribucion_2022; @tejero-peregrina_perceived_2025] y, cuanto más se percibe que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales, permite comprender como se reproduce la desigualdad y sobre qué criterio se justifican las distintas posiciones sociales y sus éxitos [@dubet_nuevo_2023, pp. 32-33].
-Atribuir logros y desventajas sociales a
+Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad en diferentes ámbitos de la vida social. Por un lado, estudiarlas permite conocer en qué medida las personas creen que la sociedad chilena valora los méritos y no las ventajas heredadas, como la riqueza familiar o los contactos, y con qué criterio creen que lo hace [@castillo_et_al_multidimensional_merit_beliefs_2023; @wiesner_effort_2026, p. 1]. También, percibir que la sociedad no es meritocrática se asocia con un mayor apoyo a la redistribución [@sonhing_merit_2011; @lierse_des_redi_2022; @tejero-peregrina_perceived_2025] y, cuanto más se percibe que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales, permite comprender como se reproduce la desigualdad y sobre qué criterio se justifican las distintas posiciones sociales y sus éxitos [@dubet_nuevo_2023, pp. 32-33]. Atribuir logros y desventajas sociales a
 
-Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad en diferentes ámbitos de la vida social. Permite conocer en qué medida las personas creen que la sociedad chilena valora los méritos y no las ventajas heredadas, como la riqueza familiar o los contactos, y con qué criterio creen que lo hace [@castillo_et_al_multidimensional_merit_beliefs_2023; @wiesner_effort_2026, p. 1]. También, percibir que la sociedad no es meritocrática se asocia con un mayor apoyo a la redistribución [@sonhing_merit_2011; @lierse_et_al_desigualdades_y_redistribucion_2022; @tejero-peregrina_perceived_2025], y cuanto más se percibe que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales [@dubet_nuevo_2023, pp. 32-33]. Y estudiar por separado la percepción de que se recompensa el esfuerzo y la de que se recompensa el talento permite saber con qué criterio las personas explican los logros y las desventajas en trayectorias educativas, laborales y la movilidad social de las personas.
- 
+Se estudian las percepciones porque, independientemente de su exactitud, orientan la forma en que las personas evalúan la desigualdad en diferentes ámbitos de la vida social. Permite conocer en qué medida las personas creen que la sociedad chilena valora los méritos y no las ventajas heredadas, como la riqueza familiar o los contactos, y con qué criterio creen que lo hace [@castillo_et_al_multidimensional_merit_beliefs_2023; @wiesner_effort_2026, p. 1]. También, percibir que la sociedad no es meritocrática se asocia con un mayor apoyo a la redistribución [@sonhing_merit_2011; @lierse_des_redi_2022; @tejero-peregrina_perceived_2025], y cuanto más se percibe que una sociedad recompensa a los individuos con base en sus méritos, más aceptables parecen las desigualdades sociales [@dubet_nuevo_2023, pp. 32-33]. Y estudiar por separado la percepción de que se recompensa el esfuerzo y la de que se recompensa el talento permite saber con qué criterio las personas explican los logros y las desventajas en trayectorias educativas, laborales y la movilidad social de las personas.
+
 Así, esta investigación tiene como objeto de estudio las percepciones sobre la meritocracia, diferenciando entre la percepción de que se recompensa el esfuerzo y la percepción de que se recompensa el talento.
 
 ## Pregunta de investigación
-Con lo expuesto anteriormente se presenta la siguiente pregunta de investigación:
-
 ¿En qué medida el estatus social subjetivo, el nivel educacional y la experiencia de movilidad social se asocian con la percepción de que en Chile se recompensa el esfuerzo y el talento, y difieren estas asociaciones entre ambas percepciones?
 
 ## Revisión inicial de literatura
 
 ### Meritocracia: concepto y debate
 
-El concepto de meritocracia se populariza con @young_1964 como una sátira a una sociedad gobernada por élites, sustentada en la fórmula mérito = inteligencia + esfuerzo (M = I + E). La idea supone la igualdad de oportunidades, en la cual los individuos, a través del esfuerzo y el talento, pueden lograr movilidad social y éxito en ciertas esferas sociales, dejando de lado factores no meritocráticos como el género, la clase social o el origen familiar [@wooldridge_aristocracy_2021]. Aun con la carga negativa que le atribuía @young_1964 [también en @young_2001], el concepto ha sido adoptado como ideal normativo en distintas sociedades para distribuir recompensas y recursos, seleccionar personas y legitimar las diferencias en la educación, el mundo empresarial y la política [@mijs_unfulfillable_2016].
+El concepto de meritocracia se populariza con @young_1964 como una sátira a una sociedad gobernada por élites, sustentada en la fórmula mérito = inteligencia + esfuerzo (M = I + E). La idea supone la igualdad de oportunidades, en la cual los individuos, a través del esfuerzo y el talento, pueden lograr movilidad social y éxito en ciertas esferas sociales, dejando de lado factores no meritocráticos como el género, la clase social o el origen familiar [@wooldridge_aristocracy_2021]. Aun con la carga negativa que le atribuía [@young_1964; también en @young_2001], el concepto ha sido adoptado como ideal normativo en distintas sociedades para distribuir recompensas y recursos, seleccionar personas y legitimar las diferencias en la educación, el mundo empresarial y la política [@mijs_unfulfillable_2016].
 
-El concepto en sí no es sinónimo de igualdad de oportunidades, pero se utiliza de manera amplia en el debate político, puesto que es el principio más cercano a la idea de carreras abiertas al talento [@sardoc_rise_2024]. El mérito ofrece una base moral para la asignación de bienes escasos, ya que se recompensa lo que se hace, y quien se desempeña mejor merece una recompensa mayor [@mijs_unfulfillable_2016]. 
+El concepto en sí no es sinónimo de igualdad de oportunidades, pero se utiliza de manera amplia en el debate político, puesto que es el principio más cercano a la idea de carreras abiertas al talento [@sardoc_rise_2024]. El mérito ofrece una base moral para la asignación de bienes escasos, ya que se recompensa lo que se hace, y quien se desempeña mejor merece una recompensa mayor [@mijs_unfulfillable_2016].
 
 Según @mijs_unfulfillable_2016, la meritocracia se compone de tres elementos: las carreras abiertas al talento, que asignan los puestos a quienes demuestran competencia y no a través del nepotismo o el soborno; las oportunidades educativas adaptadas a la capacidad natural, de modo que los procesos de prueba y selección del sistema educativo desarrollen a quienes tienen potencial y no se desperdicien talentos; y el logro como base de la desigualdad social, que reemplaza a la adscripción para que la sociedad funcione de manera más eficiente. El atractivo de la meritocracia para los responsables políticos reside en esta combinación: legitima la diferencia, estimula el esfuerzo y, al hacerlo, optimiza la asignación de recompensas.
 
@@ -52,54 +52,32 @@ El debate sobre el ideal meritocrático enfrenta a quienes lo defienden y a quie
 
 **Apuntes**
 
-Pero el concepto no ha estado exento de criticas y la necesidad de clarificar su significado. Para @sen_merit_justice_2000 el concetpo esta subdefinido y este depende de lo que entendemos por una sociedad buena, y el merito va a depender de los objetivos que tendrían las acciones y sus objetivos orientados hacia esta sociedad buena.
-- para Sen hay dos manera de ver el merito y su sitema de premiar el merito    
-  - 1 del bien que hagan, consecuencialista (en la economía domina este, a lo que es más productivo o genera a favor del mercado )
-  - 2 premiar la ideoniedidad de las acciones y no sus resultados  deontoligía
-  El sistema de incentivos es valiosos en tano permite generar consecenias valiosas.
-  Cuales son las consecuencias valoradas y como se juzga el éxito.
+Pero el concepto no ha estado exento de criticas y la necesidad de clarificar su significado. Para @sen_merit_justice_2000 el concetpo esta subdefinido y este depende de lo que entendemos por una sociedad buena, y el merito va a depender de los objetivos que tendrían las acciones y sus objetivos orientados hacia esta sociedad buena. - para Sen hay dos manera de ver el merito y su sitema de premiar el merito\
+- 1 del bien que hagan, consecuencialista (en la economía domina este, a lo que es más productivo o genera a favor del mercado ) - 2 premiar la ideoniedidad de las acciones y no sus resultados deontoligía El sistema de incentivos es valiosos en tano permite generar consecenias valiosas. Cuales son las consecuencias valoradas y como se juzga el éxito.
 
-Sen hace una critica a la vision de las teorias de bienestar (incluyendo las visiones meirotcraticas, puesto que suponen que deberpiamos tener igualdad de opourtunidades para la realizacion en base al esfuerzo y el talento de cada uno de los individuso, *pero deja de lado la igualdad de capacidaddes, donde la verdadera igualdad de oportuindades está en la igualdad de capacidades, *)
-definicion  de autores Sandel, castillo, mijts, frenatovis,  
+Sen hace una critica a la vision de las teorias de bienestar (incluyendo las visiones meirotcraticas, puesto que suponen que deberpiamos tener igualdad de opourtunidades para la realizacion en base al esfuerzo y el talento de cada uno de los individuso, *pero deja de lado la igualdad de capacidaddes, donde la verdadera igualdad de oportuindades está en la igualdad de capacidades,* ) definicion de autores Sandel, castillo, mijts, frenatovis,
 
-Apuntes que podrian servirme para desarrollar:
-Percibir que una sociedad premia el mérito
-Sandel
-  * critica sobre los puntos de partida de las personas son desiguales
-  * actitudes de los ganadores y perdedores.
-    * creen que llegaron arrbia por su propio merito, y loos de abajo igual. La realidad no funciona con igualdad de oportunidades. entonces estas actitudes no estpan justificadas en una base de igualdad que presenta un ideali meritocraticpo
-    * No se trata que no estamos a la altura de una soc meritocratica (como si fuera un objetivo que alzanzar creando igualdad de oportunidades)
-    * sino que El principio falla. corroe el bien cmun : arrogancia de los ganadores, y humillacion de quienes no. motiva a la jaztacion del exito y menosprecio de quienes no
-    * Tres salidas de sandel civicas: el rol del colegio, dignidad del trabajo y el meaning del exito.
+Apuntes que podrian servirme para desarrollar: Percibir que una sociedad premia el mérito Sandel \* critica sobre los puntos de partida de las personas son desiguales \* actitudes de los ganadores y perdedores. \* creen que llegaron arrbia por su propio merito, y loos de abajo igual. La realidad no funciona con igualdad de oportunidades. entonces estas actitudes no estpan justificadas en una base de igualdad que presenta un ideali meritocraticpo \* No se trata que no estamos a la altura de una soc meritocratica (como si fuera un objetivo que alzanzar creando igualdad de oportunidades) \* sino que El principio falla. corroe el bien cmun : arrogancia de los ganadores, y humillacion de quienes no. motiva a la jaztacion del exito y menosprecio de quienes no \* Tres salidas de sandel civicas: el rol del colegio, dignidad del trabajo y el meaning del exito.
 
-Honnet:
-En la esfera de la solidaridad, la forma de menosprecio social es la deshonra, degradacion o desvalorizaicon social, quitando valor publico
- degradación o desvalorización social Quita valor público al modo de vida o capacidades del sujeto, dañando su autoestimación (aquí es donde se inserta el debate moderno sobre la meritocracia).
-Porque ha arrogancia del ganador y humillacion hacia el perdedor por
-Ya sea por fata de talento o falta de esfuerzo
+Honnet: En la esfera de la solidaridad, la forma de menosprecio social es la deshonra, degradacion o desvalorizaicon social, quitando valor publico degradación o desvalorización social Quita valor público al modo de vida o capacidades del sujeto, dañando su autoestimación (aquí es donde se inserta el debate moderno sobre la meritocracia). Porque ha arrogancia del ganador y humillacion hacia el perdedor por Ya sea por fata de talento o falta de esfuerzo
 
-Dubet:
-integrar?
+Dubet: integrar?
 
-Meritocracia y Legitimación de privilegios y desigualdad la hace más tolerable.
-* frustracion de la meritocracia
+Meritocracia y Legitimación de privilegios y desigualdad la hace más tolerable. \* frustracion de la meritocracia
 
 ### Percepciones meritocráticas
 
-En el estudio de las creencias meritocráticas se distinguen dos enfoques. Por un lado, las preferencias, que son creencias normativas sobre cómo debería funcionar la sociedad; por otro, las percepciones, que son creencias descriptivas sobre cómo funciona efectivamente [@castillo_merit_perc_pref_2019]. Estas percepciones no son descripciones neutras de la sociedad, sino inferencias que las personas construyen a partir de su propia trayectoria y de su entorno social [@mijs_inequality_2018; @dawtry_why_2015]. 
+En el estudio de las creencias meritocráticas se distinguen dos enfoques. Por un lado, las preferencias, que son creencias normativas sobre cómo debería funcionar la sociedad; por otro, las percepciones, que son creencias descriptivas sobre cómo funciona efectivamente [@castillo_merit_perc_pref_2019]. Estas percepciones no son descripciones neutras de la sociedad, sino inferencias que las personas construyen a partir de su propia trayectoria y de su entorno social [@mijs_inequality_2018; @dawtry_why_2015].
 
 **Apuntes**
 
 **La meritocracia como lente moral:** quien atribuye el éxito al esfuerzo y al talento ve la desigualdad como legítima; quien lo atribuye a la suerte o a barreras estructurales, como injusta.
 
-Mijs 2018 dice “En resumen, estos estudios sugieren que hay consecuencias importantes en cuanto a si uno entiende las posiciones sociales como logradas por esfuerzos o fallas individuales o, alternativamente, como resultado de la discriminación, los límites o fortunas de nacimiento y otros factores (estructurales) fuera del control de una persona.”
-”La psicología social ofrece una explicación alternativa en la teoría de la justificación del sistema. La teoría de la justificación del sistema describe un proceso de socialización mediante el cual las personas llegan a adoptar una creencia dominante sobre la desigualdad, independientemente de que les convenga o no hacerlo [35,36]. Haciendo referencia a Karl Marx, se argumenta que, “debido a que las ideas de los dominantes tienden a convertirse en las ideas de los dominados, los estereotipos que justifican el sistema pueden ser propuestos incluso por aquellos que corren el riesgo de perder con ellos” [36]. En resumen, crecer con el sueño americano hace creer en él. Newman, por ejemplo, describe vívidamente cómo los trabajadores estadounidenses desempleados, habiendo internalizado el sueño americano, se culpan a sí mismos por su despido y por no encontrar un nuevo trabajo [32]. El estudio de Sharone sobre los despidos en el sector tecnológico tras el estallido de la burbuja informática a principios de la década de 2000 describe de manera similar cómo las personas que enfrentaban el desempleo en San Francisco se culpaban principalmente a sí mismas por no encontrar trabajo a pesar de las causas estructurales bien documentadas de su situación [37].”
-” La “teoría de la mente” que describen es un proceso inferencial mediante el cual las personas aprovechan lecciones de experiencias pasadas y actualizan sus creencias basándose en nueva información. Sostengo que la experiencia es donde vuelve la sociología. ”
+Mijs 2018 dice “En resumen, estos estudios sugieren que hay consecuencias importantes en cuanto a si uno entiende las posiciones sociales como logradas por esfuerzos o fallas individuales o, alternativamente, como resultado de la discriminación, los límites o fortunas de nacimiento y otros factores (estructurales) fuera del control de una persona.” ”La psicología social ofrece una explicación alternativa en la teoría de la justificación del sistema. La teoría de la justificación del sistema describe un proceso de socialización mediante el cual las personas llegan a adoptar una creencia dominante sobre la desigualdad, independientemente de que les convenga o no hacerlo \[35,36\]. Haciendo referencia a Karl Marx, se argumenta que, “debido a que las ideas de los dominantes tienden a convertirse en las ideas de los dominados, los estereotipos que justifican el sistema pueden ser propuestos incluso por aquellos que corren el riesgo de perder con ellos” \[36\]. En resumen, crecer con el sueño americano hace creer en él. Newman, por ejemplo, describe vívidamente cómo los trabajadores estadounidenses desempleados, habiendo internalizado el sueño americano, se culpan a sí mismos por su despido y por no encontrar un nuevo trabajo \[32\]. El estudio de Sharone sobre los despidos en el sector tecnológico tras el estallido de la burbuja informática a principios de la década de 2000 describe de manera similar cómo las personas que enfrentaban el desempleo en San Francisco se culpaban principalmente a sí mismas por no encontrar trabajo a pesar de las causas estructurales bien documentadas de su situación \[37\].” ” La “teoría de la mente” que describen es un proceso inferencial mediante el cual las personas aprovechan lecciones de experiencias pasadas y actualizan sus creencias basándose en nueva información. Sostengo que la experiencia es donde vuelve la sociología. ”
 
 ### Factores asociados Esfuerzo y talento y recompensa
 
-**separarlos** “captura distintos mecanismos mediante los cuales los individuos pueden justificar la desigualdad”. 
-El esfuerzo se asocia a la responsabilidad individual y al merecimiento moral; el talento, a una capacidad innata “vista como un atributo dado más que como resultado del esfuerzo”.
+**separarlos** “captura distintos mecanismos mediante los cuales los individuos pueden justificar la desigualdad”. El esfuerzo se asocia a la responsabilidad individual y al merecimiento moral; el talento, a una capacidad innata “vista como un atributo dado más que como resultado del esfuerzo”.
 
 - @franetovic_concepciones_2017 se ha desarroolado conceptualmente el talento pero no el esfuerzo.....
 
@@ -107,30 +85,19 @@ El esfuerzo se asocia a la responsabilidad individual y al merecimiento moral; e
 
 “Mucha gente está de acuerdo en que el mérito debería desempeñar un papel en la asignación de puestos en colegios y universidades, empleos y oficinas, premios y recompensas en concursos deportivos y artísticos. Pero a menudo no está claro quién es meritorio en cada uno de estos contextos. Esto se debe a que el mérito por sí solo no tiene mucho significado. Afirmar que la sociedad debería recompensar el mérito es tan informativo como afirmar que la sociedad debería ser justa.”
 
-*teorico*
-lo que se recibe por azar o herencia (Rawls, lotería natural; @harden_2021).
-Olin Wright
-- habla del talento como atributo relacional que se distribuye de manera desigual a traves de un proceso monadico
-- Lo define como :  
+*teorico* lo que se recibe por azar o herencia (Rawls, lotería natural; @harden_2021). Olin Wright - habla del talento como atributo relacional que se distribuye de manera desigual a traves de un proceso monadico - Lo define como :
 
-Chamblis
-* Contraposicion de la mundanidad de la exelencia @chambliss_mundanity_1989 y visones más biologicas de qye el talento no existe. Poner al final que el talento siempre estárá en dependeidea de los factores estructurales y socializacion de la familia y estimulos aquellos.
+Chamblis \* Contraposicion de la mundanidad de la exelencia @chambliss_mundanity_1989 y visones más biologicas de qye el talento no existe. Poner al final que el talento siempre estárá en dependeidea de los factores estructurales y socializacion de la familia y estimulos aquellos.
 
-Robert H. Frank
-  * Factor suerte y talento (integrar capacidades)
+Robert H. Frank \* Factor suerte y talento (integrar capacidades)
 
-Bourdieu
-  * Capital cultural incorporado
-  * como ideología meritocratica donde se llama al talento, don, capacidad natural al K cultural incorporado.
-  * donde hay un proceso de naturalizacion
-  * racismo de inteligencia  
+Bourdieu \* Capital cultural incorporado \* como ideología meritocratica donde se llama al talento, don, capacidad natural al K cultural incorporado. \* donde hay un proceso de naturalizacion \* racismo de inteligencia
 
 *Empirico*
 
 #### Esfuerzo:
 
-*teorico*
-* depende de la voluntad, y lo controlable se considera más merecido (Weiner 1995; Meuleman et al. 2020; Castillo et al. 2025). Es central en cómo se interpretan las trayectorias en Chile (Araujo y Martuccelli 2012). **desarrollar esto que ya se dijo antes**
+*teorico* \* depende de la voluntad, y lo controlable se considera más merecido (Weiner 1995; Meuleman et al. 2020; Castillo et al. 2025). Es central en cómo se interpretan las trayectorias en Chile (Araujo y Martuccelli 2012). **desarrollar esto que ya se dijo antes**
 
 si son fundamentos distintos, su percepción debería responder a factores distintos.
 
@@ -142,11 +109,26 @@ Aunque últimamente se ha reformulado la conceptualización de meritocracia, se 
 
 El estatus social subjetivo
 
-* Weber
-  * Apuntes a tomar encuenta[^2]
+- Weber
+  - Apuntes a tomar encuenta[^000-informe-avance-1-2]
 
-Nivel educacional
-Hipótesis de la iluminación
+[^000-informe-avance-1-2]:
+    - Weber se ha preguntado por la legitimacion de la dominacion en la sociedad, ¿porqué aceptamos una relacino de dominación donde somos dominados? se da en la legitimación de que somos dominados en terminos de asociacion entre individuos
+      - La situacion de clase en el espaacio del mercado, compartida con Marx y Engels en torno a la a las caractersiticas objetivas de un grupo de invidiuos (pero en el mercado).
+    - **acá lo que considero relebante de mencinoar para seminario**. a diferencia del marxismo, weber argumenta que las clases son bases para la accion comunitaria. Pero la clase no es generativa de conciencia coletiva o accion politica.
+    - se entiende por clase todo grupo humano que se encuentra en una igual situacion de clases
+    - **estatus social (objetivo)**Está referido a los grupos de estatus (Stände), que son comunidades que comparten un estilo de vida particular; honor social o prestigio; patrones de consumo y asociación y educación y cultura específicas. El estatus puede o no coincidir con la posición de clase. Un profesor universitario puede tener alto estatus, pero ingresos modestos, mientras que un empresario nuevo rico puede tener dinero, pero carecer de prestigio social tradicional.
+      - y partido y poder.
+      - **estamentos** o grupos de estatus. Los grupos ocupacionales (tema de Durkheim) son estamentos. A diferencia de quienes comparten una clase, quienes forman un estamento son por lo general conscientes de su situación común (forman comunidades; actúan comunalmente). Los estamentos suelen manifestar su distinción de otros estamentos a través de su modo de vida. “Toda «estilización» de la vida, cualesquiera que sean sus manifestaciones, tiene su origen en la existencia de un estamento o es conservada por él” (691). Asimismo, se ponen barreras en la interacción con otros estamentos (endogamia). Cuando un estamento se vuelve hermético, se transforma en una casta.
+      - Los estamentos pueden vincularse con las clases (se entrecruzan), pero no son lo mismo. Aquí la distribución del poder está fuera del mercado, pues está vinculado con honor o prestigio (por ejemplo, el nuevo rico no entra al Rotary Club). Dado que el prestigio se asocia a formas de consumo, sus bienes están directamente excluidos del mercado. En otras palabras, la posesión de propiedad material no es base suficiente para ingresar a un estamento dominante, ni viceversa. Sin perjuicio de lo anterior, Weber nota que frecuentemente se dan juntos el honor social positivo con el poder económico. “A largo plazo, la propiedad se reconoce con extraordinaria regularidad como cualificación estamental” (692).
+      - Ahora, la contradicción de intereses de clases (o de sus condiciones materiales) no implica necesariamente la lucha de clases. De hecho, las desigualdades en la tenencia de la propiedad no siempre desembocan en antagonismo para Weber. Señala: “La articulación de las clases propietarias puras no es “dinámica”, es decir, no conduce necesariamente a luchas de clases y a revoluciones de clase. - Vinculo con desigualdad
+    - sobre la accion politica
+      - Weber observó la posibilidad de que las clases puedan formar grupos, pero consideró esto poco probable. La situación de clase común usualmente no conduce a la acción social basada en esa situación común. Para que tal acción social ocurra, tienen que existir condiciones culturales e intelectuales apropiadas, y la naturaleza de la situación de mercado contradictoria tendría que ser relativamente transparente para todos 7 Ref.. Identificó que hay organización consciente de clase cuando: (a) no hay grupos entre los adversarios reales, (b) grandes números de personas están en la misma situación de clase, (c) es técnicamente fácil organizar a aquellos en la situación de clase común, y (d) cuando los objetivos de la clase son bien entendidos, y este entendimiento es liderado por aquellos fuera de la clase (la intelligentsia)
+      - El concepto de **"cierre social"** se refiere a los diversos procesos por los cuales grupos sociales dominantes (ya sean clases sociales, grupos de estatus, grupos políticos u otras organizaciones) retienen sus privilegios económicos, sociales o políticos a expensas de grupos subordinados.
+      - incluir mecanismos de usurpacion y exclusión ?
+      - 
+
+Nivel educacional Hipótesis de la iluminación
 
 "En cuanto al efecto de la educación, nuestros hallazgos son consistentes con la “hipótesis de la iluminación” (Kane y Kyyro, 2001, Robinson y Bell, 1978), que sostiene que la educación aumenta la sensibilidad a las limitaciones sociales" @bucca_merit_2016
 
@@ -154,65 +136,22 @@ Sus resultados son que las personas con título universitario apoyan más que la
 
 Movilidad social subjetiva
 
-@kwon_access_2026
-La movilidad social produce otro resultado interesante: tanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
+@kwon_access_2026 La movilidad social produce otro resultado interesante: tanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
 
-Variables de control y efectos esperados 
-
-[^2]:* Weber se ha preguntado por la legitimacion de la dominacion en la sociedad, ¿porqué aceptamos una relacino de dominación donde somos dominados? se da en la legitimación de que somos dominados en terminos de asociacion entre individuos
-  * La situacion de clase en el espaacio del mercado, compartida con Marx y Engels en torno a la a las caractersiticas objetivas de un grupo de invidiuos (pero en el mercado).
-    * **acá lo que considero relebante de mencinoar para seminario**. a diferencia del marxismo, weber argumenta que las clases son bases para la accion comunitaria. Pero la clase no es generativa de conciencia coletiva o accion politica.
-    - se entiende por clase todo grupo humano que se encuentra en una igual situacion de clases
-    * **estatus social (objetivo)**Está referido a los grupos de estatus (Stände), que son comunidades que comparten un estilo de vida particular; honor social o prestigio; patrones de consumo y asociación y educación y cultura específicas. El estatus puede o no coincidir con la posición de clase. Un profesor universitario puede tener alto estatus, pero ingresos modestos, mientras que un empresario nuevo rico puede tener dinero, pero carecer de prestigio social tradicional.
-  -  y partido y poder.
-  * **estamentos** o grupos de estatus. Los grupos ocupacionales (tema de Durkheim) son estamentos. A diferencia de quienes comparten una clase, quienes forman un estamento son por lo general conscientes de su situación común (forman comunidades; actúan comunalmente). Los estamentos suelen manifestar su distinción de otros estamentos a través de su modo de vida. “Toda «estilización» de la vida, cualesquiera que sean sus manifestaciones, tiene su origen en la existencia de un estamento o es conservada por él” (691). Asimismo, se ponen barreras en la interacción con otros estamentos (endogamia). Cuando un estamento se vuelve hermético, se transforma en una casta.
-  * Los estamentos pueden vincularse con las clases (se entrecruzan), pero no son lo mismo. Aquí la distribución del poder está fuera del mercado, pues está vinculado con honor o prestigio (por ejemplo, el nuevo rico no entra al Rotary Club). Dado que el prestigio se asocia a formas de consumo, sus bienes están directamente excluidos del mercado. En otras palabras, la posesión de propiedad material no es base suficiente para ingresar a un estamento dominante, ni viceversa. Sin perjuicio de lo anterior, Weber nota que frecuentemente se dan juntos el honor social positivo con el poder económico. “A largo plazo, la propiedad se reconoce con extraordinaria regularidad como cualificación estamental” (692).
-  * Ahora, la contradicción de intereses de clases (o de sus condiciones materiales) no implica necesariamente la lucha de clases. De hecho, las desigualdades en la tenencia de la propiedad no siempre desembocan en antagonismo para Weber. Señala: “La articulación de las clases propietarias puras no es “dinámica”, es decir, no conduce necesariamente a luchas de clases y a revoluciones de clase.
-                  -  Vinculo con desigualdad
-- sobre la accion politica
-  - Weber observó la posibilidad de que las clases puedan formar grupos, pero consideró esto poco probable. La situación de clase común usualmente no conduce a la acción social basada en esa situación común. Para que tal acción social ocurra, tienen que existir condiciones culturales e intelectuales apropiadas, y la naturaleza de la situación de mercado contradictoria tendría que ser relativamente transparente para todos 7 Ref.. Identificó que hay organización consciente de clase cuando: (a) no hay grupos entre los adversarios reales, (b) grandes números de personas están en la misma situación de clase, (c) es técnicamente fácil organizar a aquellos en la situación de clase común, y (d) cuando los objetivos de la clase son bien entendidos, y este entendimiento es liderado por aquellos fuera de la clase (la intelligentsia)
-  - El concepto de **"cierre social"** se refiere a los diversos procesos por los cuales grupos sociales dominantes (ya sean clases sociales, grupos de estatus, grupos políticos u otras organizaciones) retienen sus privilegios económicos, sociales o políticos a expensas de grupos subordinados.
-  - incluir mecanismos de usurpacion y exclusión ?
-  -
-
-
-
-
-
-
-
-
-
-
+Variables de control y efectos esperados
 
 *empirco*
 
-
-
-
-
-
 ## Propuesta metodológica
-
 
 Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.
 
-
 Variables dependientes: Percepción de esfuerzo y percepción de talento.
-
 
 Variables independientes (posibles): experiencias de movilidad social, nivel socioeconómico, nivel educacional, estatus subjetivo (más que clase social). Controles sociodemográficos.
 
-
 Los datos serán procesados en el programa estadístico RStudio.
-
 
 ## Disponibilidad de datos
 
-
 Para este trabajo, se utilizarán los datos de la encuesta parte del Fonfecyt regular Nº 1160921 "Economía Moral de la Meritocracia y Preferencias Redistributivas" llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics.
-
-
-
-
-
