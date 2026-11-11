@@ -83,7 +83,7 @@ Mijs 2018 dice “En resumen, estos estudios sugieren que hay consecuencias impo
 
 #### Talento:
 
-“Mucha gente está de acuerdo en que el mérito debería desempeñar un papel en la asignación de puestos en colegios y universidades, empleos y oficinas, premios y recompensas en concursos deportivos y artísticos. Pero a menudo no está claro quién es meritorio en cada uno de estos contextos. Esto se debe a que el mérito por sí solo no tiene mucho significado. Afirmar que la sociedad debería recompensar el mérito es tan informativo como afirmar que la sociedad debería ser justa.”
+“Mucha gente está de acuerdo en que el mérito debería desempeñar un papel en la asignación de puestos en colegios y universidades, empleos y oficinas, premios y recompensas en concursos deportivos y artísticos. Pero a menudo no está claro quién es meritorio en cada uno de estos contextos. Esto se debe a que el mérito por sí solo no tiene mucho significado. Afirmar que la sociedad debería recompensar el mérito es tan informativo como afirmar que la sociedad debería ser justa.” 
 
 *teorico* lo que se recibe por azar o herencia (Rawls, lotería natural; @harden_2021). Olin Wright - habla del talento como atributo relacional que se distribuye de manera desigual a traves de un proceso monadico - Lo define como :
 
@@ -92,6 +92,8 @@ Chamblis \* Contraposicion de la mundanidad de la exelencia @chambliss_mundanity
 Robert H. Frank \* Factor suerte y talento (integrar capacidades)
 
 Bourdieu \* Capital cultural incorporado \* como ideología meritocratica donde se llama al talento, don, capacidad natural al K cultural incorporado. \* donde hay un proceso de naturalizacion \* racismo de inteligencia
+@bartling_talent_2026
+ESte es clave
 
 *Empirico*
 
