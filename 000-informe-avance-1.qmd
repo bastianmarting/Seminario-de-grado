@@ -83,7 +83,6 @@ Es más, aunque puedan existir diferencias en las habilidades, los logros sobres
 
 Esta ambigüedad entre lo innato y lo adquirido se traslada a las percepciones que tienen las personas sobre el talento y en específico las percepciones de que la sociedad recompensa el talento implica la creencia de que las recompensas dependen de las cualidades que poseen las personas, y no necesariamente de lo que hacen. Sin embargo, en Estados Unidos las personas sitúan el talento en algún punto entre el esfuerzo y la suerte, y consideran que los ingresos derivados del talento son casi tan justos como los que resultan del esfuerzo [@bartling_talent_2026]. Según @bartling_talent_2026, esto se debe a que, cuando una persona hace uso de su talento, se la considera dueña de sus resultados, aunque el talento no depende en sí de ella. Desde la perspectiva de @bourdieu_2009_herederos, esta forma de ver el talento contribuye a que la ventaja heredada se perciba como un logro individual [@grau-grau_ilusion_2022, pp. 15–16]. A su vez, la creencia de que la sociedad recompensa el talento tiene consecuencias para quienes se encuentran en las posiciones más bajas, ya que atribuir una posición baja a la falta de talento la presenta como un defecto natural del individuo, sobre el cual tiene poco control [@young_1964; @sandel_tirania_2020].
 
-
 ### Esfuerzo y Talento sus factores asociados
 #### Estatus social subjetivo
 Weber desarrollar estatus social... (muy corto)
@@ -115,7 +114,7 @@ Sin embargo, en estudiantes chilenos la educación universitaria de los padres s
 > $H_2c$ : 
 
 #### Movilidad social
-**Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y Rentería, luego Traini, Mijs 2022, Jin y Friedman.**
+**Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y *Rentería*, luego Traini, Mijs 2022, Jin y Friedman.**
 @kwon_access_2026 La movilidad social ptanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
 
 > $H_3a$ : 
