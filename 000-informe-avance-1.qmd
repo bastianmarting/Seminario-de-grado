@@ -55,7 +55,6 @@ Ahora bien, el debate normativo desde la filosofía política no permite respond
 
 Las críticas a esta teoría cuestionan que las sociedades funcionen efectivamente de manera meritocrática. @hauhart_davis_2003 muestra cómo diversos estudios empíricos desmintieron la idea de que la jerarquía social responda únicamente a la necesidad funcional o al mérito técnico. Por ejemplo, los requisitos educativos no responderían a exigencias de eficiencia técnica, sino al poder e intereses de grupos de estatus, y las compensaciones ejecutivas se explicarían por el poder posicional y no por el desempeño o la contribución a la organización. En la misma línea, @goldthorpe_myth_2003 muestra que en Gran Bretaña no se cumple la teoría de la meritocracia basada en la educación, según la cual la movilidad social y las posiciones de clase dependerían cada vez más de las credenciales educativas y menos del origen social: las diferencias de logro educativo asociadas a la clase social no han desaparecido y solo muestran cambios marginales. De esta manera, la sociología ha puesto a prueba si los ideales meritocráticos se cumplen en las sociedades modernas.
 
-En Chile, las trayectorias de las personas están marcadas por relatos de esfuerzo, que operan como principio justificador, como fuente de autovaloración y como una expectativa concreta desde la cual se evalúa la justicia de la sociedad y el reconocimiento [@araujo_y_martuccelli_soc-chilena_2012].
 
 
 **Apuntes**
@@ -86,17 +85,25 @@ En el estudio de las creencias meritocráticas se distinguen dos enfoques. Por u
 Mijs 2018 dice “En resumen, estos estudios sugieren que hay consecuencias importantes en cuanto a si uno entiende las posiciones sociales como logradas por esfuerzos o fallas individuales o, alternativamente, como resultado de la discriminación, los límites o fortunas de nacimiento y otros factores (estructurales) fuera del control de una persona.” ”La psicología social ofrece una explicación alternativa en la teoría de la justificación del sistema. La teoría de la justificación del sistema describe un proceso de socialización mediante el cual las personas llegan a adoptar una creencia dominante sobre la desigualdad, independientemente de que les convenga o no hacerlo \[35,36\]. Haciendo referencia a Karl Marx, se argumenta que, “debido a que las ideas de los dominantes tienden a convertirse en las ideas de los dominados, los estereotipos que justifican el sistema pueden ser propuestos incluso por aquellos que corren el riesgo de perder con ellos” \[36\]. En resumen, crecer con el sueño americano hace creer en él. Newman, por ejemplo, describe vívidamente cómo los trabajadores estadounidenses desempleados, habiendo internalizado el sueño americano, se culpan a sí mismos por su despido y por no encontrar un nuevo trabajo \[32\]. El estudio de Sharone sobre los despidos en el sector tecnológico tras el estallido de la burbuja informática a principios de la década de 2000 describe de manera similar cómo las personas que enfrentaban el desempleo en San Francisco se culpaban principalmente a sí mismas por no encontrar trabajo a pesar de las causas estructurales bien documentadas de su situación \[37\].” ” La “teoría de la mente” que describen es un proceso inferencial mediante el cual las personas aprovechan lecciones de experiencias pasadas y actualizan sus creencias basándose en nueva información. Sostengo que la experiencia es donde vuelve la sociología. ”
 
 #### Esfuerzo y talento
-**Por qué separarlos: Cociña (2013), @clavero_2023, @meuleman_desert_carin_2020, jului iturra elites, castillo percepciones y @wiesner_effort_2026.**
 
-**separarlos** “captura distintos mecanismos mediante los cuales los individuos pueden justificar la desigualdad”. El esfuerzo se asocia a la responsabilidad individual y al merecimiento moral; el talento, a una capacidad innata “vista como un atributo dado más que como resultado del esfuerzo”.
-
-- @franetovic_concepciones_2017 se ha desarroolado conceptualmente el talento pero no el esfuerzo.....
-
+En la obra de @young_1964 y en la teoría funcionalista de @davis_est_1970, el mérito consta de dos elementos: el talento (o la capacidad) y el esfuerzo. La asignación de posiciones sociales basada en el logro, en lugar de en características como el origen familiar, ha reportado beneficios. Ha permitido evaluar a los individuos conforme a criterios comunes, frente a las ventajas heredadas, el nepotismo o las relaciones clientelares, un cambio que ha sido valorado y defendido por grupos históricamente desfavorecidos [@wooldridge_aristocracy_2021; @wiesner_effort_2026]. No obstante, el esfuerzo y el talento no se distribuyen de la misma manera cuando se aborda el concepto de merecimiento. El esfuerzo depende, en mayor medida, de la voluntad y la motivación del individuo [@franetovic_conceptions_2017, p. 5], y aquellos factores que se perciben como controlables por la persona tienden a considerarse como elementos que la hacen más merecedora de una recompensa [@meuleman_desert_carin_2020]. El talento, por el contrario, ocupa una posición ambigua entre el logro y la herencia. Según Bourdieu, lo que socialmente se reconoce como talento natural, un don o una capacidad, puede corresponder, en realidad, a un capital cultural adquirido en el seno de la familia de origen, donde las ventajas heredadas se reformulan como rasgos individuales y, posteriormente, se naturalizan [@hard_illusion_2022]. Por esta razón, @clavero_2023 sostiene que el talento solo constituye un indicador genuino de mérito cuando se manifiesta a través de una acción libre y persistente. En consecuencia, la idea de que la sociedad recompensa el esfuerzo conlleva la creencia de que las recompensas dependen de lo que las personas hacen, frente a la perspectiva de que dependen de lo que las personas tienen. Las secciones siguientes analizan cada uno de estos criterios por separado.
 
 ##### Esfuerzo
 **Esfuerzo: su definición, la idea de que lo controlable se considera más merecido, Araujo y Martuccelli, Fercovic y Castillo 2025/2026.**
 
-Atribuciones que tienen las peroans hacia el talento 
+
+
+
+
+Atribuciones que tienen las personas hacia el esfuerzo 
+
+
+
+
+
+
+En Chile, las trayectorias de las personas están marcadas por relatos de esfuerzo, que operan como principio justificador, como fuente de autovaloración y como una expectativa concreta desde la cual se evalúa la justicia de la sociedad y el reconocimiento [@araujo_y_martuccelli_soc-chilena_2012].
+
 
 *teorico* \* depende de la voluntad, y lo controlable se considera más merecido (Weiner 1995; Meuleman et al. 2020; Castillo et al. 2025). Es central en cómo se interpretan las trayectorias en Chile (Araujo y Martuccelli 2012). **desarrollar esto que ya se dijo antes**
 
