@@ -143,6 +143,35 @@ p {
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/styles.scss">
 </head>
@@ -385,13 +414,13 @@ p {
 <h5 data-number="1.4.2.0.1" class="anchored" data-anchor-id="estatus-social-subjetivo"><span class="header-section-number">1.4.2.0.1</span> Estatus social subjetivo</h5>
 <p>El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia (<strong>Evans y Kelley 2004</strong>). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala, independientemente de su posición objetiva <span class="citation" data-cites="castillo_todos_clase_media_2013">(<a href="references.html#ref-castillo_todos_clase_media_2013" role="doc-biblioref">Castillo et&nbsp;al., 2013</a>)</span>. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.</p>
 <p>La evidencia en Chile muestra que un mayor estatus social subjetivo se asocia con una mayor percepción de meritocracia <span class="citation" data-cites="castillo_merit_perc_pref_2019 iturra-sanhueza_social_2026">(<a href="references.html#ref-castillo_merit_perc_pref_2019" role="doc-biblioref">Castillo et&nbsp;al., 2019</a>; <a href="references.html#ref-iturra-sanhueza_social_2026" role="doc-biblioref">Iturra-Sanhueza et&nbsp;al., 2026</a>)</span>, y en América Latina, con explicaciones más individuales de la riqueza y la pobreza <span class="citation" data-cites="bucca_merit_2016">(<a href="references.html#ref-bucca_merit_2016" role="doc-biblioref">Bucca, 2016</a>)</span>. Al separar ambos ítems, la asociación del estatus subjetivo es positiva tanto para la percepción de que se recompensa el esfuerzo como para la de que se recompensa el talento, pero de mayor magnitud en el caso del esfuerzo <span class="citation" data-cites="iturra-sanhueza_social_2026">(<a href="references.html#ref-iturra-sanhueza_social_2026" role="doc-biblioref">Iturra-Sanhueza et&nbsp;al., 2026</a>, Tabla S3)</span>. Esto es coherente con que el esfuerzo sea el criterio que más se asocia con la justificación de la desigualdad <span class="citation" data-cites="castillo_perceptions_2025 castillo_justification_desigualdades_pensiones_clases_2026">(<a href="references.html#ref-castillo_perceptions_2025" role="doc-biblioref">Castillo et&nbsp;al., 2025</a>, <a href="references.html#ref-castillo_justification_desigualdades_pensiones_clases_2026" role="doc-biblioref">2026</a>)</span> y con que las posiciones aventajadas tiendan a presentar sus ventajas como fruto del trabajo duro <span class="citation" data-cites="khan_saying_2013">(<a href="references.html#ref-khan_saying_2013" role="doc-biblioref"><strong>khan_saying_2013?</strong></a>)</span>. Sin embargo, en las élites chilenas el mérito también se ancla en el talento <span class="citation" data-cites="atria_et_al_elites_meritocracia_2020 quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024">(<a href="references.html#ref-atria_et_al_elites_meritocracia_2020" role="doc-biblioref">Atria et&nbsp;al., 2020</a>; <a href="references.html#ref-quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024" role="doc-biblioref"><strong>quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024?</strong></a>)</span>, por lo que se espera que ambas percepciones aumenten con el estatus subjetivo, aunque no en la misma medida.</p>
-<ul>
-<li><strong>H1a:</strong> A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo.</li>
-<li><strong>H1b:</strong> A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.</li>
-<li><strong>H1c:</strong> La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.</li>
-<li><h5 id="nivel-educacional" data-number="1.4.2.0.2" class="anchored"><span class="header-section-number">1.4.2.0.2</span> Nivel educacional</h5>
-<strong>socialización frente a instrucción (Duru-Bellat y Tenret, Bucca, luego Chile (castillo 2019, Iturraa 2026, Torres), luego kwon y spruyt.</strong></li>
-</ul>
+<blockquote class="blockquote">
+<p><span class="math inline">\(H_1a\)</span> : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo. <span class="math inline">\(H_1b\)</span> : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento. <span class="math inline">\(H_1c\)</span> : La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.</p>
+</blockquote>
+</section>
+<section id="nivel-educacional" class="level5" data-number="1.4.2.0.2">
+<h5 data-number="1.4.2.0.2" class="anchored" data-anchor-id="nivel-educacional"><span class="header-section-number">1.4.2.0.2</span> Nivel educacional</h5>
+<p><strong>socialización frente a instrucción (Duru-Bellat y Tenret, Bucca, luego Chile (castillo 2019, Iturraa 2026, Torres), luego kwon y spruyt.</strong></p>
 <p>La relación entre educación y percepciones meritocráticas admite dos interpretaciones opuestas. La hipótesis de la socialización sostiene que la escuela transmite el ideal meritocrático, por lo que las personas más educadas percibirían más meritocracia <span class="citation" data-cites="lampert_meritocratic_2013 Duru-Bellat">(<a href="references.html#ref-lampert_meritocratic_2013" role="doc-biblioref">Lampert, 2013</a>; <a href="references.html#ref-Duru-Bellat" role="doc-biblioref"><strong>Duru-Bellat?</strong></a> y Tenret 2012)</span>. La hipótesis de la instrucción o de la iluminación plantea, en cambio, que la educación aumenta la sensibilidad frente a las desigualdades y las limitaciones sociales, por lo que las personas más educadas serían más críticas respecto de cómo se distribuyen las recompensas [<span class="citation" data-cites="bucca_merit_2016">Bucca (<a href="references.html#ref-bucca_merit_2016" role="doc-biblioref">2016</a>)</span>; Duru-Bellat y Tenret 2012].</p>
 <p>En Chile, la evidencia respalda la segunda interpretación: un mayor nivel educacional se asocia con una menor percepción de meritocracia [<span class="citation" data-cites="castillo_merit_perc_pref_2019">Castillo et&nbsp;al. (<a href="references.html#ref-castillo_merit_perc_pref_2019" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="iturra-sanhueza_social_2026">Iturra-Sanhueza et&nbsp;al. (<a href="references.html#ref-iturra-sanhueza_social_2026" role="doc-biblioref">2026</a>)</span>; Torres 2015], y en América Latina, quienes tienen título universitario explican la pobreza y la riqueza con más causas estructurales <span class="citation" data-cites="bucca_merit_2016">(<a href="references.html#ref-bucca_merit_2016" role="doc-biblioref">Bucca, 2016</a>)</span>. Al separar ambos ítems, la asociación negativa aparece tanto para el esfuerzo como para el talento, con una magnitud levemente menor en el caso del talento <span class="citation" data-cites="iturra-sanhueza_social_2026">(<a href="references.html#ref-iturra-sanhueza_social_2026" role="doc-biblioref">Iturra-Sanhueza et&nbsp;al., 2026</a>, Tabla S3)</span>. Esta diferencia es coherente con que las personas con educación universitaria apoyen más que las recompensas se basen en las habilidades y menos que se basen en el esfuerzo <span class="citation" data-cites="kwon_access_2026 spruyt_talent_esfuerzo_social_background_2015">(<a href="references.html#ref-kwon_access_2026" role="doc-biblioref">Kwon &amp; Erola, 2026</a>; <a href="references.html#ref-spruyt_talent_esfuerzo_social_background_2015" role="doc-biblioref">Spruyt, 2015</a>)</span>. Así, la educación podría volver más crítica la percepción de que se recompensa el esfuerzo que la de que se recompensa el talento.</p>
 <ul>
@@ -1993,10 +2022,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>La evidencia en Chile muestra que un mayor estatus social subjetivo se asocia con una mayor percepción de meritocracia <span class="co">[</span><span class="ot">@castillo_merit_perc_pref_2019; @iturra-sanhueza_social_2026</span><span class="co">]</span>, y en América Latina, con explicaciones más individuales de la riqueza y la pobreza <span class="co">[</span><span class="ot">@bucca_merit_2016</span><span class="co">]</span>. Al separar ambos ítems, la asociación del estatus subjetivo es positiva tanto para la percepción de que se recompensa el esfuerzo como para la de que se recompensa el talento, pero de mayor magnitud en el caso del esfuerzo <span class="co">[</span><span class="ot">@iturra-sanhueza_social_2026, Tabla S3</span><span class="co">]</span>. Esto es coherente con que el esfuerzo sea el criterio que más se asocia con la justificación de la desigualdad <span class="co">[</span><span class="ot">@castillo_perceptions_2025; @castillo_justification_desigualdades_pensiones_clases_2026</span><span class="co">]</span> y con que las posiciones aventajadas tiendan a presentar sus ventajas como fruto del trabajo duro <span class="co">[</span><span class="ot">@khan_saying_2013</span><span class="co">]</span>. Sin embargo, en las élites chilenas el mérito también se ancla en el talento <span class="co">[</span><span class="ot">@atria_et_al_elites_meritocracia_2020; @quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024</span><span class="co">]</span>, por lo que se espera que ambas percepciones aumenten con el estatus subjetivo, aunque no en la misma medida.</span>
 <span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**H1a:** A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo.</span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**H1b:** A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**H1c:** La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; $H_1a$ : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo.</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; $H_1b$ : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; $H_1c$ : La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Nivel educacional</span></span>
 <span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>**socialización frente a instrucción (Duru-Bellat y Tenret, Bucca, luego Chile (castillo 2019, Iturraa 2026, Torres), luego kwon y spruyt.**</span>
 <span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
