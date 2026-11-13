@@ -112,7 +112,7 @@ Sin embargo, en estudiantes chilenos la educación universitaria de los padres s
 
 > $H_2a$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el esfuerzo.
 > $H_2b$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
-> $H_2c$ : La asociación negativa del nivel educacional es más débil con la percepción de que se recompensa el talento que con la de que se recompensa el esfuerzo.
+> $H_2c$ : 
 
 #### Movilidad social
 **Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y Rentería, luego Traini, Mijs 2022, Jin y Friedman.**
