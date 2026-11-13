@@ -1,7 +1,28 @@
 ---
-title: "Apuntes y citas"
+title: "Apuntes Informe"
 numbered: true
 ---
+## meritocracia
+Añadir nota al pie en IQ
+**Apuntes**
+Pero el concepto no ha estado exento de criticas y la necesidad de clarificar su significado. Para @sen_merit_justice_2000 el concetpo esta subdefinido y este depende de lo que entendemos por una sociedad buena, y el merito va a depender de los objetivos que tendrían las acciones y sus objetivos orientados hacia esta sociedad buena. - para Sen hay dos manera de ver el merito y su sitema de premiar el merito\
+- 1 del bien que hagan, consecuencialista (en la economía domina este, a lo que es más productivo o genera a favor del mercado ) - 2 premiar la ideoniedidad de las acciones y no sus resultados deontoligía El sistema de incentivos es valiosos en tano permite generar consecenias valiosas. Cuales son las consecuencias valoradas y como se juzga el éxito.
+**Apuntes**
+Apuntes que podrian servirme para desarrollar: Percibir que una sociedad premia el mérito Sandel \* critica sobre los puntos de partida de las personas son desiguales \* actitudes de los ganadores y perdedores. \* creen que llegaron arrbia por su propio merito, y loos de abajo igual. La realidad no funciona con igualdad de oportunidades. entonces estas actitudes no estpan justificadas en una base de igualdad que presenta un ideali meritocraticpo \* No se trata que no estamos a la altura de una soc meritocratica (como si fuera un objetivo que alzanzar creando igualdad de oportunidades) \* sino que El principio falla. corroe el bien cmun : arrogancia de los ganadores, y humillacion de quienes no. motiva a la jaztacion del exito y menosprecio de quienes no \* Tres salidas de sandel civicas: el rol del colegio, dignidad del trabajo y el meaning del exito.
+Honnet: En la esfera de la solidaridad, la forma de menosprecio social es la deshonra, degradacion o desvalorizaicon social, quitando valor publico degradación o desvalorización social Quita valor público al modo de vida o capacidades del sujeto, dañando su autoestimación (aquí es donde se inserta el debate moderno sobre la meritocracia). Porque ha arrogancia del ganador y humillacion hacia el perdedor por Ya sea por fata de talento o falta de esfuerzo
+Dubet: integrar?
+
+Meritocracia y Legitimación de privilegios y desigualdad la hace más tolerable. \* frustracion de la meritocracia
+
+**La meritocracia como lente moral:** quien atribuye el éxito al esfuerzo y al talento ve la desigualdad como legítima. quien lo atribuye a la suerte o a barreras estructurales, como injusta.
+
+Mijs 2018 dice “En resumen, estos estudios sugieren que hay consecuencias importantes en cuanto a si uno entiende las posiciones sociales como logradas por esfuerzos o fallas individuales o, alternativamente, como resultado de la discriminación, los límites o fortunas de nacimiento y otros factores (estructurales) fuera del control de una persona.” ”La psicología social ofrece una explicación alternativa en la teoría de la justificación del sistema. La teoría de la justificación del sistema describe un proceso de socialización mediante el cual las personas llegan a adoptar una creencia dominante sobre la desigualdad, independientemente de que les convenga o no hacerlo \[35,36\]. Haciendo referencia a Karl Marx, se argumenta que, “debido a que las ideas de los dominantes tienden a convertirse en las ideas de los dominados, los estereotipos que justifican el sistema pueden ser propuestos incluso por aquellos que corren el riesgo de perder con ellos” \[36\]. En resumen, crecer con el sueño americano hace creer en él. Newman, por ejemplo, describe vívidamente cómo los trabajadores estadounidenses desempleados, habiendo internalizado el sueño americano, se culpan a sí mismos por su despido y por no encontrar un nuevo trabajo \[32\]. El estudio de Sharone sobre los despidos en el sector tecnológico tras el estallido de la burbuja informática a principios de la década de 2000 describe de manera similar cómo las personas que enfrentaban el desempleo en San Francisco se culpaban principalmente a sí mismas por no encontrar trabajo a pesar de las causas estructurales bien documentadas de su situación \[37\].” ” La “teoría de la mente” que describen es un proceso inferencial mediante el cual las personas aprovechan lecciones de experiencias pasadas y actualizan sus creencias basándose en nueva información. Sostengo que la experiencia es donde vuelve la sociología. ”
+
+### Talento
+**Apuntes**
+"El primer problema es el de la definición: ¿qué son“ ¿Habilidades? No es fácil, y quizás sea completamente imposible, definir una habilidad, tanto operativamente (¿Cuál es el parámetro clave para poder realizar una tarea? ¿Cómo podemos identificarlo?) como idealmente (¿Es una "habilidad" un rasgo? ¿Es innata o adquirida?). El segundo problema es práctico: suponiendo que sepamos qué son las habilidades, e incluso qué habilidad se ajusta a un trabajo determinado, ¿cómo podemos construir un proceso para discernir las diversas habilidades de las personas? Es un círculo vicioso: nunca podremos saber si tengo talento para la construcción naval si no lo intento, pero para intentarlo, debo exhibir una habilidad que me permita entrar en el astillero. El tercer problema es social: muchos roles sociales no requieren ninguna "habilidad" específica para desempeñarlos. De hecho, la mayoría de los trabajos y ocupaciones pueden no requerir ninguna habilidad en absoluto, sino solo la voluntad o la compulsión de realizarlos. No hay una habilidad específica y discernible requerida para enterrar a los muertos, fregar suelos o ser político. De hecho, es en áreas donde se pueden discernir habilidades particulares, como las artes o los deportes, donde Normalmente se sitúan al margen o más allá del ámbito de la división social del trabajo" [@lampert_meritocratic_2013, p. 53, **traduccion yo**]
+
+Robert H. Frank \* Factor suerte y talento (integrar capacidades)
 
 ## Citas sinteticas de textos
   Variables independientes posibles posicion social, educacion, educacino de los padres, estatus social.
@@ -48,17 +69,3 @@ Es por esto que diferentes estudios han propuesto que ambos deben ser medidos de
 - Esto constituye un problema, puesto que en la distribucion de recompenzas se menciona el merito, refiriendo a dos conceptos que son diferntes y contradictorios entre si talentos y logros. Se cae así en una falsa equivalencia. 
 
 - Merecimiento refiere a las formas de reconocimiento que el sujeto puede exigir justamente. El merecimiento no necesita del merito para ser reconocido. porque existen otras formas de reconocimeintoq ue no dependen del merito como lo es el talento o el logro.
-
-## Pregunta de investigación
-**Dos posibles preguntas: ¨**
-
-¿Quiénes perciben que se premia el esfuerzo y quiénes el talento? 
-    - es más micro 
-    - más hacia el merecimiento
-    -  
-
-¿Percibir que se premia el esfuerzo legitima la desigualdad de forma distinta que percibir que se premia el talento?
-    - Es más macro
-    - se pueden integrar variables meso como Fercovic presentacion en clases de seminario - tendría que revisar literatura que conecte las variables meso con esfuerzo y talento. igual es medio plagio o no sdjfasdf
-    - Revisar varibales e indice de neoliberalismo luego de la literatura. 
-    encaja con @castillo_perceptions_2025
