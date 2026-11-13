@@ -6,11 +6,10 @@ numbered: true
 
 #### Tomar en cuenta
 
-*El argumento del seminario va en torno a la contradiccion conceptual de esfuerzo y talento como concepto de meritocracia, comunmente medida a la part o subestimada hasta el punto de dejar de lado en la medicion de meritocraia*
 *El tema general del seminario se orienta a la contradiccion entre dos conceptos Esfuerz y talento, los cuales deben ser tomados de manera diferentes para redistribuir.* 
 
 - teoria más orientada a la meriotcracia y justicia y recompensas.
-- DA lo mimsmo si digo lo mismo que el JC
+- DA lo mimsmo si digo lo mismo que el profesor
 - leer la forma de escritura. 
 - citar bien o tener buenas fuentes
 - situar la problematica en torno a lo que se entiedne por meritocracia y mi problema. (Agumento)
