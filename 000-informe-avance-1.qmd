@@ -129,10 +129,10 @@ El estatus social subjetivo corresponde a la posición que las personas creen oc
 
 La evidencia en Chile muestra que un mayor estatus social subjetivo se asocia con una mayor percepción de meritocracia [@castillo_merit_perc_pref_2019; @iturra-sanhueza_social_2026], y en América Latina, con explicaciones más individuales de la riqueza y la pobreza [@bucca_merit_2016]. Al separar ambos ítems, la asociación del estatus subjetivo es positiva tanto para la percepción de que se recompensa el esfuerzo como para la de que se recompensa el talento, pero de mayor magnitud en el caso del esfuerzo [@iturra-sanhueza_social_2026, Tabla S3]. Esto es coherente con que el esfuerzo sea el criterio que más se asocia con la justificación de la desigualdad [@castillo_perceptions_2025; @castillo_justification_desigualdades_pensiones_clases_2026] y con que las posiciones aventajadas tiendan a presentar sus ventajas como fruto del trabajo duro [@khan_saying_2013]. Sin embargo, en las élites chilenas el mérito también se ancla en el talento [@atria_et_al_elites_meritocracia_2020; @quaresma_et_al_esfuerzo_y_talento_merit_universidades_elites_2024], por lo que se espera que ambas percepciones aumenten con el estatus subjetivo, aunque no en la misma medida.
 
-- **H1a:** A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo.
-- **H1b:** A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.
-- **H1c:** La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.
-- 
+> $H_1a$ : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el esfuerzo.
+> $H_1b$ : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.
+> $H_1c$ : La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.
+
 ##### Nivel educacional
 **socialización frente a instrucción (Duru-Bellat y Tenret, Bucca, luego Chile (castillo 2019, Iturraa 2026, Torres), luego kwon y spruyt.**
 
