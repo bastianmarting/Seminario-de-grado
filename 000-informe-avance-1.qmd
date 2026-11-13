@@ -86,9 +86,9 @@ Esta ambigüedad entre lo innato y lo adquirido se traslada a las percepciones q
 
 ### Esfuerzo y Talento sus factores asociados
 #### Estatus social subjetivo
-Weber desarrollar... 
+Weber desarrollar estatus social... (muy corto)
 
-El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia (**Evans y Kelley 2004(faltaestalecturabastiannnPreguntarJC**). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala, independientemente de su posición objetiva [@castillo_todos_clase_media_2013]. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.
+El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia **Evans y Kelley 2004(faltaestalecturabastiannnPreguntarJC**). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala, independientemente de su posición objetiva [@castillo_todos_clase_media_2013]. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.
 
 En Chile, la evidencia cuantitativa muestra que un mayor estatus social subjetivo se asocia con una mayor percepción de meritocracia [@castillo_merit_perc_pref_2019, p. 10; @iturra-sanhueza_social_2026], y que quienes se ubican en estratos subjetivos bajos evalúan su propio ingreso como más injusto, diferencia que se acentúa cuando lo juzgan según su esfuerzo por educarse [@mac_baroz_merit_des_2024]. 
 
@@ -104,9 +104,11 @@ Las investigaciones cualitativas en Chile muestran, en cambio, que las élites e
 
 #### Nivel educacional
 
-La relación entre educación y percepciones meritocráticas admite dos interpretaciones opuestas. La hipótesis de la socialización sostiene que la escuela transmite el ideal meritocrático, por lo que las personas más educadas percibirían más meritocracia [@lampert_meritocratic_2013; @duru-bellat_variations_2012]. La hipótesis de la instrucción o de la iluminación plantea, en cambio, que la educación aumenta la sensibilidad frente a las desigualdades y las limitaciones sociales, por lo que las personas más educadas serían más críticas respecto de cómo se distribuyen las recompensas [@bucca_merit_2016; @duru-bellat_variations_2012].
+En Chile, la evidencia cuantitativa respalda la hipótesis de la educación como iluminación **(desarrollar más esto(duru-bellat @bucca_merit_2016)),** La hipótesis de la instrucción o de la iluminación plantea, en cambio, que la educación aumenta la sensibilidad frente a las desigualdades y las limitaciones sociales, por lo que las personas más educadas serían más críticas respecto de cómo se distribuyen las recompensas [@bucca_merit_2016; @duru-bellat_variations_2012]., a diferentede la hipotesis de la educación como socialización de @bourdieu_reproduccion_1998 y @lampert_meritocratic_2013, ya que un mayor nivel educacional se asocia con una menor percepción de meritocracia [@castillo_merit_perc_pref_2019, p. 10; @iturrasanhueza_estatus_2022, p. 46; @iturra-sanhueza_social_2026] y con una menor tendencia a atribuir la pobreza a factores individuales [@landerretche_percepciones_2011, p. 23].
 
-En Chile, la evidencia respalda la segunda interpretación donde un mayor nivel educacional se asocia con una menor percepción de meritocracia [@castillo_merit_perc_pref_2019; @iturra-sanhueza_social_2026; Torres 2015], y en América Latina, quienes tienen título universitario explican la pobreza y la riqueza con más causas estructurales [@bucca_merit_2016]. Al separar ambos ítems, la asociación negativa aparece tanto para el esfuerzo como para el talento, con una magnitud levemente menor en el caso del talento [@iturra-sanhueza_social_2026, Tabla S3]. Esta diferencia es coherente con que las personas con educación universitaria apoyen más que las recompensas se basen en las habilidades y menos que se basen en el esfuerzo [@kwon_access_2026; @spruyt_talent_esfuerzo_social_background_2015]. Así, la educación podría volver más crítica la percepción de que se recompensa el esfuerzo que la de que se recompensa el talento.
+En América Latina, quienes tienen título universitario explican la pobreza y la riqueza con más causas estructurales [@bucca_merit_2016]. Cuando ambos ítems se analizan por separado, la asociación negativa aparece tanto para el esfuerzo como para el talento, con magnitudes similares [@iturra-sanhueza_social_2026, Tabla S3].
+
+Sin embargo, en estudiantes chilenos la educación universitaria de los padres se asocia con una menor importancia del talento para obtener buenas notas, pero no del esfuerzo [@retamales_rol_2024], y en Flandes los más educados recurren menos al talento para explicar el éxito escolar y los menos educados apoyan explicaciones a factores innatos sobre el rendimiento académico [@spruyt_talent_esfuerzo_social_background_2015]. Aunque, desde la perspectiva de Bourdieu, la escuela consagra como talento las ventajas heredadas [@grau-grau_ilusion_2022]. Por ello, se espera que la educación se asocie negativamente con ambas percepciones y que esta asociación difiera entre ellas, **aún no sé qué la H2c**
 
 > $H_2a$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el esfuerzo.
 > $H_2b$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
@@ -114,7 +116,7 @@ En Chile, la evidencia respalda la segunda interpretación donde un mayor nivel 
 
 #### Movilidad social
 **Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y Rentería, luego Traini, Mijs 2022, Jin y Friedman.**
-@kwon_access_2026 La movilidad social produce otro resultado interesante: tanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
+@kwon_access_2026 La movilidad social ptanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
 
 > $H_3a$ : 
 > $H_3b$ :
@@ -123,7 +125,7 @@ En Chile, la evidencia respalda la segunda interpretación donde un mayor nivel 
 #### Características sociodemográficas
 **¿solo la dirección esperada? o fundamento más con fuentes sobre la direccion y las atribuciones.  en sexo la evidencia es mixta .**
 
-Empírico
+Empírico revisar sesgo de genero en europa y chile ya tengo en zotero
 
 ## Propuesta metodológica
 
