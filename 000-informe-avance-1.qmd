@@ -140,12 +140,17 @@ La relación entre educación y percepciones meritocráticas admite dos interpre
 
 En Chile, la evidencia respalda la segunda interpretación: un mayor nivel educacional se asocia con una menor percepción de meritocracia [@castillo_merit_perc_pref_2019; @iturra-sanhueza_social_2026; Torres 2015], y en América Latina, quienes tienen título universitario explican la pobreza y la riqueza con más causas estructurales [@bucca_merit_2016]. Al separar ambos ítems, la asociación negativa aparece tanto para el esfuerzo como para el talento, con una magnitud levemente menor en el caso del talento [@iturra-sanhueza_social_2026, Tabla S3]. Esta diferencia es coherente con que las personas con educación universitaria apoyen más que las recompensas se basen en las habilidades y menos que se basen en el esfuerzo [@kwon_access_2026; @spruyt_talent_esfuerzo_social_background_2015]. Así, la educación podría volver más crítica la percepción de que se recompensa el esfuerzo que la de que se recompensa el talento.
 
-- **H2a:** A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el esfuerzo.
-- **H2b:** A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
-- **H2c:** La asociación negativa del nivel educacional es más débil con la percepción de que se recompensa el talento que con la de que se recompensa el esfuerzo.
+> $H_2a$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el esfuerzo.
+> $H_2b$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
+> $H_2c$ : La asociación negativa del nivel educacional es más débil con la percepción de que se recompensa el talento que con la de que se recompensa el esfuerzo.
+
 ##### Movilidad social
 **Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y Rentería, luego Traini, Mijs 2022, Jin y Friedman. Termina en H3.**
 @kwon_access_2026 La movilidad social produce otro resultado interesante: tanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
+
+> $H_3a$ : 
+> $H_3b$ :
+> $H_3c$ :
 
 ##### Características sociodemográficas
 **solo la dirección esperada. En sexo la evidencia es mixta.**
