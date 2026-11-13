@@ -85,11 +85,7 @@ Esta ambigüedad entre lo innato y lo adquirido se traslada a las percepciones q
 
 
 ### Esfuerzo y Talento sus factores asociados
-**tesis de los desvalidos? (Robinson y Bell, Bucca), inferencia desde la experiencia de laspersonas, pero esto estaría orientado hacia otro lado, y otras variables meso. (Mijs 2018).**
-
-Si son fundamentos distintos, su percepción debería responder a factores distintos.
-
-##### Estatus social subjetivo
+#### Estatus social subjetivo
 Weber desarrollar... 
 
 El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia (**Evans y Kelley 2004(faltaestalecturabastiannnPreguntarJC**). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala, independientemente de su posición objetiva [@castillo_todos_clase_media_2013]. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.
@@ -100,7 +96,7 @@ La evidencia en Chile muestra que un mayor estatus social subjetivo se asocia co
 > $H_1b$ : A mayor estatus social subjetivo, mayor es la percepción de que en Chile se recompensa el talento.
 > $H_1c$ : La asociación del estatus social subjetivo es más fuerte con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.
 
-##### Nivel educacional
+#### Nivel educacional
 
 La relación entre educación y percepciones meritocráticas admite dos interpretaciones opuestas. La hipótesis de la socialización sostiene que la escuela transmite el ideal meritocrático, por lo que las personas más educadas percibirían más meritocracia [@lampert_meritocratic_2013; @duru-bellat_variations_2012]. La hipótesis de la instrucción o de la iluminación plantea, en cambio, que la educación aumenta la sensibilidad frente a las desigualdades y las limitaciones sociales, por lo que las personas más educadas serían más críticas respecto de cómo se distribuyen las recompensas [@bucca_merit_2016; @duru-bellat_variations_2012].
 
@@ -110,7 +106,7 @@ En Chile, la evidencia respalda la segunda interpretación donde un mayor nivel 
 > $H_2b$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
 > $H_2c$ : La asociación negativa del nivel educacional es más débil con la percepción de que se recompensa el talento que con la de que se recompensa el esfuerzo.
 
-##### Movilidad social
+#### Movilidad social
 **Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y Rentería, luego Traini, Mijs 2022, Jin y Friedman.**
 @kwon_access_2026 La movilidad social produce otro resultado interesante: tanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
 
@@ -118,7 +114,7 @@ En Chile, la evidencia respalda la segunda interpretación donde un mayor nivel 
 > $H_3b$ :
 > $H_3c$ :
 
-##### Características sociodemográficas
+#### Características sociodemográficas
 **¿solo la dirección esperada? o fundamento más con fuentes sobre la direccion y las atribuciones.  en sexo la evidencia es mixta .**
 
 Empírico
