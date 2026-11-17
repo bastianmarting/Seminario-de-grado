@@ -3,21 +3,30 @@ title: "Metodología"
 ---
 
 ## Datos
-
 Texto de muestra para describir las fuentes de datos utilizadas.
+
+Para este trabajo, se utilizarán los datos de la encuesta parte del Fonfecyt regular Nº 1160921 "Economía Moral de la Meritocracia y Preferencias Redistributivas" llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics.
+
+Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.
+
+
 
 
 
 
 ## Variables
-
 Detalle de las variables incluidas en el análisis, así como escalas de medición.
 
 
 
 ## Métodos
-
 Breve descripción de los procedimientos aplicados para procesar y analizar la información.
 
+Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.
 
+Variables dependientes: Percepción de esfuerzo y percepción de talento.
+
+Variables independientes: experiencias de movilidad social, nivel educacional, estatus subjetivo. Controles sociodemográficos.
+
+Los datos serán procesados en el programa estadístico RStudio.
 
