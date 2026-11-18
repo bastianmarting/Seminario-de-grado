@@ -25,7 +25,7 @@ Las críticas a esta teoría cuestionan que las sociedades funcionen efectivamen
 **un parrafo corto de percepciones frente a preferencias y su función legitimadora: @castillo_merit_perc_pref_2019, Kluegel y Smith (1986)** **Preguntar JC**
 
 **La segunda pregunta, sobre si las personas consideran que la sociedad en la que viven es meritocrática, ha sido abordada por el estudio de las creencias meritocráticas.**
-En el estudio de las creencias meritocráticas se distinguen dos enfoques. Por un lado, las preferencias, que son creencias normativas sobre cómo debería funcionar la sociedad, por otro, las percepciones, que son creencias descriptivas sobre cómo funciona efectivamente [@castillo_merit_perc_pref_2019]. Estas percepciones no son descripciones neutras de la sociedad, sino inferencias que las personas construyen a partir de su propia trayectoria y de su entorno social **[@mijs_inequality_2018; @dawtry_why_2015].Revisar nuevamente**
+En el estudio de las creencias meritocráticas se distinguen dos enfoques. Por un lado, las preferencias, que son creencias normativas sobre cómo debería funcionar la sociedad, por otro, las percepciones, que son creencias descriptivas sobre cómo funciona efectivamente [@castillo_merit_perc_pref_2019]. Estas percepciones no son descripciones neutras de la sociedad, sino inferencias que las personas construyen a partir de su propia trayectoria y de su entorno social, que permiten entender cómo es la meritocracia en la sociedad**[@mijs_inequality_2018; @dawtry_why_2015].Revisar nuevamente**
 
 #### Esfuerzo y talento
 
@@ -68,7 +68,9 @@ Es más, aunque puedan existir diferencias en las habilidades, los logros sobres
 #### Estatus social subjetivo
 Weber desarrollar estatus social... (muy corto)
 
-El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia **Evans y Kelley 2004(faltaestalecturabastiannnPreguntarJC**). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala, independientemente de su posición objetiva [@castillo_todos_clase_media_2013]. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.
+El estatus social subjetivo corresponde a la posición que las personas creen ocupar en la jerarquía social. No es un reflejo directo de su ingreso o educación, sino una evaluación que combina sus condiciones materiales con la comparación con sus grupos de referencia **Evans y Kelley 2004(faltaestalecturabastiannnPreguntarJC**). En Chile, las personas tienden a ubicarse en las posiciones medias de la escala independientemente de su posición objetiva [@castillo_todos_clase_media_2013]  y esto aumenta en sociedades altamente desiguales, pero la evidencia reciente presenta que las personas en los extremos más bajos tienden a ser más precisos con su estatus objetivo [@wiesner_knowing_2026]. Por eso, el estatus subjetivo permite captar cómo las personas se ven a sí mismas en la jerarquía, lo cual es relevante para estudiar percepciones, que también son evaluaciones subjetivas sobre la sociedad.
+
+*[@wiesner_knowing_2026]. --> integrar vinculo : si quienes tienen más ingresos subestiman su posición, las élites casi no aparecen en la parte alta de la escala.*
 
 En Chile, la evidencia cuantitativa muestra que un mayor estatus social subjetivo se asocia con una mayor percepción de meritocracia [@castillo_merit_perc_pref_2019, p. 10; @iturra-sanhueza_social_2026], y que quienes se ubican en estratos subjetivos bajos evalúan su propio ingreso como más injusto, diferencia que se acentúa cuando lo juzgan según su esfuerzo por educarse [@mac_baroz_merit_des_2024]. 
 
@@ -94,7 +96,7 @@ Sin embargo, en estudiantes chilenos la educación universitaria de los padres s
 > $H_2b$ : A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el talento.
 > $H_2c$ : 
 
-#### Movilidad social
+#### Movilidad social subjetiva
 **Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y *Rentería*, luego Traini, Mijs 2022, Jin y Friedman.**
 @kwon_access_2026 La movilidad social ptanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
 
@@ -102,6 +104,8 @@ Sin embargo, en estudiantes chilenos la educación universitaria de los padres s
 > $H_3b$ :
 > $H_3c$ :
 
+#### Variables de control
+El sexo porque las "También incluimos el sexo, dada la evidencia de que las mujeres tienden a favorecer la protección estatal más que los hombres, en parte debido a trayectorias diferenciadas del mercado laboral" @plaza_networked_2026
 
 ## Resumen del capítulo
 

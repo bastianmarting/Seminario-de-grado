@@ -3,25 +3,36 @@ title: "Metodología"
 ---
 
 ## Datos
-Texto de muestra para describir las fuentes de datos utilizadas.
+**Texto de muestra para describir las fuentes de datos utilizadas.**
 
-Para este trabajo, se utilizarán los datos de la encuesta parte del Fonfecyt regular Nº 1160921 "Economía Moral de la Meritocracia y Preferencias Redistributivas" llevada a cabo en abril 2016 - marzo 2020. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics.
+En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del Fonfecyt regular Nº 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en **AÑO**, y en la segunda ola, recopilados en **AÑO**. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como .....
 
 Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.
 
+## Variables dependientes: Percepciones de meritocracia
+**Detalle de las variables incluidas en el análisis, así como escalas de medición.**
 
+Percepción de que se premia el Talento: Este ítem se basa en la afirmación: ‘En Chile, las personas son recompensadas por sus talentos’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo).
 
+Percepción de que se premia el Esfuerzo: Este ítem se basa en la afirmación: ‘En Chile, las personas son recompensadas por sus esfuerzos’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo). 
 
+## Variables independientes
 
+Nivel educacional: 
 
-## Variables
-Detalle de las variables incluidas en el análisis, así como escalas de medición.
+Estatus social subjetivo:
+
+Movilidad social subjetiva:
+
+Nivel socioeconómico:
+
+## Variables de control
+Sexo, edad, 
 
 
 
 ## Métodos
-Breve descripción de los procedimientos aplicados para procesar y analizar la información.
-
+**Breve descripción de los procedimientos aplicados para procesar y analizar la información.**
 Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.
 
 Variables dependientes: Percepción de esfuerzo y percepción de talento.
