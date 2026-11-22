@@ -101,20 +101,33 @@ Sin embargo, en estudiantes chilenos la educación universitaria de los padres s
 > $H_2c$ : 
 
 #### Movilidad social subjetiva
-**Gugushvili, Day y Fiske, Kelley y Kelley, luego Fercovic y *Rentería*, luego Traini, Mijs 2022, Jin y Friedman.**
-@kwon_access_2026 La movilidad social ptanto quienes habían ascendido socialmente como quienes habían descendido apoyaban más que se recompensaran el esfuerzo y las habilidades que quienes habían permanecido en una posición similar a la de su familia. No apareció la misma relación respecto a la educación.
+A diferencia de la movilidad social objetiva que refiere a los cambios que experimentan las personas en la sociedad en relación con la estructura socioeconómica, en cambio, la movilidad social subjetiva, refiere a como las personas evalúan su posición actual en comparación con la de la familia con la que crecieron. La movilidad subjetiva  permite comprender mejor qué actitudes y comportamientos se ven influidos por la movilidad social, así como las razones por las cuales esta los afecta [@kelley_subjective_2008]. Se considera la medida subjetiva y no la objetiva porque la movilidad incide en las creencias en la medida en que las personas la experimentan como real y tiene mayor relación con las experiencias de las personas [@mijs_belief_2022, p. 138].  
 
-> $H_3a$ : 
-> $H_3b$ :
-> $H_3c$ :
+Para esta relación se han propuesto dos mecanismos. Por un lado, las personas infieren cómo funciona la sociedad a partir de su propia trayectoria. Por otro, quienes ascienden tienen motivos para presentar su éxito como merecido [@mijs_belief_2022, p. 133]. Las personas tienden a generalizar su experiencia de movilidad al conjunto de la sociedad [@traini_et_al_mov_social_percepciones_meritocracia_2025, p. 4], y quienes logran ascender tienden a atribuir su éxito a su propio trabajo y habilidad, y a usar esa experiencia para explicar el éxito o el fracaso de los demás [@bucca_merit_2016, p. 99].
 
+Para el esfuerzo, la evidencia internacional respalda esta relación. En Países Bajos, quienes perciben haber ascendido atribuyen más importancia al trabajo duro para salir adelante que quienes se mantuvieron en la misma posición [@mijs_belief_2022, p. 136]. Con datos de 26 países, entre ellos Chile, quienes perciben haber ascendido consideran que el trabajo duro es más importante para tener éxito [@traini_et_al_mov_social_percepciones_meritocracia_2025, p. 11].
 
+Sin embargo, estos estudios miden la importancia atribuida al trabajo duro para salir adelante y no la percepción de que efectivamente se recompensa, dos dimensiones que en Chile se comportan como factores distintos [@iturrasanhueza_estatus_2019, p. 35]. **El problema es que cuando se mide la recompensa percibida, la evidencia chilena no es clara.** A igual estatus subjetivo propio, quienes ubican a su familia de origen en una posición más alta perciben en mayor medida que se recompensan el esfuerzo y la inteligencia [@iturrasanhueza_estatus_2019, p. 46]. No obstante, ese resultado proviene de una medida que combina ambos criterios y trata el origen como una escala continua, por lo que no permite saber si la asociación es la misma para el esfuerzo y para el talento, ni si difiere entre quienes ascienden y quienes descienden. En América Latina, la movilidad percibida respecto de los padres no se asocia con las explicaciones de la riqueza y la pobreza [@bucca_merit_2016, pp. 105-106], y en Chile quienes han tenido una movilidad ascendente de largo alcance explican su trayectoria desde un marco colectivo y reconocen los factores externos que la hicieron posible, lo que menciona como conciencia dual [@fercovic_2022].
+
+**[Pendiente: Iturra p. 35 y Tabla 8 en p. 46. Confirmar que un valor alto en "recompensa percibida" significa más recompensa (57), que dice lo contrario. bucca pp. 105 y 106. fercovic.]**
+
+La evidencia sobre el talento es más escasa y proviene de estudios cualitativos sobre cómo las personas explican su propia trayectoria. Quienes ascienden ponen el trabajo duro al centro de sus relatos. Entre las élites de Reino Unido y Dinamarca, quienes ascendieron destacan más el trabajo duro que el resto [@friedman_meaning_2024, p. 876], y estudiantes chinos de clase trabajadora que llegaron a universidades de élite sostienen que el trabajo duro siempre da frutos [@jin_meritocracy_2020, p. 10]. Pero también recurren al talento. En Lima, profesionales que ascendieron perciben que en los campos de alta calificación el talento y la inteligencia pesan más que las ventajas de un origen privilegiado, y **usan el talento para distinguirse de sus colegas privilegiados [@renteria_telling_2026, p. 1353].** Si las personas proyectan su experiencia hacia la sociedad, esto sugiere que la movilidad ascendente se asocia con ambas percepciones, pero de forma más positiva con la del esfuerzo, ya que es el criterio que depende en mayor medida de la voluntad [@franetovic_concepciones_2017a, p. 5] y que permite presentar el ascenso como resultado del trabajo propio. Dado que la evidencia sobre la movilidad descendente es menos consistente [@mijs_belief_2022, p. 136; @traini_et_al_mov_social_percepciones_meritocracia_2025, pp. 11-12], esta se incluye en los análisis sin una hipótesis específica.
+
+o
+
+Para el talento, la evidencia es más escasa y apunta en otra dirección. En Lima, profesionales que ascendieron perciben que en los campos de alta calificación el talento y la inteligencia pesan más que las ventajas de un origen privilegiado, y usan el talento para distinguirse de sus colegas privilegiados [@renteria_telling_2026, p. 1353]. Además, frente a sus éxitos, las personas tienden a exagerar su propia capacidad y talento para reforzar una imagen positiva de sí mismas [@traini_et_al_mov_social_percepciones_meritocracia_2025, p. 3]. Esto sugiere que, mientras su trayectoria les muestra los límites de la recompensa al esfuerzo, el talento les permite explicar por qué ellos sí lograron ascender. Como esta evidencia proviene de un solo estudio cualitativo, la hipótesis para el talento es más tentativa. Dado que la evidencia sobre la movilidad descendente es menos consistente [@mijs_belief_2022, p. 136; @traini_et_al_mov_social_percepciones_meritocracia_2025, pp. 11-12], esta se incluye en los análisis sin una hipótesis específica.
+
+> $H_{3a}$: A igual estatus social subjetivo, quienes perciben haber ascendido respecto de su familia de origen perciben en mayor medida que en Chile se recompensa el esfuerzo que quienes perciben mantenerse en la misma posición.
+>
+> $H_{3b}$: **A igual estatus social subjetivo, quienes perciben haber ascendido respecto de su familia de origen perciben en mayor medida que en Chile se recompensa el talento que quienes perciben mantenerse en la misma posición.**
+>
+> $H_{3c}$: La movilidad ascendente se asocia de forma más positiva con la percepción de que se recompensa el esfuerzo que con la de que se recompensa el talento.
 
 #### Nivel Socioeconómico
 
 Ver si lo integro con educación.
 
-Describir nivel socioeconomico y porque sería diferente a estatus social subjetivo. 
+Describir nivel socioeconomico y porque sería diferente a estatus social subjetivo. es necesaroi
 
 Investigaciones cuali sobre elites y clases bajas
 
