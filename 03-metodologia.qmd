@@ -42,7 +42,7 @@ Se realizará una regresión lienal multivariante para analizar la relación ent
 
 Variables dependientes: Percepción de esfuerzo y percepción de talento.
 
-Variables independientes: experiencias de movilidad social, nivel educacional, estatus subjetivo. Controles sociodemográficos.
+Variables independientes: experiencias de movilidad social, nivel educacional, estatus subjetivo y nivel socioeconomico. Controles sociodemográficos.
 
 Los datos serán procesados en el programa estadístico RStudio.
 
