@@ -26,9 +26,11 @@ Movilidad social subjetiva:
 **La variable fue recodificada...** 
 
 Nivel socioeconómico:
-El nivel socioeconomico 
-**La variable fue recodificada...** 
 
+El nivel socioeconómico se mide en una escala de 14 puntos de tramos, donde se pregunta: 'De los siguientes tramos de ingresos mensuales que se presentan, ¿podría Ud. indicarme en cuál de ellos se encuentra su hogar, considerando todos los ingresos líquidos por sueldos y salarios de todas las personas que trabajan remuneradamente, jubilaciones, pensiones, aportes de parientes o amigos, arriendos y otros?'. La escala va desde 1, la cual representa ingresos menores a $35.000 mensuales líquidos, al 14, que representa más de $3.000.000 mensuales líquidos.
+
+**La variable fue recodificada de 
+**
 
 
 ## Variables de control
