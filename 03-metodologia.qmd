@@ -4,32 +4,35 @@ title: "Metodología"
 
 ## Datos
 **Texto de muestra para describir las fuentes de datos utilizadas.**
+En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del proyecto Fonfecyt 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en *año*. Esta encuesta tiene una muestra de N = 2.457. Y, contempla un cuestionario de 37 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros.
 
-En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del Fonfecyt regular Nº 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en **AÑO**, y en la segunda ola, recopilados en **AÑO**. Esta encuesta tiene una muestra de N = 1,489. Y, contempla un cuestionario de 59 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como .....
+La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, es decir, talento y esfuerzo. 
 
-Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.
-
-## Variables dependientes: Percepciones de meritocracia
-**Detalle de las variables incluidas en el análisis, así como escalas de medición.**
-
-Percepción de que se premia el Talento: Este ítem se basa en la afirmación: ‘En Chile, las personas son recompensadas por sus talentos’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo).
-
-Percepción de que se premia el Esfuerzo: Este ítem se basa en la afirmación: ‘En Chile, las personas son recompensadas por sus esfuerzos’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo). 
+## Variables dependientes: Percepciones de esfuerzo y talento
+Las variables dependientes del estudio son las percepciones de que se premia el esfuerzo y el talento en la sociedad por separado, ambas percepciones se miden con un ítem tipo Likert de cinco categorías. 
+La dimensión del esfuerzo, se basa en la afirmación: 'Quienes más se esfuerzan logran obtener mayores recompensas que quienes se esfuerzan menos’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo). Y la dimensión del talento, se basa en la afirmación: 'Quienes poseen más talento logran obtener mayores recompensas que quienes poseen menos talento’. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5 (totalmente de acuerdo).  Los valores altos en las variables indican percepciones afirmativas sobre que se recompensa el talento y esfuerzo en la sociedad. 
 
 ## Variables independientes
+Para las variables independientes del estudio se utilizará el estatus social subjetivo que se mide como una escala de autoubicación de 11 puntos donde se pregunta: 'En Chile, hay grupos que tienden a ubicarse en los niveles más altos y grupos que tienden a ubicarse en los niveles más bajos de la sociedad. Usando la escala presentada, donde 0 es el nivel más bajo y 10 el nivel más alto, ¿dónde se ubicaría usted en la sociedad chilena?'. En la cual valores más altos significan mayor estatus social percibido. 
 
-Nivel educacional: 
+**La variable fue recodificada...** 
 
-Estatus social subjetivo:
+El nivel educacional se mide como una escala de autoubicación de 10 categorías del nivel que se cursa actualmente o el último aprobado, donde se pregunta: '¿Cuál es su mayor nivel educacional alcanzado?' La escala va desde (1) No estudió, (2) Educación básica incompleta, (3) Educación básica completa, (4) Educación media incompleta, (5)Educación media completa, (6) Educación superior no universitaria incompleta, (7) Educación superior no universitaria completa, (8) Educación universitaria incompleta, (9) Educación universitaria completa, y (10) Estudios de postgrado, master, doctorado. Donde valores más altos significan mayor nivel educacional alcanzado. 
 
-Movilidad social subjetiva:
+**La variable fue recodificada...** 
+
+Movilidad social subjetiva: 
+
+**La variable fue recodificada...** 
 
 Nivel socioeconómico:
+El nivel socioeconomico 
+**La variable fue recodificada...** 
+
+
 
 ## Variables de control
-Sexo, edad, 
-
-
+La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La edad se utilizará como **variable contínua**
 
 ## Métodos
 **Breve descripción de los procedimientos aplicados para procesar y analizar la información.**
