@@ -21,7 +21,7 @@ La movilidad social subjetiva se construye con la variable de estatus subjetivo 
 El nivel socioeconómico se mide a través del ingreso del hogar en una escala de 14 puntos de tramos, donde se pregunta: 'De los siguientes tramos de ingresos mensuales que se presentan, ¿podría Ud. indicarme en cuál de ellos se encuentra su hogar, considerando todos los ingresos líquidos por sueldos y salarios de todas las personas que trabajan remuneradamente, jubilaciones, pensiones, aportes de parientes o amigos, arriendos y otros?'. La escala va desde 1, la cual representa ingresos menores a $35.000 mensuales líquidos, al 14, que representa más de $3.000.000 mensuales líquidos. La variable será recodificada siguiendo la estrategia de estimar diferencias entre grupos de ingreso en lugar de un coeficiente único [@mac_baroz_merit_des_2024, p. 13], porque no se puede construir quintiles de ingreso per cápita al no preguntar por el número de integrantes del hogar. Los tramos se agrupan en cuatro categorías: ingresos bajos (hasta $448.000, referencia), medio-bajos ($448.001 a $1.000.000), medio-altos ($1.000.001 a $2.000.000) y altos (más de $2.000.000). Esta última se aproxima al 10% de mayores ingresos que distinguen @iturra-sanhueza_social_2026 [Tabla S1].
 
 ## Variables de control
-La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La edad se utilizará como **variable contínua**
+La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La edad se utilizará como una variable continua
 
 ## Métodos
 **Breve descripción de los procedimientos aplicados para procesar y analizar la información.**
