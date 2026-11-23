@@ -15,29 +15,20 @@ La dimensión del esfuerzo, se basa en la afirmación: 'Quienes más se esfuerza
 ## Variables independientes
 Para las variables independientes del estudio se utilizará el estatus social subjetivo que se mide como una escala de autoubicación de 11 puntos donde se pregunta: 'En Chile, hay grupos que tienden a ubicarse en los niveles más altos y grupos que tienden a ubicarse en los niveles más bajos de la sociedad. Usando la escala presentada, donde 0 es el nivel más bajo y 10 el nivel más alto, ¿dónde se ubicaría usted en la sociedad chilena?'. En la cual valores más altos significan mayor estatus social percibido. 
 
-**La variable fue recodificada...** 
-
 El nivel educacional se mide como una escala de autoubicación de 10 categorías del nivel que se cursa actualmente o el último aprobado, donde se pregunta: '¿Cuál es su mayor nivel educacional alcanzado?' La escala va desde (1) No estudió, (2) Educación básica incompleta, (3) Educación básica completa, (4) Educación media incompleta, (5)Educación media completa, (6) Educación superior no universitaria incompleta, (7) Educación superior no universitaria completa, (8) Educación universitaria incompleta, (9) Educación universitaria completa, y (10) Estudios de postgrado, master, doctorado. Donde valores más altos significan mayor nivel educacional alcanzado. 
 
-**La variable fue recodificada...** 
+La movilidad social subjetiva se construye con la variable de estatus subjetivo propio y el de la familia de origen, el ítem menciona: '"Y pensando en la familia en la que usted creció, ¿dónde se ubicarían ellos en esta escala?", de 0 a 10'. Siguiendo a @mijs_belief_2022 [p. 134] y @kwon_access_2026 [p. 1008], ambas escalas se agruparán en bajo (0 a 3), medio (4 a 6) y alto (7 a 10) y se cruzan. Quienes quedan en un nivel superior al de su familia se clasifican como ascendentes, quienes quedan en uno inferior como descendentes y quienes se mantienen como inmóviles (referencia). 
 
-Movilidad social subjetiva: 
-
-**La variable fue recodificada...** 
-
-Nivel socioeconómico:
-
-El nivel socioeconómico se mide en una escala de 14 puntos de tramos, donde se pregunta: 'De los siguientes tramos de ingresos mensuales que se presentan, ¿podría Ud. indicarme en cuál de ellos se encuentra su hogar, considerando todos los ingresos líquidos por sueldos y salarios de todas las personas que trabajan remuneradamente, jubilaciones, pensiones, aportes de parientes o amigos, arriendos y otros?'. La escala va desde 1, la cual representa ingresos menores a $35.000 mensuales líquidos, al 14, que representa más de $3.000.000 mensuales líquidos.
-
-**La variable fue recodificada de 
-**
-
+El nivel socioeconómico se mide a través del ingreso del hogar en una escala de 14 puntos de tramos, donde se pregunta: 'De los siguientes tramos de ingresos mensuales que se presentan, ¿podría Ud. indicarme en cuál de ellos se encuentra su hogar, considerando todos los ingresos líquidos por sueldos y salarios de todas las personas que trabajan remuneradamente, jubilaciones, pensiones, aportes de parientes o amigos, arriendos y otros?'. La escala va desde 1, la cual representa ingresos menores a $35.000 mensuales líquidos, al 14, que representa más de $3.000.000 mensuales líquidos. La variable será recodificada siguiendo la estrategia de estimar diferencias entre grupos de ingreso en lugar de un coeficiente único [@mac_baroz_merit_des_2024, p. 13], porque no se puede construir quintiles de ingreso per cápita al no preguntar por el número de integrantes del hogar. Los tramos se agrupan en cuatro categorías: ingresos bajos (hasta $448.000, referencia), medio-bajos ($448.001 a $1.000.000), medio-altos ($1.000.001 a $2.000.000) y altos (más de $2.000.000). Esta última se aproxima al 10% de mayores ingresos que distinguen @iturra-sanhueza_social_2026 [Tabla S1].
 
 ## Variables de control
 La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La edad se utilizará como **variable contínua**
 
 ## Métodos
 **Breve descripción de los procedimientos aplicados para procesar y analizar la información.**
+
+Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asocciados de ambas variables dependientes afectan de igual manera. Los coeficientes de cada ecuación equivalen a los de una regresión de mínimos cuadrados ordinarios, y el modelo conjunto permite contrastar mediante pruebas de Wald si el coeficiente de cada factor difiere entre ambas percepciones, que es lo que plantean las hipótesis "c". Primero se estima un modelo para cada factor y luego un modelo conjunto [@iturra-sanhueza_social_2026, p. 5]. Los análisis se realizan en R.
+
 Se realizará una regresión lienal multivariante para analizar la relación entre variables independientes y dos variables dependientes de manera simultánea.
 
 Variables dependientes: Percepción de esfuerzo y percepción de talento.
