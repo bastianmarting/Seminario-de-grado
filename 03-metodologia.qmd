@@ -26,5 +26,5 @@ La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La edad s
 ## Métodos
 **Breve descripción de los procedimientos aplicados para procesar y analizar la información.**
 
-Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asociados de ambas variables dependientes afectan de igual manera. Los análisis se realizan en R.
+Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asociados de ambas variables dependientes afectan de igual manera. Test de Wald. Los análisis se realizan en R.
 

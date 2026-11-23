@@ -116,7 +116,7 @@ En Chile, los datos sugieren que la asociación entre el estatus subjetivo y la 
 
 #### Nivel educacional
 
-La educación ocupa un lugar central en la meritocracia, ya que es el principal mecanismo a través del cual se seleccionan y certifican los méritos individuales, de este modo el logro académico funciona como indicador objetivo del mérito [Goldthorpe, 2003, citado en @iturrasanhueza_estatus_2019, p. 15]. **[Pendiente: Goldthorpe es una cita secundaria, a través de Iturra. revisar gold nuevamente**
+La educación ocupa un lugar central en la meritocracia, ya que es el principal mecanismo a través del cual se seleccionan y certifican los méritos individuales, de este modo el logro académico funciona como indicador objetivo del mérito [Goldthorpe, 2003, citado en @iturrasanhueza_estatus_2019, p. 15]. **[]Pendiente: Goldthorpe es una cita secundaria, a través de Iturra. revisar gold nuevamente**
 
 En relación a la educación se plantean dos hipótesis opuestas, la primera es la hipótesis de la socialización que plantea que el colegio transmite la idea de que el éxito depende del mérito individual, por lo que quienes han avanzado más en el sistema educativo adherirían más a la meritocracia [@bourdieu_reproduccion_1998; @lampert_meritocratic_2013]. Desde esta perspectiva, la escuela traduce el privilegio social en talento, don o mérito [@grau-grau_ilusion_2022, p. 5], y quienes tienen mayor capital cultural atribuyen en mayor medida su posición a su propio talento y esfuerzo [@grau-grau_ilusion_2022, p. 15]. La hipótesis de la iluminación plantea, en cambio, que la educación aumenta la sensibilidad frente a las desigualdades y las limitaciones sociales, por lo que las personas más educadas serían más críticas respecto de cómo se distribuyen las recompensas [@duru-bellat_variations_2012; @bucca_merit_2016].
 
@@ -192,7 +192,7 @@ El sexo porque las "También incluimos el sexo, dada la evidencia de que las muj
 ## Datos
 En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del proyecto Fonfecyt 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en *año*. Esta encuesta tiene una muestra de N = 2.457. Y, contempla un cuestionario de 37 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros.
 
-La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, es decir, talento y esfuerzo. 
+La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia porque incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, el talento y esfuerzo. 
 
 ## Variables dependientes: Percepciones de esfuerzo y talento
 Las variables dependientes del estudio son las percepciones de que se premia el esfuerzo y el talento en la sociedad por separado, ambas percepciones se miden con un ítem tipo Likert de cinco categorías. 
