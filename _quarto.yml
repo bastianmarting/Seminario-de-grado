@@ -9,7 +9,7 @@ project:
 
 book:
   title: "Percepciones meritocráticas: percepciones de esfuerzo y talento en la distribución de recompensas sus factores asociados"
-  subtitle: Seminario de Grado 2026
+  subtitle: Seminario de Grado 1 2026
   output-file: reportes-seminario
   repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)
   author:
