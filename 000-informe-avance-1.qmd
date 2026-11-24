@@ -1,5 +1,5 @@
 ---
-title: "Informe de Avance 1"
+title: "Informe de Avance"
 numbered: true
 ---
 ## Problema de investigación
