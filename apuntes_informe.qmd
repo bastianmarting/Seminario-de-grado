@@ -4,6 +4,8 @@ numbered: true
 ---
 # problematica 
 
+*se elimino este parrafo de intro, porque quedaba muy largo, pero debe intgrarse dsp*
+, por lo que la desigualdad basada en el talento tiende a considerarse menos legítima [@castillo_perceptions_2025]. Esta diferencia también cambia el sentido de la desventaja, ya que atribuir una posición baja a la falta de esfuerzo la convierte en una responsabilidad individual, mientras que atribuirla a la falta de talento la presenta como una carencia natural de la persona [@young_1964; @sandel_tirania_2020].
 
 
 
