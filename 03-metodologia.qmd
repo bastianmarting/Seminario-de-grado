@@ -3,7 +3,7 @@ title: "Metodología"
 ---
 
 ## Datos
-En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del proyecto Fonfecyt 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en *año*. Esta encuesta tiene una muestra de N = 2.457. Y, contempla un cuestionario de 37 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros.
+En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" una encuesta parte del proyecto Fondecyt 1160921 llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados en *año*. Esta encuesta tiene una muestra de N = 2.457. Y, contempla un cuestionario de 37 preguntas aplicado mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros.
 
 La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, es decir, talento y esfuerzo. 
 
