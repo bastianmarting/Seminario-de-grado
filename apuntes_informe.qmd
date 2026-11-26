@@ -202,7 +202,25 @@ Existe una interpretación contraria, según la cual quienes ocupan las posicion
 
 
 
+#### nivel educa texto largo
 
+En América Latina, quienes tienen título universitario explican la riqueza con más causas estructurales [@bucca_merit_2016, p. 105], y en Chile un mayor nivel educacional se asocia con una menor percepción de meritocracia [@castillo_merit_perc_pref_2019, p. 9; @iturra-sanhueza_social_2026]. Esto se ha explicado porque los más educados tienen más contacto con grupos socioeconómicos diversos y porque sus experiencias de movilidad no siempre se traducen en los retornos esperados [@iturra-sanhueza_social_2026, p. 9]. Sin embargo, ambas hipótesis pueden operar a la vez. En Chile, las personas más educadas atribuyen más importancia a la ambición, la educación y el trabajo duro para salir adelante, como predice la socialización, pero perciben en menor medida que el esfuerzo y la inteligencia se recompensan, como predice la iluminación [@iturrasanhueza_estatus_2019, pp. 41-42, 45].
+
+**Iturra-Sanhueza et al. 2026 p. 9 se apoya en Londoño-Vélez, Espinoza y Núñez y Canales, así que es una cita secundaria. revisar para citar bien y leer a londoño** 
+
+La evidencia que distingue entre ambos criterios es escasa y no apunta en una sola dirección. Con la medida de recompensa percibida, la educación se asocia negativamente tanto con el esfuerzo como con el talento, con magnitudes similares [@iturra-sanhueza_social_2026, Tabla S3]. En estudiantes chilenos, la educación universitaria de los padres se asocia con una menor importancia del talento para obtener buenas notas, pero no del esfuerzo [@retamales_rol_2024], y en Flandes los más educados recurren menos al talento para explicar el éxito escolar [@spruyt_talent_esfuerzo_social_background_2015, p. 104]. En cambio, las personas con educación universitaria prefieren que las habilidades se recompensen más y el esfuerzo menos [@kwon_access_2026, p. 1010], aunque se trata de preferencias y no de percepciones.
+
+**[Pendiente: Retamales, agregar la página. Spruyt p. 104. Kwon y Erola p. 1010.]**
+
+Esto sugiere que la iluminación y la socialización podrían operar de forma distinta según el criterio. El esfuerzo es lo que la experiencia educativa muestra como insuficiente, ya que los más educados conocen mejor las barreras que impiden que se traduzca en recompensas. El talento, en cambio, es lo que la escuela certifica al traducir las ventajas de origen en capacidades individuales [@accominotti_making_2026]. Por ello se espera que la educación se asocie negativamente con la percepción de que se recompensa el esfuerzo y positivamente con la de que se recompensa el talento.
+
+**[Pendiente: las dos oraciones sobre el esfuerzo y el talento son una síntesis de las citas anteriores. Revisarlas con el  p JC]**
+
+> $H_4$: A mayor nivel educacional, menor es la percepción de que en Chile se recompensa el esfuerzo.
+>
+**> $H_4$: A mayor nivel educacional, mayor es la percepción de que en Chile se recompensa el talento.**
+>
+> $H_4$: El nivel educacional se asocia de forma más positiva con la percepción de que se recompensa el talento que con la de que se recompensa el esfuerzo.
 
 
 #### Movilidad social subjetiva
