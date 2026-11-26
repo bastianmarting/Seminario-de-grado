@@ -144,6 +144,35 @@ p {
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="assets/styles.scss">
 </head>
@@ -334,6 +363,7 @@ p {
 <h2 data-number="5.5" class="anchored" data-anchor-id="métodos"><span class="header-section-number">5.5</span> Métodos</h2>
 <p><strong>Breve descripción de los procedimientos aplicados para procesar y analizar la información.</strong></p>
 <p>Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asociados de ambas variables dependientes afectan de igual manera. Test de Wald. Los análisis se realizan en R.</p>
+<p><strong>La movilidad, el estatus subjetivo propio y el de origen están relacionados por construcción, por lo que no pueden separarse por completo. Por eso, <span class="math inline">\(H_3\)</span> se contrasta en dos especificaciones. En la primera, sin el estatus subjetivo propio, el coeficiente de la movilidad compara a quienes ascendieron con quienes se mantuvieron, e incluye el hecho de que quienes ascienden tienden a ubicarse más arriba. En la segunda, que incluye el estatus propio, el coeficiente compara a personas que se ubican en el mismo nivel pero provienen de orígenes distintos, es decir, refleja sobre todo la diferencia de origen. <span class="math inline">\(H_3\)</span> se considera respaldada si la diferencia a favor del esfuerzo aparece en ambas especificaciones. La colinealidad entre la movilidad y el estatus propio se revisa con el factor de inflación de la varianza.</strong></p>
 
 
 <!-- -->
@@ -1666,7 +1696,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Métodos</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>**Breve descripción de los procedimientos aplicados para procesar y analizar la información.**</span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asociados de ambas variables dependientes afectan de igual manera. Test de Wald. Los análisis se realizan en R.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Se estima una regresión lineal multivariante en la que ambas percepciones son variables dependientes simultáneas, con las mismas variables independientes. Esto permite estimar si los factores asociados de ambas variables dependientes afectan de igual manera. Test de Wald. Los análisis se realizan en R.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>**La movilidad, el estatus subjetivo propio y el de origen están relacionados por construcción, por lo que no pueden separarse por completo. Por eso, $H_3$ se contrasta en dos especificaciones. En la primera, sin el estatus subjetivo propio, el coeficiente de la movilidad compara a quienes ascendieron con quienes se mantuvieron, e incluye el hecho de que quienes ascienden tienden a ubicarse más arriba. En la segunda, que incluye el estatus propio, el coeficiente compara a personas que se ubican en el mismo nivel pero provienen de orígenes distintos, es decir, refleja sobre todo la diferencia de origen. $H_3$ se considera respaldada si la diferencia a favor del esfuerzo aparece en ambas especificaciones. La colinealidad entre la movilidad y el estatus propio se revisa con el factor de inflación de la varianza.**</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
