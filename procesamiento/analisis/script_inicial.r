@@ -1,4 +1,4 @@
-# Cargar librerías y datos -----------------------------------------------------
+# Cargar librerías y datos -----------------------------------------------------------
 pacman::p_load(tidyverse,
                sjmisc,
                knitr,
@@ -21,14 +21,13 @@ pacman::p_load(tidyverse,
 options(scipen = 999)
 rm(list = ls())
 
-
 set.seed(777)
 bbdd <- read_sav("input/data-orig/estudio_ola1.sav")
 
 dim(bbdd)
 
-# 1. FIltrar y seleccionar variables -------------------------------------------
-## a Selección de variables de interés -----------------------------------------
+# 1. FIltrar y seleccionar variables ---------------------------------------------------
+## a Selección de variables de interés -------------------------------------------------
 
 df <- bbdd %>%
   dplyr::select(
@@ -68,3 +67,26 @@ resumen_df <- sjmisc::descr(df)
 resumen_df
 View(resumen_df) #abre tabla de descriptivos iniciales en r
 
+
+
+
+
+
+
+
+#---- 4. Guardar datos limpios -----------------------------------------------------------
+
+# Guardar los datos limpios en un archivo CSV llamado "datos_limpios.csv"
+# row.names = FALSE se usa para evitar que los numeros de fila se guarden en el
+# archivo
+#write.csv(datos, "datos/datos_limpios.csv", row.names = FALSE)
+
+# Guardar los datos limpios en un archivo de Excel llamado "datos_limpios.xlsx"
+# Si se desea especificar la hoja de calculo, se puede utilizar el argumento sheetName
+#write.xlsx(datos, "datos/datos_limpios.xlsx")
+
+# Guardar los datos limpios en un archivo de Stata llamado "datos_limpios.dta"
+#write_dta(datos, "datos/datos_limpios.dta")
+
+# Guardar los datos limpios en un archivo de SPSS llamado "datos_limpios.sav"
+#write_sav(datos, "datos/datos_limpios.sav")
