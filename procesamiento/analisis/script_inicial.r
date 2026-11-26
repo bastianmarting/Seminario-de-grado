@@ -15,43 +15,56 @@ pacman::p_load(tidyverse,
                ggplot2,
                dplyr,
                hrbrthemes,
-               here) 
+               here,
+               labelled) 
 
 options(scipen = 999)
 rm(list = ls())
 
 
 set.seed(777)
-bbdd <- read_sav("input/data-orig/Estudio_3_ola1.sav")
-
+bbdd <- read_sav("input/data-orig/estudio_ola1.sav")
 
 dim(bbdd)
 
 # 1. FIltrar y seleccionar variables -------------------------------------------
 ## a Selección de variables de interés -----------------------------------------
 
-data <- bbdd %>%
+df <- bbdd %>%
   dplyr::select(
-    infiel_sex = i_6_p102,
-    part_sex_grupo = i_7_p102,
-    relacion_exclusiva = p86,
-    pers_sex_ult_ano = p71,
-    ult_sex_met_concep = p119, 
-    ult_ano_frc_preserv = p73,  
-    sex_mes_alc_drog = p103_o1,         
-    sex_mes_alc_drog_pareja = p104_o1,
-    sexo = p1,
-    genero = p3,
-    age = p4,
-    condon_1 = i_1_p33,
-    condon_2 = i_2_p33,
-    condon_3 = i_3_p33,
-    condon_4 = i_4_p33,
-    condon_5 = i_5_p33,
-    prs = p49,
-    os = p134,
-    esf = p34
+    sexo = 19,
+    edad = 21,
+    educ = 77,
+    ingresos = 75,
+    estat_subj = 70, 
+    estat_fam = 71,
+    per_effort = 33,
+    per_talent = 34  
   )
+dim(df)
 
-## b Tratar NA's ---------------------------------------------------------------
+
+## b Revisión de variables ---------------------------------------------------------------
+
+# Pasar todas a as.numeric
+df$sexo <- as.numeric(df$sexo)
+df$edad <- as.numeric(df$edad)
+df$educ <- as.numeric(df$educ)
+df$ingresos <- as.numeric(df$ingresos)
+df$estat_subj <- as.numeric(df$estat_subj)
+df$estat_fam <- as.numeric(df$estat_fam)
+df$per_effort <- as.numeric(df$per_effort)
+df$per_talent <- as.numeric(df$per_talent)
+
+# revisar base de datos
+sum(is.na(df))
+colSums(is.na(df))
+rowSums(is.na(df))
+look_for(df)
+summary(df)
+
+#tabla para descriptivos de las variables
+resumen_df <- sjmisc::descr(df)
+resumen_df
+View(resumen_df) #abre tabla de descriptivos iniciales en r
 
