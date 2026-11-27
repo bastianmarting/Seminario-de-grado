@@ -282,7 +282,7 @@ saveRDS(df_rec1, file = "input/data-proc/base_proc_ola1.rds")
 df_proc <- df_rec1
 saveRDS(df_proc,    file = "input/data-proc/base_proc_ola1.rds")
 saveRDS(tabla_desc, file = "input/data-proc/tabla_desc.rds")
-
+#
 
 
 
