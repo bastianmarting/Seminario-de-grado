@@ -54,9 +54,10 @@ En Chile, las trayectorias están marcadas por relatos de esfuerzo, que operan c
 
 Percibir que la sociedad recompensa el esfuerzo se alinea con los relatos sobre la responsabilidad individual y el merecimiento moral [@castillo_perceptions_2025]. En Chile, esta es la percepción que más se asocia con la legitimación de la desigualdad, ya que se asocia con aceptar que el acceso a la salud, la educación y las pensiones dependa del ingreso [@castillo_perceptions_2025; @castillo_justification_desigualdades_pensiones_clases_2026]. Por ser el criterio que permite presentar una posición como obra propia, el esfuerzo es el que se espera que se asocie más con la forma en que las personas se ubican y con la trayectoria que recorrieron.
 
+### Factores asociados a la percepción de que se recompensa el esfuerzo y el talento
+
 Las creencias sobre el funcionamiento de la desigualdad se forman a partir de experiencias socialmente situadas. Según @mijs_inequality_2018, propone entender estas creencias como un problema de inferencia causal donde las personas observan resultados desiguales e inducen las fuerzas que los producen a partir de la información disponible en sus espacios inferenciales cotidianos, como escuelas, barrios y lugares de trabajo. Cuando estos entornos son socialmente homogéneos, reducen la exposición a experiencias contrapuestas que evidencien barreras estructurales, generando una tendencia a sobreestimar el peso de las acciones y del esfuerzo individual. De este modo, si en una posición aventajada el entorno inmediato valida el éxito principalmente a través del mérito individual y oculta las ventajas de origen, es esperable que el sujeto infiera que la sociedad chilena en su conjunto distribuye las recompensas bajo esa misma lógica, limitando las explicaciones estructurales tradicionales.
 
-### Factores asociados a la percepción de que se recompensa el esfuerzo y el talento
 #### Nivel socioeconómico
 
 El nivel socioeconómico refiere a la posición de una persona según su ingreso, su educación y su ocupación [@li_community_2021, p. 478]. En este estudio se aborda con el ingreso del hogar, y la educación se trata en una sección aparte. El ingreso permite identificar a quienes ocupan las posiciones más altas, algo que la autoubicación no permite, porque en Chile tiende hacia el centro [@castillo_todos_clase_media_2013].
