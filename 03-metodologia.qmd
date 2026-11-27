@@ -41,6 +41,8 @@ El nivel educacional se mide con el mayor nivel alcanzado, en 10 categorías. Se
 ## Variables de control
 La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer, se recodifica a variable dummy, donde (0) es hombre, la cual se utilizará como categoría de referencia y (1) es mujer. La edad se utilizará como una variable continua. Además, se incluye la versión de la batería de meritocracia, que se presentó en tres órdenes distintos asignados al azar [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 462].
 
+La @tbl-descriptivos presenta los estadísticos descriptivos de todas las variables del estudio.
+
 ```{r}
 #| label: tbl-descriptivos
 #| tbl-cap: "Estadísticos descriptivos de las variables del estudio (N = 2.079)"
