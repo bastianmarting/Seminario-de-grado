@@ -207,7 +207,11 @@ names(df_rec1) # Muestra los nombres de las variables de la base de datos
 #      show = c("label","range", "mean", "sd", "NA.prc", "n"))%>%
 #      kable(.,"markdown")
 #summarytools::view(summarytools::dfSummary(df_rec1, headings=FALSE))
-
+st_options(
+  style = "rmarkdown", 
+  dfSummary.silent = TRUE, 
+  footnote = NA  # Las notas al pie nativas de summarytools a veces rompen el PDF #esto me ayudo la ia, porque no sé como hacer que no falle el pdf 
+)
 tabla_df <- df_rec1 %>%
   dplyr::select(
     "Percepción de recompensa al esfuerzo" = per_effort,

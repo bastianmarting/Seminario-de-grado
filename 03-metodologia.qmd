@@ -18,17 +18,50 @@ knitr::opts_chunk$set(
   fig.height = 5,
   out.width = "80%"
 )
+library(tidyverse)
+library(summarytools)
+library(here)
+
+# 1. Cargar la base de datos procesada
+df_proc <- readRDS(here("input", "data-proc", "base_proc_ola1.rds"))
+
+# 2. Configurar opciones globales de summarytools
+st_options(
+  style = "rmarkdown",
+  dfSummary.silent = TRUE,
+  footnote = NA
+)
 ```
 
 ## Datos
 
-En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" parte del proyecto Fondecyt 1160921, llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados entre el 25 de noviembre de 2019 y el 8 de enero de 2020. La muestra no es probabilística. Se construyó con cuotas de sexo, edad y nivel educacional, basadas en la encuesta CEP de 2019 [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 461]. Esta encuesta tiene una muestra de N = 2.236, incluyendo residentes de 54 comunas. La base no incluye ponderadores. Y, contempla un cuestionario de 37 preguntas aplicado de manera online mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros. Al ser aplicado de manera online no probabilístico, excluye a personas que no usan internet, y subrepresenta a las personas de menor nivel educacional. Por esto, los resultados no se generalizan a la población chilena y se interpretan como asociaciones dentro de la muestra.
+Para el estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" del proyecto Fondecyt 1160921, llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados entre el 25 de noviembre de 2019 y el 8 de enero de 2020. La muestra no es probabilística. Se construyó con cuotas de sexo, edad y nivel educacional, basadas en la encuesta CEP de 2019 [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 461]. Esta encuesta tiene una muestra de N = 2.236, incluyendo residentes de 54 comunas de Chile. La base no incluye ponderadores. Y, contempla un cuestionario de 37 preguntas aplicado de manera online mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros.
 
-La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, el talento y esfuerzo. También, se utiliza la primera ola, ya que es la única que incluye ingresos del hogar, y se responde a preguntas de meritocracia.
+La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, el talento y esfuerzo. Se utiliza la primera ola, ya que es la única que incluye ingresos del hogar, y se responde a preguntas de meritocracia.
+
+Al ser aplicado de manera online no probabilístico, excluye a personas que no usan internet, y subrepresenta a las personas de menor nivel educacional. Por esto, los resultados no se generalizan a la población y se interpretan como asociaciones dentro de la muestra.
 
 ## Variables dependientes: Percepciones de esfuerzo y talento
 
-Las variables dependientes son la percepción de que en Chile se recompensa el esfuerzo y la percepción de que se recompensa el talento. Cada una se mide con un ítem tipo Likert de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo), en que valores más altos indican una mayor percepción de que se recompensa ese criterio.
+Las variables dependientes son la percepción de que en Chile se recompensa el esfuerzo ("Quienes más se esfuerzan logran obtener mayores recompensas que quienes se esfuerzan menos") y la percepción de que se recompensa el talento ("Quienes poseen más talento logran obtener mayores recompensas que quienes poseen menos talento"). Ambas se miden de en un ítem tipo Likert de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo) y provienen del instrumento de @castillo_et_al_multidimensional_merit_beliefs_2023 [pp. 461-462]. Como cada percepción se mide con un solo ítem, no es posible estimar su confiabilidad. La batería se aplicó en tres versiones con distinto orden de los ítems, asignadas al azar [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 462], que se reúnen en una sola variable para cada percepción. Se puede ver los descriptivos de ambas variables en la @tbl-dependientes.
+
+```{r}
+#| label: tbl-dependientes
+#| tbl-cap: "Estadísticos descriptivos: Variables Dependientes"
+#| echo: false
+
+df_dependientes <- df_proc %>%
+  dplyr::select(
+    "Percepción de recompensa al esfuerzo" = per_effort,
+    "Percepción de recompensa al talento"  = per_talent
+  )
+
+print(
+  dfSummary(df_dependientes, valid.col = FALSE, na.col = FALSE, graph.col = FALSE),
+  method = "pander",
+  headings = FALSE
+)
+```
 
 ## Variables independientes
 
@@ -44,7 +77,6 @@ El nivel educacional se mide con el mayor nivel alcanzado, en 10 categorías. Se
 
 La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer, se recodifica a variable dummy, donde (0) es hombre, la cual se utilizará como categoría de referencia y (1) es mujer. La edad se utilizará como una variable continua. Además, se incluye la versión de la batería de meritocracia, que se presentó en tres órdenes distintos asignados al azar [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 462].
 
-La @tbl-descriptivos presenta los estadísticos descriptivos de todas las variables del estudio.
 
 ```{r}
 #| label: tbl-descriptivos

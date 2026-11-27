@@ -112,6 +112,7 @@ execute:
 lang: es
 
 crossref:
+  chapters: false
   eq-prefix: Ecuación
   fig-prefix: Figura
   fig-title: Figura
