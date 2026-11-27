@@ -1,0 +1,3497 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  a4paper,
+  oneside]{scrbook}
+\usepackage{xcolor}
+\usepackage[top=25mm,bottom=25mm,left=30mm,right=20mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\AtBeginDocument{\hypersetup{linkcolor=black}}
+% ---------- Paquetes tipograficos y microajustes ----------
+\usepackage{microtype}        % mejor interletrado y justificado
+\usepackage{csquotes}         % comillas tipograficas
+\usepackage{iftex}
+\ifPDFTeX\else
+  % Seleccion de fuentes solo cuando XeTeX/LuaTeX esta disponible.
+  \IfFontExistsTF{TeX Gyre Termes}{
+    \setmainfont{TeX Gyre Termes}
+  }{
+    \IfFontExistsTF{Latin Modern Roman}{\setmainfont{Latin Modern Roman}}{}
+  }
+  \IfFontExistsTF{TeX Gyre Heros}{
+    \setsansfont{TeX Gyre Heros}
+  }{
+    \IfFontExistsTF{Latin Modern Sans}{\setsansfont{Latin Modern Sans}}{}
+  }
+  \IfFontExistsTF{TeX Gyre Cursor}{
+    \setmonofont{TeX Gyre Cursor}
+  }{
+    \IfFontExistsTF{Latin Modern Mono}{\setmonofont{Latin Modern Mono}}{}
+  }
+\fi
+\usepackage{enumitem}         % listas compactas
+\setlist{itemsep=.2em, topsep=.2em}
+
+% ---------- KOMA-Script: estilo de titulos y espaciado ----------
+\KOMAoptions{
+  headings=big,
+  parskip=half,
+  fontsize=12pt,
+  appendixprefix=true
+}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.6em}
+\usepackage{indentfirst}
+\usepackage{setspace}         % Control del interlineado del documento
+\setstretch{1.5}
+
+% ---------- Encabezados y pies (scrlayer-scrpage) ----------
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\automark[chapter]{chapter}
+\ihead{\pagemark}
+\ohead{\itshape\headmark}
+\setheadsepline{0.4pt}
+\renewcommand*{\chaptermarkformat}{}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\pagestyle{scrheadings}
+\makeatletter
+\let\ps@plain\ps@scrheadings
+\makeatother
+\cfoot{}
+
+% ---------- Hipervinculos mas sobrios ----------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=[rgb]{0.05,0.2,0.5},
+  urlcolor=[rgb]{0.05,0.2,0.5},
+  pdfauthor={\@author},
+  pdftitle={\@title}
+}
+
+% ---------- Leyendas de figuras/tablas ----------
+\usepackage[labelfont=bf,textfont=it]{caption}
+\captionsetup{
+  skip=8pt
+}
+
+% ---------- Tabla de contenidos ----------
+\KOMAoptions{toc=graduated}
+\RedeclareSectionCommand[tocnumwidth=3em]{chapter}
+\RedeclareSectionCommand[tocindent=3.25em,tocnumwidth=2.8em]{section}
+\RedeclareSectionCommand[tocindent=6.5em,tocnumwidth=2.5em]{subsection}
+\makeatletter
+\newcommand*{\tocdotfill}{\leavevmode\leaders\hbox to .6em{\hss.\hss}\hfill}
+\makeatother
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{chapter}
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{section}
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{subsection}
+\renewcommand*{\contentsname}{Tabla de contenido}
+\setkomafont{chapterentry}{\normalfont}
+\setkomafont{chapterentrypagenumber}{\normalfont}
+
+% ---------- Viudas/Huerfanas y cortes de pagina ----------
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+% ---------- Entorno abstract para scrbook ----------
+\providecommand{\abstractname}{Resumen}
+\makeatletter
+\@ifundefined{abstract}{
+  \newenvironment{abstract}{
+    \cleardoublepage
+    \thispagestyle{plain}
+    \null\vfill
+    \begin{center}
+      {\bfseries\Large \abstractname\par}
+    \end{center}\vspace{1em}
+    \begingroup
+  }{
+    \par\endgroup
+    \vfill\null
+    \cleardoublepage
+  }
+}{}
+\makeatother
+
+% ---------- Soporte de subtitulo desde YAML ----------
+\makeatletter
+\providecommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\providecommand{\@subtitle}{}
+\makeatother
+
+\makeatletter
+\newcommand{\facso@iflist}[4]{%
+  \begingroup
+    \def\addvspace##1{}%
+    \def\numberline##1{##1}%
+    \def\facso@target{#2}%
+    \newcount\facso@entrycount
+    \facso@entrycount=0\relax
+    \long\def\contentsline##1##2##3{%
+      \def\facso@this{##1}%
+      \ifx\facso@this\facso@target
+        \advance\facso@entrycount\@ne
+      \fi
+    }%
+    \InputIfFileExists{\jobname.#1}{}{}%
+  \endgroup
+  \ifnum\facso@entrycount>0\relax
+    #3%
+  \else
+    #4%
+  \fi}
+\renewcommand{\listoffigures}{%
+  \facso@iflist{lof}{figure}{%
+    \cleardoublepage
+    \phantomsection
+    \addchap*{Listado de Figuras}%
+    \thispagestyle{scrheadings}%
+    \markboth{Listado de Figuras}{Listado de Figuras}%
+    \addcontentsline{toc}{chapter}{Listado de Figuras}%
+    \@starttoc{lof}%
+    \cleardoublepage
+    \automark[chapter]{chapter}%
+  }{}}
+\renewcommand{\listoftables}{%
+  \facso@iflist{lot}{table}{%
+    \cleardoublepage
+    \phantomsection
+    \addchap*{Listado de Tablas}%
+    \thispagestyle{scrheadings}%
+    \markboth{Listado de Tablas}{Listado de Tablas}%
+    \addcontentsline{toc}{chapter}{Listado de Tablas}%
+    \@starttoc{lot}%
+    \cleardoublepage
+    \automark[chapter]{chapter}%
+  }{}}
+\makeatother
+
+% --- Desactivar portada y abstract automaticos de Pandoc (PDF) ---
+\AtBeginDocument{\let\maketitle\relax}
+\renewenvironment{abstract}{}{}
+\providecommand{\appendixname}{}
+\providecommand{\appendixtocname}{}
+\providecommand{\appendixpagename}{}
+\renewcommand*{\appendixname}{Anexo}
+\renewcommand*{\appendixtocname}{Anexos}
+\renewcommand*{\appendixpagename}{Anexos}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Lista de figuras}
+\else
+  \newcommand\figurename{Lista de figuras}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Lista de tablas}
+\else
+  \newcommand\tablename{Lista de tablas}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Percepciones meritocráticas: percepciones de esfuerzo y talento en la distribución de recompensas sus factores asociados},
+  pdfauthor={Bastián Javier Martin Gerdes},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Percepciones meritocráticas: percepciones de esfuerzo y talento
+en la distribución de recompensas sus factores asociados}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Seminario de Grado 1 2026}
+\author{Bastián Javier Martin Gerdes}
+\date{26 de noviembre de 2026}
+\begin{document}
+\frontmatter
+\maketitle
+
+% --- title-pdf.tex personalizado para portada formal ---
+\makeatletter
+\providecommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\providecommand{\@subtitle}{}
+\providecommand{\frontmattercontext}{}
+\providecommand{\advisorname}{}
+\providecommand{\advisorlabel}{Profesor guia:}
+\providecommand{\frontmatterlocation}{}
+\InputIfFileExists{includes/cover-config.tex}{}{}
+
+\newcommand{\PrintTitle}{%
+  {\sffamily\bfseries\fontsize{24pt}{28pt}\selectfont \@title\par}%
+}
+\newcommand{\PrintSubtitle}{%
+  \begingroup
+  \edef\temp{\detokenize{\@subtitle}}%
+  \ifx\temp\empty\relax
+    % sin subtitulo
+  \else
+    {\sffamily\bfseries\large \@subtitle\par}%
+  \fi
+  \endgroup
+}
+\newcommand{\PrintAuthor}{%
+  {\Large\bfseries \@author\par}%
+}
+\newcommand{\PrintDate}{%
+  {\small \@date\par}%
+}
+\makeatother
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{10mm}
+
+% Logo o imagen institucional
+\includegraphics[width=0.35\textwidth]{assets/cover.png}\par
+\vspace{12mm}
+
+% Titulo y subtitulo
+\PrintTitle
+\vspace{6mm}
+\PrintSubtitle
+
+\vspace{22mm}
+\begingroup
+\edef\temp{\detokenize{\frontmattercontext}}%
+\ifx\temp\empty\relax
+  % sin contexto adicional
+\else
+  {\normalsize \frontmattercontext\par}
+\fi
+\endgroup
+
+\vspace{18mm}
+\PrintAuthor
+
+\vspace{16mm}
+\begingroup
+\edef\temp{\detokenize{\advisorname}}%
+\ifx\temp\empty\relax
+  % sin tutor
+\else
+  \rule{0.45\textwidth}{0.4pt}\par
+  {\small \advisorlabel\ \advisorname\par}
+\fi
+\endgroup
+
+\vfill
+\begingroup
+\edef\temp{\detokenize{\frontmatterlocation}}%
+\ifx\temp\empty\relax
+  % sin ubicacion
+\else
+  {\small \frontmatterlocation\par}
+\fi
+\endgroup
+\PrintDate
+
+\end{center}
+\end{titlepage}
+
+% Preliminares (numeros romanos) y estilo simple
+\frontmatter
+\pagestyle{scrheadings}
+
+\setcounter{tocdepth}{2} % (o 1/3 segun prefieras)
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter{index}\label{index}
+
+\small\textbf{Palabras clave:} Sociología, desigualdades, educación,
+Chile \normalsize
+
+\bookmarksetup{startatroot}
+
+\chapter*{Abstract}\label{abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\markboth{Abstract}{Abstract}
+
+Resumen en español (200-300). Expón propósito, método, resultados clave
+y conclusiones. Puede incluir citas como y se actualizarán
+automáticamente.
+
+\bookmarksetup{startatroot}
+
+\chapter{Informe de Avance}\label{informe-de-avance}
+
+\section{Problema de investigación}\label{problema-de-investigaciuxf3n}
+
+La meritocracia es el principio de justicia más extendido en las
+sociedades contemporáneas, entregando una base moral para asignar
+recursos y recompensas escasas de manera proporcional al desempeño
+individual, dejando de lado el origen social
+(\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016};
+\citeproc{ref-mulligan_meritocracy_2023a}{Mulligan, 2023}). Además,
+cumple la función de legitimar la desigualdad, ya que al reducir el
+éxito a factores individuales deja de lado los factores estructurales y
+presenta las brechas sociales como merecidas
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026};
+\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019};
+\citeproc{ref-lierse_des_redi_2022}{Lierse et~al., 2022, p. 373}). Desde
+la sociología, esta legitimación se ha estudiado a través de las
+percepciones meritocráticas, es decir, lo que las personas creen sobre
+si la sociedad efectivamente recompensa el esfuerzo y el talento
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Estas percepciones varían según la posición que las personas ocupan y la
+trayectoria que han recorrido, en particular según su estatus social
+subjetivo, su nivel educacional y su experiencia de movilidad social
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}; \citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022}). Sin embargo,
+los factores asociados a percibir que se recompensa el esfuerzo podrían
+no ser los mismos que los asociados a percibir que se recompensa el
+talento.
+
+Esta posibilidad se apoya en que ambos criterios no tienen la misma base
+de merecimiento. La fórmula de Young (\citeproc{ref-young_1964}{1964}),
+que define el mérito como la suma de inteligencia y esfuerzo, contiene
+dos criterios que remiten a principios de merecimiento distintos
+(\citeproc{ref-clavero_2023}{Clavero García, 2023};
+\citeproc{ref-sardoc_rise_2024}{Sardoč, 2024}). El esfuerzo depende en
+mayor medida de la voluntad y la motivación de las personas
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}),
+mientras que el talento, que suele entenderse como un conjunto de
+capacidades innatas distribuidas de manera azarosa
+(\citeproc{ref-harden_2021}{Harden, 2021};
+\citeproc{ref-wright_preguntas_2010}{Wright, 2010, pp. 50-51}), escapa
+en mayor medida a su control, por lo que la desigualdad basada en el
+talento tiende a considerarse menos legítima
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025}). Esta
+diferencia también cambia el sentido de la desventaja, ya que atribuir
+una posición baja a la falta de esfuerzo la convierte en una
+responsabilidad individual, mientras que atribuirla a la falta de
+talento la presenta como una carencia natural de la persona
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020};
+\citeproc{ref-young_1964}{Young, 1964}).
+
+Esta distinción no es solo conceptual, ya que personas de diferente
+estatus social tienden a explicar, justificar y dar sentido a sus
+posiciones en la estructura social basada en el mérito. En Chile, las
+élites económicas explican el acceso a las posiciones superiores más por
+el talento que por el esfuerzo, mientras que en las clases medias y
+bajas, y en las universidades de masas, predomina el esfuerzo
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}; \citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid,
+et~al., 2024}). Quienes han experimentado movilidad ascendente tienden a
+destacar su esfuerzo (\citeproc{ref-jin_meritocracy_2020}{Jin \& Ball,
+2020}; \citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022}), aunque
+también pueden reivindicar su talento para distinguirse de sus pares
+privilegiados (\citeproc{ref-renteria_telling_2026}{Rentería, 2026}), y
+el criterio que privilegian las élites varía según el país y las
+instituciones en las que se forman
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024};
+\citeproc{ref-gogescu_meritocracy_2025}{Gogescu, 2025};
+\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr, 2014}).
+
+Hasta ahora, sin embargo, se han analizado las percepciones
+meritocráticas predominantemente bajo la fórmula de Young
+(\citeproc{ref-young_1964}{1964}) y algunos estudios las miden solo a
+través del esfuerzo (\citeproc{ref-ehmes_paradox_2026}{Ehmes \& Gangl,
+2026}; \citeproc{ref-mijs_paradox_2021}{Mijs, 2021};
+\citeproc{ref-wiesner_effort_2026}{Wiesner \& Sachweh, 2026}) y otros
+suman esfuerzo y talento en un mismo indicador
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}), pero rara vez se analiza el talento por separado\footnote{La
+  encuesta ISSP (International Social Survey Programme) incluye en su
+  módulo de desigualdad social la importancia de las habilidades
+  naturales para salir adelante: ``Get ahead: How important is having
+  natural ability?'' (\citeproc{ref-issp_data}{ISSP Research Group,
+  2002}). ELSOC (Estudio Longitudinal Social de Chile) incluye el ítem
+  ``En Chile, las personas son recompensadas por su inteligencia y
+  habilidad'' (\citeproc{ref-elsoc_data}{Reproducible Research, Centre
+  for Social Conflict and Cohesion Studies COES, 2024}). La encuesta
+  CFPS (China Family Panel Studies) pregunta ``The most important factor
+  affecting one's future success is his/her talent'' y, en olas
+  enfocadas en el rendimiento educativo, ``In your opinion, talent
+  accounts for \_\_\_\_\_\_\% in achieving a good academic record''
+  (\citeproc{ref-cfps_data}{Institute of Social Science Survey, Peking
+  University, 2015}).}. Así, los factores asociados a la percepción
+meritocrática se han estimado sobre medidas que no distinguen entre
+ambos criterios, y no es posible saber si los resultados valen para los
+dos o solo para uno de ellos.
+
+Hay indicios de que ambos criterios se comportan de manera distinta. En
+Chile, el esfuerzo se percibe como menos recompensado que la
+inteligencia y las habilidades
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019, p.
+6}; \citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 6}), y cuando ambas percepciones se estiman por separado, su
+asociación con el estatus subjetivo y la educación difiere en magnitud,
+aunque esas diferencias no han sido puestas a prueba formalmente
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). En este escenario, el presente estudio busca
+establecer en qué medida los factores asociados a la percepción de que
+en Chile se recompensa el esfuerzo difieren de aquellos asociados a la
+percepción de que se recompensa el talento.
+
+Para ello, se consideran tres factores asociados a la posición y a la
+trayectoria social de las personas. El primero es el estatus social
+subjetivo, ya que quienes se perciben en posiciones más altas tienden a
+percibir que la sociedad premia el mérito, lo que legitima su propia
+posición (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al.,
+2019}; \citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza
+et~al., 2026}). El segundo es el nivel educacional, ya que la educación
+se asocia con una visión más crítica de cómo se distribuyen las
+recompensas, pero al mismo tiempo certifica los logros académicos a
+través del mérito individual
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). El tercero es la movilidad social subjetiva, ya que quienes
+perciben haber ascendido tienden a interpretar la sociedad a partir de
+su propia trayectoria y a percibirla como más meritocrática
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025}) y por último el nivel socioeconómico, donde quienes son
+objetivamente más aventajados y elites buscan justificar su posición en
+torno al mérito individual y no ventajas estructurales.
+
+\section{Objeto de estudio}\label{objeto-de-estudio}
+
+La investigación sobre meritocracia distingue entre las preferencias,
+que son creencias normativas sobre cómo debería funcionar la sociedad, y
+las percepciones, que son descripciones de cómo funciona y que pueden
+diferir de lo que efectivamente sucede en ella
+(\citeproc{ref-castillo_percepcion_2012}{Castillo et~al., 2012};
+\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Percibir que una sociedad premia el esfuerzo o el talento es, por lo
+tanto, distinto de preferir que lo haga. Según el teorema de Thomas, si
+las personas definen una situación como real, esta es real en sus
+consecuencias (\citeproc{ref-merton_selffulfilling_1948}{Merton, 1948}).
+Así, percibir que la sociedad es meritocrática se asocia con considerar
+más aceptables las desigualdades (\citeproc{ref-dubet_nuevo_2023}{Dubet,
+2023, pp. 32-33}) y con un menor apoyo a la redistribución
+(\citeproc{ref-sonhing_merit_2011}{Son Hing et~al., 2011};
+\citeproc{ref-tejero-peregrina_perceived_2025}{Tejero-Peregrina et~al.,
+2025}). Además, estas consecuencias difieren según el criterio. En
+Chile, percibir que se recompensa el esfuerzo se asocia con legitimar
+que el acceso a la salud, la educación y las pensiones dependa del
+ingreso, mientras que percibir que se recompensa el talento no se
+asocia, o se asocia negativamente, con esa legitimación
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+
+Así, esta investigación tiene como objeto de estudio las percepciones
+sobre la meritocracia, diferenciando entre la percepción de que se
+recompensa el esfuerzo y la percepción de que se recompensa el talento.
+
+\section{Pregunta de investigación}\label{pregunta-de-investigaciuxf3n}
+
+¿En qué medida el estatus social subjetivo, el nivel educacional, el
+nivel socioeconómico y la experiencia de movilidad social se asocian con
+la percepción de que en Chile se recompensa el esfuerzo y con la
+percepción de que se recompensa el talento, y en qué medida difieren
+estas asociaciones entre ambas percepciones?
+
+\section{Marco conceptual}\label{marco-conceptual}
+
+\subsection{Meritocracia: concepto y
+debate}\label{meritocracia-concepto-y-debate}
+
+El concepto de meritocracia se populariza con Young
+(\citeproc{ref-young_1964}{1964}) como una sátira a una sociedad
+gobernada por élites, sustentada en la fórmula mérito = inteligencia +
+esfuerzo (M = I + E). La idea supone la igualdad de oportunidades, en la
+cual los individuos, a través del esfuerzo y el talento, pueden lograr
+movilidad social y éxito en ciertas esferas sociales, dejando de lado
+factores no meritocráticos como el género, la clase social o el origen
+familiar (\citeproc{ref-wooldridge_aristocracy_2021}{Wooldridge, 2021}).
+Aun con la carga negativa que le atribuía
+(\citeproc{ref-young_1964}{Young, 1964}; también en
+\citeproc{ref-young_2001}{Young, 2001}), el concepto ha sido adoptado
+como ideal normativo en distintas sociedades para distribuir recompensas
+y recursos, seleccionar personas y legitimar las diferencias en la
+educación, el mundo empresarial y la política
+(\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016}).
+
+En la sociología el mérito es un tipo de merecimiento propio de la
+justicia distributiva, que depende de las normas, valores y objetivos de
+prácticas sociales particulares (\citeproc{ref-pavel_merit_2024}{Pavel,
+2024}).El concepto en sí no es sinónimo de igualdad de oportunidades,
+pero se utiliza de manera amplia en el debate político, puesto que es el
+principio más cercano a la idea de carreras abiertas al talento
+(\citeproc{ref-sardoc_rise_2024}{Sardoč, 2024}). De esta manera, el
+mérito ofrece una base moral para la asignación de bienes escasos, ya
+que se recompensa lo que se hace, y quien se desempeña mejor merece una
+recompensa mayor (\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016}).
+Según Mijs (\citeproc{ref-mijs_unfulfillable_2016}{2016}), la
+meritocracia se compone de tres elementos fundamentales: las carreras
+abiertas al talento, que asignan los puestos a quienes demuestran
+competencia y no a través del nepotismo o el soborno; las oportunidades
+educativas adaptadas a la capacidad natural, de modo que los procesos de
+prueba y selección del sistema educativo desarrollen a quienes tienen
+potencial y no se desperdicien talentos; y el logro como base de la
+desigualdad social, que reemplaza a la adscripción para que la sociedad
+funcione de manera más eficiente. El atractivo de la meritocracia para
+los responsables políticos reside en esta combinación que permitiría
+legitimar las diferencias, estimular el esfuerzo y optimizar la
+asignación de recompensas.
+
+En la misma línea, Sen (\citeproc{ref-sen_merit_justice_2000}{2000})
+entiende que el término está subdefinido y que no hay mucha claridad
+sobre el significado de meritocracia, al mismo tiempo, menciona que
+premiar el mérito significa premiar los criterios sociales normativos de
+éxito, según la concepción de buena sociedad que tenga esta misma lo que
+permite un procedimiento legítimo para asignar recursos y recompensas
+(\textbf{o simplemente decir lo que dice Rawls que está basado en
+factores arbitrarios como estandares culturales cambiantes(e innatos)}).
+Pero, para poder determinar lo que es meritorio y lo que no, se necesita
+un grado de acuerdo sobre principios de justicia. Esto concuerda con la
+discusión reciente de Clavero García (\citeproc{ref-clavero_2023}{2023,
+p. 1180}), quien define el mérito como ``the value of a free, effortful,
+good-oriented action'' {[}el valor de una acción libre, esforzada y
+orientada al bien{]}, lo que lo vuelve contextual y diferente según la
+sociedad. En su formulación clásica, el mérito combina capacidad o
+talento con esfuerzo, y este último incluye la dedicación y el trabajo
+sostenido hacia un fin (\citeproc{ref-clavero_2023}{Clavero García,
+2023}; \citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017}).
+Bajo esta definición, el talento solo sería meritorio en la medida en
+que se ejerce mediante una acción libre y esforzada, y no por sí mismo,
+lo que tensiona la fórmula de Young (\citeproc{ref-young_1964}{1964}),
+que lo incluye como componente directo del mérito.
+
+Sobre el ideal, el debate ha estado en enfocado en meritócratas como
+Wooldridge (\citeproc{ref-wooldridge_aristocracy_2021}{2021}) quien
+considera que la meritocracia actual está incompleta y que debe seguir
+desarrollándose para superar sus problemas, ya que permite juzgar a las
+personas por sus méritos en lugar de las ventajas heredadas, el
+nepotismo o el clientelismo, algo que han valorado y exigido los
+sectores históricamente desfavorecidos. En cambio, para Sandel
+(\citeproc{ref-sandel_tirania_2020}{2020}) el problema no radica solo en
+que la igualdad de oportunidades no se haya alcanzado, sino en el
+principio mismo, puesto que al hacer creer que las posiciones sociales
+son el resultado del esfuerzo y el talento individual genera soberbia en
+quienes triunfan y humillación en quienes quedan rezagados, y convierte
+los títulos en una medida del valor de las personas.
+
+El debate normativo, sin embargo, no permite responder si la sociedad
+funciona de manera meritoria. Esa pregunta ha sido abordada por la
+sociología desde la teoría funcionalista de K. Davis \& Moore
+(\citeproc{ref-davis_est_1970}{1970}), según la cual la desigualdad
+opera como un esquema de motivación donde el éxito y las recompensas
+dependen de dos componentes del mérito, la capacidad o talento
+individual y el esfuerzo o capacitación, por lo que sería justa e
+indispensable para que los más aptos asuman los roles de mayor
+responsabilidad. Además, en las sociedades modernas las características
+adquiridas serían más relevantes que las adscritas
+(\citeproc{ref-parsons_class_1953}{Parsons, 1953}) Pero, que las
+sociedades funcionen efectivamente de manera meritocrática ha mantenido
+críticas, ya que, se puede apreciar cómo organizaciones educativas no
+responden a la necesidad funcional o al mérito técnico
+(\citeproc{ref-hauhart_davis_2003}{Hauhart, 2003}), sino al poder y
+grupos de interés. De esta manera la promesa de la meritocracia basada
+en la educación no permite la movilidad social de las clases bajas y
+medias, según la cual las posiciones de clase dependerían cada vez más
+de las credenciales educativas y menos del origen social, mostrando sólo
+pequeños cambios (\citeproc{ref-goldthorpe_myth_2003}{Goldthorpe,
+2003}).
+
+Más allá de si la meritocracia se cumple, la sociología crítica ha
+planteado que opera como un mecanismo de legitimación. Para Bourdieu \&
+Passeron (\citeproc{ref-bourdieu_reproduccion_1998}{1998}), el sistema
+educativo ejerce una violencia simbólica al presentar como méritos
+individuales diferencias que dependen del origen social, con lo que las
+desigualdades aparecen como diferencias naturales entre las personas.
+
+De este modo se presentarían las desigualdades como diferencias
+naturales entre los individuos y no de sus distintas condiciones
+sociales. En esta línea Accominotti \& Sauder
+(\citeproc{ref-accominotti_making_2026}{2026}) plantean que la
+meritocracia no solo ordena a las personas en posiciones desiguales,
+sino que además construye órdenes de mérito, es decir, jerarquías de
+estatus basadas en evaluaciones del mérito, el logro o el desempeño, que
+establecen relaciones de superioridad, igualdad o inferioridad entre las
+personas. Estos órdenes tienen efectos propios, ya que moralizan la
+desigualdad al presentar las diferencias de ventajas como diferencias de
+mérito individual y, en línea con Sandel
+(\citeproc{ref-sandel_tirania_2020}{2020}), pueden erosionar la cohesión
+social y la solidaridad distributiva al reintroducir jerarquías morales
+sobre el valor de las personas. Además, existen como esquemas culturales
+más o menos compartidos, de modo que lo que las personas perciben como
+merecido forma parte de ellos.
+
+En el estudio de las creencias meritocráticas se distinguen dos
+enfoques, por un lado, las preferencias, que son creencias normativas
+sobre cómo debería funcionar la sociedad, y por otro, las percepciones,
+que son creencias descriptivas sobre cómo funciona efectivamente
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Como menciona Castillo et~al.
+(\citeproc{ref-castillo_merit_perc_pref_2019}{2019}), percibir que la
+meritocracia funciona no implica considerarla el mejor sistema ni
+preferirla. Además, las percepciones cumplen una función legitimadora,
+puesto que quienes perciben que la meritocracia funciona también
+perciben menos desigualdad económica
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019, p.
+11}). Estas percepciones no son descripciones neutras de la sociedad,
+sino inferencias que las personas construyen a partir de su propia
+trayectoria y de su entorno social, que permiten entender cómo es la
+meritocracia en la sociedad (\citeproc{ref-dawtry_why_2015}{Dawtry
+et~al., 2015}; \citeproc{ref-mijs_inequality_2018}{J. Mijs, 2018}).
+Además, las personas reconocen factores meritocráticos y no
+meritocráticos, como el origen familiar o los contactos, lo que se ha
+denominado conciencia dual
+(\citeproc{ref-reynolds_perceptions_2014}{Reynolds \& Xian, 2014};
+\citeproc{ref-wiesner_effort_2026}{Wiesner \& Sachweh, 2026}). Por ello,
+las percepciones meritocráticas y no meritocráticas se miden como
+dimensiones distintas
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023}), y la forma en que se combinan varía entre países
+(\citeproc{ref-zhu_meritocratic_2025}{Zhu, 2025}).
+
+\subsubsection{Esfuerzo y talento}\label{esfuerzo-y-talento}
+
+Como se señaló, tanto la fórmula de Young
+(\citeproc{ref-young_1964}{1964}) como la teoría de K. Davis \& Moore
+(\citeproc{ref-davis_est_1970}{1970}) consideran el talento y el
+esfuerzo como los dos componentes del mérito, que son también las
+explicaciones más comunes del éxito y del fracaso
+(\citeproc{ref-weiner_attributional_1985}{Weiner, 1985, p. 549}). Sin
+embargo, ambos no se sostienen en la misma base de merecimiento, ya que
+el esfuerzo se percibe como algo que depende de las personas, mientras
+que el talento ocupa una posición ambigua entre el logro y la herencia.
+Por ello, percibir que la sociedad recompensa el esfuerzo implica creer
+que las recompensas dependen de lo que las personas hacen, mientras que
+percibir que recompensa el talento implica creer que dependen de lo que
+las personas tienen.
+
+Además, las personas pueden percibir el esfuerzo y el talento de
+distintas maneras, ya sea según su importancia para salir adelante, como
+explicación de la pobreza y la riqueza, o como explicación de la propia
+posición. Esta investigación se centra en la percepción de que la
+sociedad recompensa a quienes más se esfuerzan y a quienes poseen más
+talento (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al.,
+2019}; \citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025}).
+A continuación se analizan ambos criterios por separado.
+
+\paragraph{Esfuerzo}\label{esfuerzo}
+
+La ética del esfuerzo ha sido un tema recurrente en la sociología, en
+específico en la distribución de recursos. Desde Weber
+(\citeproc{ref-weber_etica_2001}{2001}) se ha analizado el esfuerzo en
+relación con la religión, en torno a la secularización y la ética
+protestante del trabajo, donde se tensiona la idea de una omnipotencia
+divina que predetermina el destino, como con el sistema católico de
+salvación mediante obras e indulgencias. Así, el trabajo duro y el
+ascetismo pasan a ser una señal de salvación, permitiendo tener
+respuestas a la incertidumbre psicológica de la predestinación. Con la
+secularización de los valores religiosos, el orden meritocrático
+moraliza el éxito a través del esfuerzo personal, trasladando el énfasis
+en el libre albedrío y agencia de las personas
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020, pp. 41-60}). De este
+modo, el éxito se vuelve una señal de esfuerzo, y el esfuerzo, el
+fundamento para considerar merecidas las recompensas.
+
+Por otra parte, Merton (\citeproc{ref-merton_social_1938}{1938}) planteó
+que la sociedad estadounidense sostenía una ideología de clases
+abiertas, según la cual el éxito era una meta deseable y alcanzable para
+todos, y que esta ideología persistía porque contribuía a mantener el
+orden existente\footnote{Se retoma solo la descripción que hace Merton
+  de esta ideología y no su teoría de la desviación, que ha sido
+  criticada por suponer que todos los grupos comparten las mismas metas
+  culturales.}. En una línea parecida, Kluegel \& Smith
+(\citeproc{ref-kluegel_beliefs_1981}{1981}) denominaron ideología
+dominante al conjunto de creencias según las cuales las oportunidades
+están ampliamente disponibles y cada persona es responsable de su
+posición, por lo que la desigualdad resultante es justa, y el esfuerzo
+individual aparece como el camino legítimo hacia el éxito, y su falta,
+como la explicación del fracaso.
+
+Las teorías que siguen caracterizan qué implica explicar un resultado
+por el esfuerzo o por el talento, y no miden directamente la percepción
+de que la sociedad los recompensa. Sin embargo, permiten entender por
+qué ambas percepciones podrían asociarse de forma distinta con la
+posición de las personas. Desde la teoría de la atribución, Weiner
+(\citeproc{ref-weiner_attributional_1985}{1985}) plantea que las
+personas buscan las causas de sus éxitos y fracasos para comprender su
+entorno y orientar sus acciones futuras. El éxito suele atribuirse a una
+alta capacidad y al trabajo duro, y el fracaso, a una baja capacidad y a
+la falta de esfuerzo. El autor clasifica estas causas según su locus, su
+estabilidad y su controlabilidad. El esfuerzo y la capacidad son causas
+internas, pero solo el esfuerzo se considera controlable, y es esta
+controlabilidad la que lleva a juzgar a una persona como responsable de
+sus resultados, ya sea al evaluar a otros o a uno mismo
+(\citeproc{ref-davis_learning_2017}{M. L. Davis et~al., 2017};
+\citeproc{ref-schrader_school_2015}{Schrader \& Helmke, 2015}). Lo que
+distingue al esfuerzo de otros criterios de mérito es, entonces, que se
+percibe bajo el control de las personas, ya que depende en mayor medida
+de su voluntad y motivación
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}).
+Este control es uno de los criterios con que las personas juzgan lo que
+otros merecen (\citeproc{ref-meuleman_desert_carin_2020}{Meuleman
+et~al., 2020}), y, en Estados Unidos, el esfuerzo es percibido como el
+factor que más depende de las personas y se juzga como el criterio más
+justo para determinar el ingreso
+(\citeproc{ref-bartling_talent_2026}{Bartling et~al., 2026, p. 6}).
+
+Percibir el esfuerzo como algo controlable tendría consecuencias por
+atribuirlo a factores propios o externos. Quien se esfuerza merece ser
+recompensado por su dedicación, pero también se usa para explicar los
+fracasos, con componentes de culpa o desesperanza, porque supone que la
+situación estaba bajo el control de la persona
+(\citeproc{ref-lampert_meritocratic_2013}{Lampert, 2013};
+\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 96}). Así, un fracaso atribuido a la falta de esfuerzo genera
+enojo o rechazo en otros y culpa en uno mismo, mientras que uno
+atribuido a la falta de capacidad genera lástima y vergüenza
+(\citeproc{ref-weiner_attributional_1985}{Weiner, 1985, p. 561}).
+
+Esta distinción entre culpa y destino también organiza las explicaciones
+de la pobreza, que se clasifican según si la causa está en el individuo
+o en la sociedad, y si remite a la acción de alguien que puede ser
+culpado o a una cuestión del destino
+(\citeproc{ref-oorschot_blame_2000}{Oorschot \& Halman, 2000, pp. 5-7}).
+La explicación de culpa individual atribuye la pobreza a fallas morales
+o conductuales de los propios pobres, como pereza, falta de ahorro o
+malas costumbres, mientras que la de destino individual la atribuye a la
+mala suerte, la voluntad divina o infortunios personales que están fuera
+del control propio (\citeproc{ref-oorschot_blame_2000}{Oorschot \&
+Halman, 2000, p. 7}). De este modo, una posición baja atribuida a la
+falta de esfuerzo se convierte en una responsabilidad individual
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020}).
+
+El talento, en cambio, ocupa un lugar más ambiguo. En los estudios que
+revisan Oorschot \& Halman (\citeproc{ref-oorschot_blame_2000}{2000, p.
+6}), la falta de habilidad y talento se agrupa con la falta de esfuerzo
+entre las explicaciones individuales de la pobreza. Sin embargo, el
+talento se entiende como una cualidad estable cuya presencia escapa al
+control de las personas, por lo que explicar un resultado por el talento
+resulta más fatalista que culpabilizador
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, pp. 96-97}).
+
+Además, los límites del esfuerzo están en relación con la estructura
+social, por barreras materiales o culturales de origen. Así, Bourdieu
+(\citeproc{ref-bourdieu_distincion_2006}{2006}) describe cómo la pequeña
+burguesía se caracteriza por una buena voluntad cultural, es decir, por
+el esfuerzo de apropiarse de la cultura legítima, mientras que las
+clases dominantes valoran la soltura y la naturalidad, que hacen
+aparecer como innato lo que fue adquirido en la familia. Del mismo modo,
+en contextos escolares se valora el esfuerzo, pero lograr buenos
+resultados sin esfuerzo se celebra como señal de una inteligencia
+auténtica (\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015,
+pp. 393-394}). A su vez, el esfuerzo que realizan las familias de clase
+trabajadora para compensar su menor capital cultural no siempre es
+recompensado (\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p.
+4}), mientras que quienes heredaron mayor capital cultural declaran
+haberse esforzado más que el resto para obtener su posición
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, pp. 15-16}). En
+el mercado laboral chileno, además, el esfuerzo excede al mérito, ya que
+incluye la disponibilidad, la personalidad y las relaciones personales,
+en un contexto donde hay un desconocimiento generalizado sobre los
+criterios de evaluación y asignación de recompensas
+(\citeproc{ref-sir_esfuerzo_2017}{Sir, 2017, pp. 313, 319-320}).
+
+En Chile, las trayectorias están marcadas por relatos de esfuerzo, que
+operan como principio justificador, como fuente de autovaloración y como
+una expectativa concreta desde la cual se evalúa la justicia de la
+sociedad y el reconocimiento
+(\citeproc{ref-araujo_y_martuccelli_soc-chilena_2012}{Araujo \&
+Martuccelli, 2012}). En el mundo del trabajo, el esfuerzo se ha
+convertido en el núcleo ético de un mercado laboral individualizado, al
+punto de que ``el esfuerzo y no el mérito es lo que reclama más
+compensación'' (\citeproc{ref-sir_esfuerzo_2017}{Sir, 2017, p. 311}), y
+en un contexto de desprotección laboral se vuelve un requisito para ser
+reconocido (\citeproc{ref-sir_esfuerzo_2017}{Sir, 2017, p. 320}).
+
+Percibir que la sociedad recompensa el esfuerzo implica, entonces, creer
+que las recompensas siguen a lo que las personas hacen, una percepción
+que se alinea con los relatos sobre la responsabilidad individual y el
+merecimiento moral (\citeproc{ref-castillo_perceptions_2025}{Castillo
+et~al., 2025}). En Chile, esta es la percepción que más se asocia con la
+legitimación de la desigualdad, ya que percibir que se recompensa el
+esfuerzo se asocia con aceptar que el acceso a la salud, la educación y
+las pensiones dependa del ingreso
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+Una explicación posible es que el esfuerzo se ve como un rasgo
+controlable, mientras que el talento se percibe como innato y menos
+sujeto al control personal
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025}).
+
+\paragraph{Talento}\label{talento}
+
+En esta investigación, el talento se entiende como una noción de sentido
+común sobre las capacidades que las personas tienen, sin pronunciarse
+sobre si estas son innatas o adquiridas. Por ello, interesa qué
+reconocen las personas como talento cuando evalúan si la sociedad lo
+recompensa.
+
+Desde la sociología, el talento ha sido entendido como algo que no es
+independiente de la posición social. Bourdieu \& Passeron
+(\citeproc{ref-bourdieu_2009_herederos}{2009}) describen una ideología
+del don, según la cual el éxito escolar de los estudiantes de origen
+privilegiado se percibe como resultado de dotes naturales y no de una
+herencia cultural transmitida por la familia. En su teoría de la
+reproducción, Bourdieu \& Passeron
+(\citeproc{ref-bourdieu_reproduccion_1998}{1998}) sostiene que las
+desigualdades educativas no nacen del mérito y el talento individual,
+sino del funcionamiento de campos que premian las prácticas de quienes
+están familiarizados con la cultura dominante
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 3}). En este
+marco, el capital cultural incorporado se adquiere a través de la
+socialización en la familia de origen y se expresa en disposiciones, es
+decir, en formas de hablar, juzgar, percibir y actuar que forman parte
+del habitus de cada persona
+(\citeproc{ref-bourdieu_distincion_2006}{Bourdieu, 2006};
+\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022}). El sistema
+escolar, bajo una apariencia de neutralidad, valora estas disposiciones
+como si fueran habilidades personales, por lo que termina premiando a
+quienes ya estaban aventajados y transformando un privilegio heredado en
+mérito propio (\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022}).
+Desde esta perspectiva, lo que se reconoce como talento puede ser una
+ventaja de origen que se naturaliza y se presenta como una cualidad
+individual.
+
+Ahora bien, esto no significa negar las diferencias entre las personas,
+ya que existen diferencias genéticas entre los individuos, que están
+vinculadas con resultados como el nivel educativo alcanzado y que
+otorgan ventajas a quienes las heredan, aunque su distribución en la
+sociedad sea producto del azar (\citeproc{ref-harden_2021}{Harden,
+2021}). Mijs (\citeproc{ref-mijs_unfulfillable_2016}{2016, p. 19})
+desarrolla la misma idea, mencionando que las condiciones para tener
+mérito están determinadas por esta lotería de nacimiento, que incluye
+los recursos familiares heredados y habilidades naturales como el
+coeficiente intelectual, la condición física y el atractivo. De esta
+manera, el ideal meritocrático parte de condiciones desiguales que son
+ajenas a la meritocracia, lo que vulnera el propio principio
+meritocrático (\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016}).
+Además, no está claro qué es una habilidad ni cómo identificar las que
+requiere cada tarea, aunque en ámbitos como el arte o el deporte sí es
+posible aislar habilidades específicas
+(\citeproc{ref-lampert_meritocratic_2013}{Lampert, 2013, p. 53}). Por lo
+tanto, no es preciso discutir si el talento existe o no, sino qué se
+reconoce como talento y cómo esta percepción se usa para explicar
+posiciones y recompensas sociales.
+
+Lo que se percibe como talento, sin embargo, no siempre corresponde a
+una habilidad innata, según Chambliss
+(\citeproc{ref-chambliss_mundanity_1989}{1989}), en su estudio
+etnográfico sobre nadadores de distintos niveles, que la excelencia no
+se puede explicar por un don especial, sino más bien por la acumulación
+de prácticas, hábitos y detalles cotidianos que se aprenden y se llevan
+a cabo de manera constante. Según el autor, recurrir al talento como
+explicación, en última instancia, mistifica la forma en que realmente
+surgen los logros sobresalientes, lo que en la práctica es el resultado
+del entrenamiento y de un entorno propicio. De esta manera, el talento
+no solo sería la causa del éxito, sino también la forma de nombrarlo una
+vez que ya ha ocurrido. En el mundo del trabajo británico, las formas de
+presentarse de las clases privilegiadas, como ciertos modos de hablar,
+de vestir o de desenvolverse, suelen ser reconocidas como talento, lo
+que explica parte de las ventajas de quienes provienen de esos orígenes
+en las ocupaciones de élite
+(\citeproc{ref-friedman_class_2019b}{Friedman \& Laurison, 2019}). En
+Chile, las autoridades de universidades de élite asumen que las
+credenciales académicas y los puntajes de admisión reflejan el talento y
+el mérito de sus estudiantes
+(\citeproc{ref-quaresma_justify_2024}{Quaresma, Villalobos, et~al.,
+2024, p. 9}), aun cuando los programas de élite son socialmente
+homogéneos (\citeproc{ref-quaresma_justify_2024}{Quaresma, Villalobos,
+et~al., 2024, p. 13}).
+
+Las personas también recurren al talento para justificar su propia
+posición, en especial quienes ocupan posiciones de élite. Entre las
+élites británicas predomina una justificación basada en la aptitud
+natural, la inteligencia y el buen juicio innato, mientras que las
+élites danesas destacan el trabajo duro, diferencia que los autores
+vinculan con el papel de las escuelas privadas de élite británicas en
+cultivar la idea de un talento excepcional
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 861}).
+Además, entre las pocas personas de la élite británica que eran mujeres,
+no blancas o de origen de clase trabajadora, se destacaba más el trabajo
+duro que el talento como explicación de su éxito
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 872}).
+De manera similar, estudiantes de Oxford reconocen que otros tienen
+menos acceso a las habilidades que se cultivan en los colegios privados,
+pero atribuyen su propia admisión a una inteligencia que consideran
+inherente (\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr,
+2014, p. 712}). En la región, élites económicas chilenas definen el
+talento como habilidades empresariales y de liderazgo, más que como
+inteligencia, y consideran que está disponible para todos, ya que se
+trata de habilidades que cualquiera podría identificar y reproducir
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al., 2020,
+pp. 10-11}). En Lima, en cambio, profesionales que ascendieron
+socialmente reivindican su talento para distinguirse de sus pares
+privilegiados, estableciendo una frontera simbólica entre el privilegio
+y el talento (\citeproc{ref-renteria_telling_2026}{Rentería, 2026, pp.
+1342, 1354}).
+
+En conjunto, estos relatos muestran que el criterio que se enfatiza para
+justificar la propia posición depende tanto de la posición que se ocupa
+como de la socialización en instituciones como las escuelas de élite o
+el mundo empresarial
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}; \citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024};
+\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr, 2014}). Se
+trata, sin embargo, de relatos de personas que ocupan objetivamente
+posiciones aventajadas, por lo que su relación con la percepción de
+recompensa según el estatus subjetivo se discute en los antecedentes.
+Además, como muestra el caso de las élites chilenas, lo que se entiende
+por talento varía, por lo que al evaluar si la sociedad lo recompensa
+las personas pueden estar pensando en cualidades distintas, lo que
+constituye una limitación para interpretar esta percepción.
+
+Percibir que la sociedad recompensa el talento implica, entonces, creer
+que las recompensas siguen a lo que las personas tienen. Por ejemplo, en
+Estados Unidos, las personas sitúan el talento en algún punto entre el
+esfuerzo y la suerte, ya que lo perciben como menos controlable que el
+esfuerzo, pero mucho más que la suerte, y consideran que los ingresos
+derivados del talento son casi tan justos como los que resultan del
+esfuerzo (\citeproc{ref-bartling_talent_2026}{Bartling et~al., 2026, p.
+6}). Según Bartling et~al. (\citeproc{ref-bartling_talent_2026}{2026}),
+esto se debe a que, cuando una persona hace uso de su talento, se la
+considera dueña de sus resultados, aunque el talento no dependa de ella.
+Sin embargo, atribuir el éxito a un talento innato puede presentar la
+desigualdad como inevitable, como resultado de diferencias naturales de
+capacidad (\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024}).
+En Chile, a diferencia de lo que ocurre con el esfuerzo, percibir que se
+recompensa el talento no se asocia, o se asocia negativamente, con
+legitimar que el acceso a la salud, la educación y las pensiones dependa
+del ingreso (\citeproc{ref-castillo_perceptions_2025}{Castillo et~al.,
+2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+A su vez, la creencia de que la sociedad recompensa el talento tiene
+consecuencias para quienes se encuentran en las posiciones más bajas, ya
+que atribuir una posición baja a la falta de talento la presenta como un
+defecto natural del individuo, sobre el cual tiene poco control
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020};
+\citeproc{ref-young_1964}{Young, 1964}).
+
+\subsection{Esfuerzo y Talento sus factores
+asociados}\label{esfuerzo-y-talento-sus-factores-asociados}
+
+\subsubsection{Estatus social subjetivo}\label{estatus-social-subjetivo}
+
+A diferencia de la clasificación objetiva de clase, el estatus social
+subjetivo refiere a la autoubicación de los individuos en la jerarquía
+social, entendida por J. A. Davis
+(\citeproc{ref-davis_status_1956}{1956}) como una creencia personal que
+no necesariamente coincide con su posición material real. Desde la tesis
+de los grupos de referencia, este desajuste se explica porque las
+personas suelen desenvolverse en entornos socioeconómicamente
+homogéneos, lo que actúa como un filtro cognitivo al evaluar la
+desigualdad general. Así, aunque las condiciones económicas objetivas
+inciden en la autopercepción
+(\citeproc{ref-iturra_status_subj_2019}{Iturra-Sanhueza \& Riffo,
+2019}), su efecto es más débil que el de la comparación cotidiana con el
+entorno cercano (\citeproc{ref-evans_images_1992}{Evans et~al., 1992}).
+En Chile, las personas tienden a ubicarse en las posiciones medias de la
+escala independientemente de su posición objetiva
+(\citeproc{ref-castillo_todos_clase_media_2013}{Castillo et~al., 2013}).
+Además, en contextos de alta desigualdad, quienes tienen menores
+ingresos tienden a ubicarse con mayor precisión, mientras que quienes
+tienen mayores ingresos tienden a subestimar su posición
+(\citeproc{ref-wiesner_knowing_2026}{Wiesner \& Iturra-Sanhueza, 2026}).
+Por eso, el estatus subjetivo permite captar cómo las personas se ven a
+sí mismas en la jerarquía, lo cual es relevante para estudiar
+percepciones, que también son evaluaciones subjetivas sobre la sociedad
+y en específico cómo se distribuyen las recompensas.
+
+La relevancia de estudiar el estatus subjetivo radica en que, a
+diferencia de la posición objetiva, se asocia con mayor fuerza con la
+percepción de desigualdad (\citeproc{ref-melli_uncovering_2025}{Melli \&
+Azzollini, 2025}) y con los juicios sobre la justicia del propio ingreso
+(\citeproc{ref-mac_baroz_merit_des_2024}{Mac-Clure et~al., 2024, p.
+20}). En Chile, la evidencia cuantitativa muestra que un mayor estatus
+social subjetivo se asocia con una mayor percepción de meritocracia,
+incluso al controlar por el ingreso del hogar, que no resulta
+significativo (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo
+et~al., 2019, p. 10};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}), y que quienes se ubican en estratos subjetivos bajos evalúan su
+propio ingreso como más injusto, diferencia que se acentúa cuando lo
+juzgan según su esfuerzo por educarse
+(\citeproc{ref-mac_baroz_merit_des_2024}{Mac-Clure et~al., 2024}). En
+América Latina, un mayor estatus subjetivo también se asocia con
+explicaciones más individuales de la riqueza y la pobreza
+(\citeproc{ref-bucca_merit_2016}{Bucca, 2016}). No obstante, con datos
+de 2016 el estatus subjetivo no se asoció significativamente con la
+recompensa percibida, mientras que el estatus subjetivo de la familia de
+origen se asoció positivamente y el estatus esperado para los hijos,
+negativamente (\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra
+Sanhueza, 2019, p. 46}).
+
+Cuando la percepción de esfuerzo y la de talento se analizan por
+separado, la asociación del estatus subjetivo es positiva para la
+percepción de que se recompensa el esfuerzo y para la de que se
+recompensa el talento, pero de mayor magnitud en el caso del esfuerzo
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). Esto es coherente con que el esfuerzo sea el criterio
+que más se asocia con la justificación de la desigualdad en Chile
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+
+Las investigaciones cualitativas en Chile muestran que las élites
+económicas explican el acceso a las posiciones superiores más por el
+talento que por el esfuerzo
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}), y que en las universidades de élite el mérito se entiende
+principalmente como talento
+(\citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid, et~al.,
+2024}). Sin embargo, estos estudios se refieren a personas que ocupan
+objetivamente posiciones de élite, y no necesariamente a quienes se
+perciben en la parte alta de la jerarquía. Dado que quienes tienen
+mayores ingresos tienden a subestimar su posición
+(\citeproc{ref-wiesner_knowing_2026}{Wiesner \& Iturra-Sanhueza, 2026}),
+el estatus subjetivo no captura directamente a estas élites.
+
+El estudio de Friedman et~al.
+(\citeproc{ref-friedman_deflecting_2021a}{2021}) ilustra este desajuste.
+Profesionales y directivos que crecieron en hogares de clase media se
+identifican como clase trabajadora o como personas que ascendieron desde
+abajo, a través de relatos sobre su origen que minimizan las ventajas
+con las que crecieron y se apoyan en la historia de movilidad ascendente
+de su familia extendida. De esta manera, aunque no han experimentado
+movilidad social, presentan su trayectoria como una historia de trabajo
+duro, talento excepcional y lucha meritocrática ``contra todo
+pronóstico'' (\citeproc{ref-friedman_deflecting_2021a}{Friedman et~al.,
+2021, p. 723}). Así, quienes ocupan posiciones aventajadas pero se
+ubican más abajo de lo que indica su posición objetiva pueden justificar
+su posición tanto por el esfuerzo como por el talento.
+
+En Chile, los datos sugieren que la asociación entre el estatus
+subjetivo y la percepción de que se recompensa la inteligencia y las
+habilidades, ítem que se puede usar como aproximación al talento,
+aumenta con el ingreso, de modo que entre quienes tienen mayores
+ingresos se asemeja a la del esfuerzo, mientras que entre quienes tienen
+menores ingresos la diferencia a favor del esfuerzo es mayor
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). Por ello, se espera que ambas percepciones aumenten
+con el estatus subjetivo, aunque con mayor fuerza en el caso del
+esfuerzo.
+
+\begin{quote}
+\(H_{1a}\): A mayor estatus social subjetivo, mayor es la percepción de
+que en Chile se recompensa el esfuerzo.
+
+\(H_{1b}\): A mayor estatus social subjetivo, mayor es la percepción de
+que en Chile se recompensa el talento.
+
+\(H_{1c}\): La asociación del estatus social subjetivo es más fuerte con
+la percepción de que se recompensa el esfuerzo que con la de que se
+recompensa el talento.
+\end{quote}
+
+\subsubsection{Nivel educacional}\label{nivel-educacional}
+
+La educación ocupa un lugar central en la meritocracia, ya que es el
+principal mecanismo a través del cual se seleccionan y certifican los
+méritos individuales, de este modo el logro académico funciona como
+indicador objetivo del mérito (Goldthorpe, 2003, citado en
+\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, p.
+15}). \textbf{Pendiente: Goldthorpe es una cita secundaria, a través de
+Iturra. revisar gold nuevamente}
+
+En relación a la educación se plantean dos hipótesis opuestas, la
+primera es la hipótesis de la socialización que plantea que el colegio
+transmite la idea de que el éxito depende del mérito individual, por lo
+que quienes han avanzado más en el sistema educativo adherirían más a la
+meritocracia (\citeproc{ref-bourdieu_reproduccion_1998}{Bourdieu \&
+Passeron, 1998}; \citeproc{ref-lampert_meritocratic_2013}{Lampert,
+2013}). Desde esta perspectiva, la escuela traduce el privilegio social
+en talento, don o mérito
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 5}), y
+quienes tienen mayor capital cultural atribuyen en mayor medida su
+posición a su propio talento y esfuerzo
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 15}). La
+hipótesis de la iluminación plantea, en cambio, que la educación aumenta
+la sensibilidad frente a las desigualdades y las limitaciones sociales,
+por lo que las personas más educadas serían más críticas respecto de
+cómo se distribuyen las recompensas
+(\citeproc{ref-bucca_merit_2016}{Bucca, 2016};
+\citeproc{ref-duru-bellat_variations_2012}{Duru-Bellat \& Tenret,
+2012}).
+
+En América Latina, quienes tienen título universitario explican la
+riqueza con más causas estructurales
+(\citeproc{ref-bucca_merit_2016}{Bucca, 2016, p. 105}), y en Chile un
+mayor nivel educacional se asocia con una menor percepción de
+meritocracia (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo
+et~al., 2019, p. 9};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). Esto se ha explicado porque los más educados tienen más contacto
+con grupos socioeconómicos diversos y porque sus experiencias de
+movilidad no siempre se traducen en los retornos esperados
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 9}). Sin embargo, ambas hipótesis pueden operar a la vez. En
+Chile, las personas más educadas atribuyen más importancia a la
+ambición, la educación y el trabajo duro para salir adelante, como
+predice la socialización, pero perciben en menor medida que el esfuerzo
+y la inteligencia se recompensan, como predice la iluminación
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, pp.
+41-42, 45}).
+
+\textbf{Iturra-Sanhueza et al.~2026 p.~9 se apoya en Londoño-Vélez,
+Espinoza y Núñez y Canales, así que es una cita secundaria. revisar para
+citar bien y leer a londoño}
+
+La evidencia que distingue entre ambos criterios es escasa y no apunta
+en una sola dirección. Con la medida de recompensa percibida, la
+educación se asocia negativamente tanto con el esfuerzo como con el
+talento, con magnitudes similares
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). En estudiantes chilenos, la educación universitaria de
+los padres se asocia con una menor importancia del talento para obtener
+buenas notas, pero no del esfuerzo
+(\citeproc{ref-retamales_rol_2024}{Retamales, 2024}), y en Flandes los
+más educados recurren menos al talento para explicar el éxito escolar
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 104}). En cambio, las personas con educación universitaria
+prefieren que las habilidades se recompensen más y el esfuerzo menos
+(\citeproc{ref-kwon_access_2026}{Kwon \& Erola, 2026, p. 1010}), aunque
+se trata de preferencias y no de percepciones.
+
+\textbf{{[}pendiente: Retamales, agregar la pagina. Spruyt p.~104. Kwon
+y Erola p.~1010.{]}}
+
+Esto sugiere que la iluminación y la socialización podrían operar de
+forma distinta según el criterio. El esfuerzo es lo que la experiencia
+educativa muestra como insuficiente, ya que los más educados conocen
+mejor las barreras que impiden que se traduzca en recompensas. El
+talento, en cambio, es lo que la escuela certifica al traducir las
+ventajas de origen en capacidades individuales
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026}).
+Por ello se espera que la educación se asocie negativamente con la
+percepción de que se recompensa el esfuerzo y positivamente con la de
+que se recompensa el talento.
+
+\textbf{{[}pendiente: las dos oraciones sobre el esfuerzo y el talento
+son una síntesis de las citas anteriores. Revisarlas con p JC{]}}
+
+\begin{quote}
+\(H_{2a}\): A mayor nivel educacional, menor es la percepción de que en
+Chile se recompensa el esfuerzo.
+
+\textbf{\textgreater{} \(H_{2b}\): A mayor nivel educacional, mayor es
+la percepción de que en Chile se recompensa el talento.}
+
+\(H_{2c}\): El nivel educacional se asocia de forma más positiva con la
+percepción de que se recompensa el talento que con la de que se
+recompensa el esfuerzo.
+\end{quote}
+
+\subsubsection{Movilidad social
+subjetiva}\label{movilidad-social-subjetiva}
+
+A diferencia de la movilidad social objetiva que refiere a los cambios
+que experimentan las personas en la sociedad en relación con la
+estructura socioeconómica, en cambio, la movilidad social subjetiva,
+refiere a como las personas evalúan su posición actual en comparación
+con la de la familia con la que crecieron. La movilidad subjetiva
+permite comprender mejor qué actitudes y comportamientos se ven
+influidos por la movilidad social, así como las razones por las cuales
+esta los afecta (\citeproc{ref-kelley_subjective_2008}{Kelley \& Kelley,
+2008}). Se considera la medida subjetiva y no la objetiva porque la
+movilidad incide en las creencias en la medida en que las personas la
+experimentan como real y tiene mayor relación con las experiencias de
+las personas (\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p.
+138}).
+
+Para esta relación se han propuesto dos mecanismos. Por un lado, las
+personas infieren cómo funciona la sociedad a partir de su propia
+trayectoria. Por otro, quienes ascienden tienen motivos para presentar
+su éxito como merecido (\citeproc{ref-mijs_belief_2022}{Mijs et~al.,
+2022, p. 133}). Las personas tienden a generalizar su experiencia de
+movilidad al conjunto de la sociedad
+(\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, p. 4}), y quienes logran ascender tienden a atribuir su
+éxito a su propio trabajo y habilidad, y a usar esa experiencia para
+explicar el éxito o el fracaso de los demás
+(\citeproc{ref-bucca_merit_2016}{Bucca, 2016, p. 99}).
+
+Para el esfuerzo, la evidencia internacional respalda esta relación. En
+Países Bajos, quienes perciben haber ascendido atribuyen más importancia
+al trabajo duro para salir adelante que quienes se mantuvieron en la
+misma posición (\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p.
+136}). Con datos de 26 países, entre ellos Chile, quienes perciben haber
+ascendido consideran que el trabajo duro es más importante para tener
+éxito
+(\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, p. 11}).
+
+Sin embargo, estos estudios miden la importancia atribuida al trabajo
+duro para salir adelante y no la percepción de que efectivamente se
+recompensa, dos dimensiones que en Chile se comportan como factores
+distintos (\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza,
+2019, p. 35}). \textbf{El problema es que cuando se mide la recompensa
+percibida, la evidencia chilena no es clara.} A igual estatus subjetivo
+propio, quienes ubican a su familia de origen en una posición más alta
+perciben en mayor medida que se recompensan el esfuerzo y la
+inteligencia (\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra
+Sanhueza, 2019, p. 46}). No obstante, ese resultado proviene de una
+medida que combina ambos criterios y trata el origen como una escala
+continua, por lo que no permite saber si la asociación es la misma para
+el esfuerzo y para el talento, ni si difiere entre quienes ascienden y
+quienes descienden. En América Latina, la movilidad percibida respecto
+de los padres no se asocia con las explicaciones de la riqueza y la
+pobreza (\citeproc{ref-bucca_merit_2016}{Bucca, 2016, pp. 105-106}), y
+en Chile quienes han tenido una movilidad ascendente de largo alcance
+explican su trayectoria desde un marco colectivo y reconocen los
+factores externos que la hicieron posible, lo que menciona como
+conciencia dual (\citeproc{ref-fercovic_disentanglin_2022}{Fercovic,
+2022}).
+
+\textbf{{[}pendiente Iturra p.~35 y Tabla 8 en p.~46. Confirmar que un
+valor alto en ``recompensa percibida'' significa más recompensa (57),
+que dice lo contrario. bucca pp.~105 y 106. fercovic.{]}}
+
+La evidencia sobre el talento es más escasa y proviene de estudios
+cualitativos sobre cómo las personas explican su propia trayectoria.
+Quienes ascienden ponen el trabajo duro al centro de sus relatos. Entre
+las élites de Reino Unido y Dinamarca, quienes ascendieron destacan más
+el trabajo duro que el resto
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 876}), y
+estudiantes chinos de clase trabajadora que llegaron a universidades de
+élite sostienen que el trabajo duro siempre da frutos
+(\citeproc{ref-jin_meritocracy_2020}{Jin \& Ball, 2020, p. 10}). Pero
+también recurren al talento. En Lima, profesionales que ascendieron
+perciben que en los campos de alta calificación el talento y la
+inteligencia pesan más que las ventajas de un origen privilegiado, y
+\textbf{usan el talento para distinguirse de sus colegas privilegiados
+(\citeproc{ref-renteria_telling_2026}{Rentería, 2026, p. 1353}).} Si las
+personas proyectan su experiencia hacia la sociedad, esto sugiere que la
+movilidad ascendente se asocia con ambas percepciones, pero de forma más
+positiva con la del esfuerzo, ya que es el criterio que depende en mayor
+medida de la voluntad
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}) y
+que permite presentar el ascenso como resultado del trabajo propio. Dado
+que la evidencia sobre la movilidad descendente es menos consistente
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p. 136};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, pp. 11-12}), esta se incluye en los análisis sin una
+hipótesis específica.
+
+o \emph{acá hay dos argumentos contrarios que orientan las hipotesis,
+tengo una duda acá, porque no sé si están correctos los argumentos}
+
+Para el talento, la evidencia es más escasa y apunta en otra dirección.
+En Lima, profesionales que ascendieron perciben que en los campos de
+alta calificación el talento y la inteligencia pesan más que las
+ventajas de un origen privilegiado, y usan el talento para distinguirse
+de sus colegas privilegiados
+(\citeproc{ref-renteria_telling_2026}{Rentería, 2026, p. 1353}). Además,
+frente a sus éxitos, las personas tienden a exagerar su propia capacidad
+y talento para reforzar una imagen positiva de sí mismas
+(\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, p. 3}). Esto sugiere que, mientras su trayectoria les
+muestra los límites de la recompensa al esfuerzo, el talento les permite
+explicar por qué ellos sí lograron ascender. Como esta evidencia
+proviene de un solo estudio cualitativo, la hipótesis para el talento es
+más tentativa. Dado que la evidencia sobre la movilidad descendente es
+menos consistente (\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p.
+136};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, pp. 11-12}), esta se incluye en los análisis sin una
+hipótesis específica.
+
+\begin{quote}
+\(H_{3a}\): A igual estatus social subjetivo, quienes perciben haber
+ascendido respecto de su familia de origen perciben en mayor medida que
+en Chile se recompensa el esfuerzo que quienes perciben mantenerse en la
+misma posición.
+
+\(H_{3b}\): \textbf{A igual estatus social subjetivo, quienes perciben
+haber ascendido respecto de su familia de origen perciben en mayor
+medida que en Chile se recompensa el talento que quienes perciben
+mantenerse en la misma posición.}
+
+\(H_{3c}\): La movilidad ascendente se asocia de forma más positiva con
+la percepción de que se recompensa el esfuerzo que con la de que se
+recompensa el talento.
+\end{quote}
+
+\subsubsection{Nivel Socioeconómico}\label{nivel-socioeconuxf3mico}
+
+El nivel socioeconómico refiere a la posición objetiva que ocupan las
+personas en la estructura social según sus recursos
+(\citeproc{ref-li_community_2021}{Li \& Hu, 2021, p. 478}). En este
+estudio se aborda a partir del ingreso del hogar, que junto con la
+educación conforma el estatus objetivo
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 5}), con el fin de identificar a quienes ocupan las posiciones
+más altas. El estatus social subjetivo no permite hacerlo, ya que en
+Chile la autoubicación tiende hacia el centro, sobre todo entre quienes
+tienen un mayor estatus objetivo
+(\citeproc{ref-castillo_todos_clase_media_2013}{Castillo et~al., 2013}).
+Así, quienes están en la parte alta de la distribución suelen ubicarse a
+sí mismos en posiciones medias, por lo que su forma de percibir la
+meritocracia podría quedar oculta si solo se considera el estatus
+subjetivo.
+
+\textbf{{[}pendiente: li y Hu, p.~478 (leer nuevamente). turra-Sanhueza
+et al.~2026, p.~5. Castillo et al.~2013:revisar la página.{]}}
+
+La evidencia chilena indica que quienes ocupan las posiciones más altas
+explican el acceso a ellas por el talento más que por el esfuerzo. La
+élite económica ancla el mérito en el talento, a diferencia de las
+clases medias y bajas, que lo equiparan con el esfuerzo
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al., 2020,
+p. 3}). Más de la mitad de sus integrantes asocia explícitamente el
+mérito con el talento o con conceptos similares, como habilidades o
+dones (\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020, p. 10}), de modo que se privilegia el talento por sobre el
+esfuerzo (\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria
+et~al., 2020, p. 16}).
+
+\textbf{{[}Pendiente: atria pp.~3, 10 y 16¿ paginación de la revista es
+1219 a 1241. Quaresma: confirmar la llave de las dos investigaciones q
+tiene {]}}
+
+Fuera de Chile sucede algo parecido, en Reino Unido las élites destacan
+su talento natural, una idea que cultivan las escuelas privadas de
+élite, mientras que en Dinamarca destacan el trabajo duro
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 861}).
+Además, los estudiantes de clase media y de élite tienden a verse como
+naturalmente inteligentes, mientras que los de clase trabajadora deben
+demostrar su esfuerzo para no ser vistos como perezosos
+(\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p. 403}).
+
+\textbf{Friedman, p.~861 p.~871. Jackson y Nyström revisar paginas}
+
+Pero, en Chile el ingreso no muestra una asociación lineal con la
+percepción de que se recompensa el esfuerzo ni con la de que se
+recompensa el talento
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3), pero el 10\% de mayores ingresos percibe más
+meritocracia que el resto
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S1). Como esa medida combina ambos criterios, no permite
+saber si la diferencia proviene del esfuerzo, del talento o de ambos.
+Aun así, a partir de la evidencia sobre las élites, se espera que los
+hogares de mayores ingresos perciban en mayor medida que se recompensa
+el talento y en menor medida que se recompensa el esfuerzo. Los hogares
+de altos ingresos no equivalen a la élite económica, que se define por
+ocupar posiciones de poder en grandes empresas
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}). Sin embargo, la asociación entre mérito y talento no se limita a
+la élite, ya que, también aparece entre directivos de universidades de
+élite (\citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid,
+et~al., 2024}) y entre estudiantes de clase media y de élite, que
+tienden a verse como naturalmente inteligentes
+(\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p. 403}).
+Por ello se espera que los hogares de altos ingresos compartan, al menos
+en parte, esta forma de entender el mérito.
+
+\textbf{{[}Pendiente: Tablas S1 y S3 del material suplementario de
+iturra-Ssanhueza et al.~2026.{]}}
+
+\begin{quote}
+\(H_{4a}\): Quienes pertenecen a hogares de altos ingresos perciben en
+menor medida que en Chile se recompensa el esfuerzo que quienes
+pertenecen a hogares de ingresos medios y bajos.
+
+\(H_{4b}\): Quienes pertenecen a hogares de altos ingresos perciben en
+mayor medida que en Chile se recompensa el talento que quienes
+pertenecen a hogares de ingresos medios y bajos.
+
+\(H_{4c}\): La diferencia entre los hogares de altos ingresos y el resto
+es más positiva para la percepción de que se recompensa el talento que
+para la de que se recompensa el esfuerzo.
+\end{quote}
+
+\subsubsection{Variables de control}\label{variables-de-control}
+
+El sexo porque las ``También incluimos el sexo, dada la evidencia de que
+las mujeres tienden a favorecer la protección estatal más que los
+hombres, en parte debido a trayectorias diferenciadas del mercado
+laboral'' Plaza et~al. (\citeproc{ref-plaza_networked_2026}{2026})
+
+\section{Resumen del capítulo}\label{resumen-del-capuxedtulo}
+
+\begin{quote}
+\emph{Este capítulo ofreció una revisión breve de los conceptos
+fundamentales y estableció proposiciones para guiar el análisis empírico
+posterior} \textbf{cambiar, es de la plantilla facso}
+\end{quote}
+
+\bookmarksetup{startatroot}
+
+\chapter{Metodología}\label{metodologuxeda}
+
+\section{Datos}\label{datos}
+
+En el presente estudio, se utilizarán los datos de la encuesta
+``Economía Moral de la Meritocracia y Preferencias Redistributivas'' una
+encuesta parte del proyecto Fonfecyt 1160921 llevada a cabo en abril
+2016 - marzo 2020. Los análisis se basan en datos de la primera ola,
+recopilados en \emph{año}. Esta encuesta tiene una muestra de N = 2.457.
+Y, contempla un cuestionario de 37 preguntas aplicado mediante
+Qualtrics. Los encuestados responden preguntas sobre temas como
+tolerancia a la desigualdad, importancia para surgir en la vida,
+igualitarismo, percepciones y preferencias en meritocracia, entre otros.
+
+La encuesta tiene dos puntos fuertes en relación con la investigación de
+meritocracia. Incluye percepciones y preferencias meritocráticas y junto
+a este, factores no meritocráticos, lo que permite dimensionar el
+concepto más allá de las creencias y también separa el concepto en sus
+dos dimensiones, es decir, talento y esfuerzo.
+
+\section{Variables dependientes: Percepciones de esfuerzo y
+talento}\label{variables-dependientes-percepciones-de-esfuerzo-y-talento}
+
+Las variables dependientes del estudio son las percepciones de que se
+premia el esfuerzo y el talento en la sociedad por separado, ambas
+percepciones se miden con un ítem tipo Likert de cinco categorías. La
+dimensión del esfuerzo, se basa en la afirmación: 'Quienes más se
+esfuerzan logran obtener mayores recompensas que quienes se esfuerzan
+menos'. Medida en una escala Likert de 5 puntos, desde 1 (totalmente en
+desacuerdo) hasta 5 (totalmente de acuerdo). Y la dimensión del talento,
+se basa en la afirmación: 'Quienes poseen más talento logran obtener
+mayores recompensas que quienes poseen menos talento'. Medida en una
+escala Likert de 5 puntos, desde 1 (totalmente en desacuerdo) hasta 5
+(totalmente de acuerdo). Los valores altos en las variables indican
+percepciones afirmativas sobre que se recompensa el talento y esfuerzo
+en la sociedad.
+
+\section{Variables independientes}\label{variables-independientes}
+
+Para las variables independientes del estudio se utilizará el estatus
+social subjetivo que se mide como una escala de autoubicación de 11
+puntos donde se pregunta: `En Chile, hay grupos que tienden a ubicarse
+en los niveles más altos y grupos que tienden a ubicarse en los niveles
+más bajos de la sociedad. Usando la escala presentada, donde 0 es el
+nivel más bajo y 10 el nivel más alto, ¿dónde se ubicaría usted en la
+sociedad chilena?'. En la cual valores más altos significan mayor
+estatus social percibido.
+
+El nivel educacional se mide como una escala de autoubicación de 10
+categorías del nivel que se cursa actualmente o el último aprobado,
+donde se pregunta: `¿Cuál es su mayor nivel educacional alcanzado?' La
+escala va desde (1) No estudió, (2) Educación básica incompleta, (3)
+Educación básica completa, (4) Educación media incompleta, (5)Educación
+media completa, (6) Educación superior no universitaria incompleta, (7)
+Educación superior no universitaria completa, (8) Educación
+universitaria incompleta, (9) Educación universitaria completa, y (10)
+Estudios de postgrado, master, doctorado. Donde valores más altos
+significan mayor nivel educacional alcanzado. \textbf{ver si codifico
+según oit, mctp o CINE antigua de 1997}
+
+La movilidad social subjetiva se construye con la variable de estatus
+subjetivo propio y el de la familia de origen, el ítem menciona: `\,``Y
+pensando en la familia en la que usted creció, ¿dónde se ubicarían ellos
+en esta escala?'', de 0 a 10'. Siguiendo a Mijs et~al.
+(\citeproc{ref-mijs_belief_2022}{2022, p. 134}) y Kwon \& Erola
+(\citeproc{ref-kwon_access_2026}{2026, p. 1008}), ambas escalas se
+agruparán en bajo (0 a 3), medio (4 a 6) y alto (7 a 10) y se cruzan.
+Quienes quedan en un nivel superior al de su familia se clasifican como
+ascendentes, quienes quedan en uno inferior como descendentes y quienes
+se mantienen como inmóviles.
+
+El nivel socioeconómico se mide a través del ingreso del hogar en una
+escala de 14 puntos de tramos, donde se pregunta: `De los siguientes
+tramos de ingresos mensuales que se presentan, ¿podría Ud. indicarme en
+cuál de ellos se encuentra su hogar, considerando todos los ingresos
+líquidos por sueldos y salarios de todas las personas que trabajan
+remuneradamente, jubilaciones, pensiones, aportes de parientes o amigos,
+arriendos y otros?'. La escala va desde 1, la cual representa ingresos
+menores a \$35.000 mensuales líquidos, al 14, que representa más de
+\$3.000.000 mensuales líquidos. La variable será recodificada siguiendo
+la estrategia de estimar diferencias entre grupos de ingreso en lugar de
+un coeficiente único (\citeproc{ref-mac_baroz_merit_des_2024}{Mac-Clure
+et~al., 2024, p. 13}), porque no se puede construir quintiles de ingreso
+per cápita al no preguntar por el número de integrantes del hogar. Los
+tramos se agrupan en cuatro categorías: ingresos bajos (hasta \$448.000,
+referencia), medio-bajos (\$448.001 a \$1.000.000), medio-altos
+(\$1.000.001 a \$2.000.000) y altos (más de \$2.000.000). Esta última se
+aproxima al 10\% de mayores ingresos que distinguen Iturra-Sanhueza
+et~al. (\citeproc{ref-iturra-sanhueza_social_2026}{2026}, Tabla S1).
+
+\section{Variables de control}\label{variables-de-control-1}
+
+La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer. La
+edad se utilizará como una variable continua.
+
+\section{Métodos}\label{muxe9todos}
+
+\textbf{Breve descripción de los procedimientos aplicados para procesar
+y analizar la información.}
+
+Se estima una regresión lineal multivariante en la que ambas
+percepciones son variables dependientes simultáneas, con las mismas
+variables independientes. Esto permite estimar si los factores asociados
+de ambas variables dependientes afectan de igual manera. Test de Wald.
+Los análisis se realizan en R.
+
+\bookmarksetup{startatroot}
+
+\chapter*{Prefacio}\label{prefacio}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+\markboth{Prefacio}{Prefacio}
+
+Agradecimientos opcionales, dedicatorias, notas sobre financiamiento,
+etc.
+
+\mainmatter
+
+\bookmarksetup{startatroot}
+
+\chapter{Introducción}\label{introducciuxf3n}
+
+\section{Problema de
+investigación}\label{problema-de-investigaciuxf3n-1}
+
+La meritocracia es el principio de justicia más extendido en las
+sociedades contemporáneas, entregando una base moral para asignar
+recursos y recompensas escasas de manera proporcional al desempeño
+individual, dejando de lado el origen social
+(\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016};
+\citeproc{ref-mulligan_meritocracy_2023a}{Mulligan, 2023}). Además,
+cumple la función de legitimar la desigualdad, ya que al reducir el
+éxito a factores individuales deja de lado los factores estructurales y
+presenta las brechas sociales como merecidas
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026};
+\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019};
+\citeproc{ref-lierse_des_redi_2022}{Lierse et~al., 2022, p. 373}). Desde
+la sociología, esta legitimación se ha estudiado a través de las
+percepciones meritocráticas, es decir, lo que las personas creen sobre
+si la sociedad efectivamente recompensa el esfuerzo y el talento
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Estas percepciones varían según la posición que las personas ocupan y la
+trayectoria que han recorrido, en particular según su estatus social
+subjetivo, su nivel educacional y su experiencia de movilidad social
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}; \citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022}). Sin embargo,
+los factores asociados a percibir que se recompensa el esfuerzo podrían
+no ser los mismos que los asociados a percibir que se recompensa el
+talento.
+
+El esfuerzo y el talento de la fórmula de Young
+(\citeproc{ref-young_1964}{1964}) contienen dos criterios que remiten a
+principios de merecimiento distintos
+(\citeproc{ref-clavero_2023}{Clavero García, 2023};
+\citeproc{ref-sardoc_rise_2024}{Sardoč, 2024}). El esfuerzo depende en
+mayor medida de la voluntad y la motivación de las personas
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}),
+mientras que el talento, suele entenderse como un conjunto de
+capacidades innatas distribuidas de manera azarosa
+(\citeproc{ref-harden_2021}{Harden, 2021};
+\citeproc{ref-wright_preguntas_2010}{Wright, 2010, pp. 50-51}), escapa
+en mayor medida del control de las personas.
+
+Las personas recurren al mérito de manera discursiva para explicar,
+justificar y dar sentido a sus posiciones en la estructura social. De
+esta manera, recurrir al mérito permite legitimar la propia posición,
+aun cuando se sostiene en ventajas heredadas
+(\citeproc{ref-khan_saying_2013}{Khan \& Jerolmack, 2013, p. 12}). En
+Chile, las élites económicas explican el acceso a las posiciones
+superiores más por el talento que por el esfuerzo, mientras que en las
+clases medias y bajas, y en las universidades de masas, predomina el
+esfuerzo (\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria
+et~al., 2020}; \citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma,
+Madrid, et~al., 2024}). Quienes han experimentado movilidad ascendente
+tienden a destacar su esfuerzo (\citeproc{ref-jin_meritocracy_2020}{Jin
+\& Ball, 2020}; \citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022}),
+aunque también pueden reivindicar su talento para distinguirse de sus
+pares privilegiados (\citeproc{ref-renteria_telling_2026}{Rentería,
+2026}), y el criterio que privilegian las élites varía según el país y
+las instituciones en las que se forman
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024};
+\citeproc{ref-gogescu_meritocracy_2025}{Gogescu, 2025};
+\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr, 2014}).
+
+Hasta ahora, se han analizado las percepciones meritocráticas bajo la
+fórmula de Young (\citeproc{ref-young_1964}{1964}), pero rara vez se
+analiza el talento por separado\footnote{La encuesta ISSP (International
+  Social Survey Programme) incluye en su módulo de desigualdad social la
+  importancia de las habilidades naturales para salir adelante: ``Get
+  ahead: How important is having natural ability?''
+  (\citeproc{ref-issp_data}{ISSP Research Group, 2002}). ELSOC (Estudio
+  Longitudinal Social de Chile) incluye el ítem ``En Chile, las personas
+  son recompensadas por su inteligencia y habilidad''
+  (\citeproc{ref-elsoc_data}{Reproducible Research, Centre for Social
+  Conflict and Cohesion Studies COES, 2024}). La encuesta CFPS (China
+  Family Panel Studies) pregunta ``The most important factor affecting
+  one's future success is his/her talent'' y, en olas enfocadas en el
+  rendimiento educativo, ``In your opinion, talent accounts for
+  \_\_\_\_\_\_\% in achieving a good academic record''
+  (\citeproc{ref-cfps_data}{Institute of Social Science Survey, Peking
+  University, 2015}).}. Algunos estudios las miden solo a través del
+esfuerzo (\citeproc{ref-ehmes_paradox_2026}{Ehmes \& Gangl, 2026};
+\citeproc{ref-mijs_paradox_2021}{Mijs, 2021};
+\citeproc{ref-wiesner_effort_2026}{Wiesner \& Sachweh, 2026}) y otros
+suman esfuerzo y talento en un mismo indicador
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). Así, los factores asociados a la percepción meritocrática se han
+estimado sobre medidas que no distinguen entre ambos criterios, y no es
+posible saber si los resultados valen para los dos o solo para uno de
+ellos.
+
+Hay indicios de que ambos criterios se comportan de manera distinta. En
+Chile, el esfuerzo se percibe como menos recompensado que la
+inteligencia y las habilidades
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019, p.
+6}; \citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 6}), y cuando ambas percepciones se estiman por separado, su
+asociación con el estatus subjetivo y la educación difiere en magnitud,
+aunque esas diferencias no han sido puestas a prueba formalmente
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). En este escenario, el presente estudio busca
+establecer en qué medida los factores asociados a la percepción de que
+en Chile se recompensa el esfuerzo difieren de aquellos asociados a la
+percepción de que se recompensa el talento.
+
+Para ello, se consideran cuatro factores asociados a la posición y a la
+trayectoria social de las personas. \emph{Primero}, el nivel
+socioeconómico, ya que quienes ocupan posiciones objetivamente más
+aventajadas tienden a explicar su lugar por el talento
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}) y el 10\% de mayores ingresos percibe más meritocracia que el
+resto (\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza
+et~al., 2026}). El \emph{segundo} es el estatus social subjetivo, es
+decir, cómo las personas se autoidentifican en la jerarquía social, ya
+que quienes se perciben en posiciones más altas tienden a percibir que
+la sociedad premia el mérito, lo que legitima su propia posición
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). El \emph{tercero} es el nivel educacional, ya que la educación
+se asocia con una visión más crítica de cómo se distribuyen las
+recompensas, pero al mismo tiempo certifica los logros académicos a
+través del mérito individual
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). El cuarto es, la movilidad social subjetiva, ya que quienes
+perciben haber ascendido tienden a interpretar la sociedad a partir de
+su propia trayectoria y a percibirla como más meritocrática
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025}).
+
+\textbf{ultima frase para resultados esperados de las hipotesis}
+
+\section{Objeto de estudio}\label{objeto-de-estudio-1}
+
+La investigación sobre meritocracia distingue entre las preferencias,
+que son creencias normativas sobre cómo debería funcionar la sociedad, y
+las percepciones, que son descripciones de cómo funciona y que pueden
+diferir de lo que efectivamente sucede en ella
+(\citeproc{ref-castillo_percepcion_2012}{Castillo et~al., 2012};
+\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Percibir que una sociedad premia el esfuerzo o el talento es, por lo
+tanto, distinto de preferir que lo haga. Según el teorema de Thomas, si
+las personas definen una situación como real, esta es real en sus
+consecuencias (\citeproc{ref-merton_selffulfilling_1948}{Merton, 1948}).
+Así, percibir que la sociedad es meritocrática se asocia con considerar
+más aceptables las desigualdades (\citeproc{ref-dubet_nuevo_2023}{Dubet,
+2023, pp. 32-33}) y con un menor apoyo a la redistribución
+(\citeproc{ref-sonhing_merit_2011}{Son Hing et~al., 2011};
+\citeproc{ref-tejero-peregrina_perceived_2025}{Tejero-Peregrina et~al.,
+2025}). Además, estas consecuencias difieren según el criterio. En
+Chile, percibir que se recompensa el esfuerzo se asocia con legitimar
+que el acceso a la salud, la educación y las pensiones dependa del
+ingreso, mientras que percibir que se recompensa el talento no se
+asocia, o se asocia negativamente, con esa legitimación
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+
+Así, esta investigación tiene como objeto de estudio las percepciones
+sobre la meritocracia, diferenciando entre la percepción de que se
+recompensa el esfuerzo y la percepción de que se recompensa el talento.
+
+\section{Pregunta de
+investigación}\label{pregunta-de-investigaciuxf3n-1}
+
+¿En qué medida el nivel socioeconómico, el estatus social subjetivo, el
+nivel educacional y la experiencia de movilidad social se asocian con la
+percepción de que en Chile se recompensa el esfuerzo y con la percepción
+de que se recompensa el talento, y en qué medida difieren estas
+asociaciones entre ambas percepciones?
+
+\bookmarksetup{startatroot}
+
+\chapter{Antecedentes conceptuales y
+empíricos}\label{antecedentes-conceptuales-y-empuxedricos}
+
+\section{Marco conceptual}\label{marco-conceptual-1}
+
+\subsection{Meritocracia: concepto y
+debate}\label{meritocracia-concepto-y-debate-1}
+
+En la sociología el mérito es un tipo de merecimiento propio de la
+justicia distributiva, que depende de las normas, valores y objetivos de
+prácticas sociales particulares (\citeproc{ref-pavel_merit_2024}{Pavel,
+2024}). El concepto de meritocracia se populariza con Young
+(\citeproc{ref-young_1964}{1964}) como una sátira a una sociedad
+gobernada por élites, sustentada en la fórmula mérito = inteligencia +
+esfuerzo (M = I + E). La idea supone la igualdad de oportunidades, en la
+cual los individuos, a través del esfuerzo y el talento, pueden lograr
+movilidad social y éxito en ciertas esferas sociales, dejando de lado
+factores no meritocráticos como el género, la clase social o el origen
+familiar (\citeproc{ref-wooldridge_aristocracy_2021}{Wooldridge, 2021}).
+El concepto ofrece así, una base moral para la asignación de bienes
+escasos, ya que recompensa lo que las personas hacen, en proporción a su
+desempeño (\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016}). Según
+Mijs (\citeproc{ref-mijs_unfulfillable_2016}{2016}), la meritocracia se
+compone de tres elementos fundamentales: las carreras abiertas al
+talento, las oportunidades educativas adaptadas a la capacidad natural y
+el logro, en lugar de la adscripción, como base de la desigualdad
+social.
+
+El contenido del mérito es difuso y depende de lo que cada sociedad
+valora. Para Sen (\citeproc{ref-sen_merit_justice_2000}{2000}), el
+término está subdefinido y no hay claridad sobre el significado de
+meritocracia. Premiar el mérito significa premiar lo que una sociedad
+considera éxito, según su concepción de una buena sociedad, lo que
+permitiría un procedimiento legítimo para asignar recursos y
+recompensas. Por eso, para determinar lo que es meritorio y lo que no,
+se necesita un grado de acuerdo sobre principios de justicia. En una
+línea similar, Clavero García (\citeproc{ref-clavero_2023}{2023, p.
+1180}) define el mérito como ``the value of a free, effortful,
+good-oriented action'' {[}el valor de una acción libre, esforzada y
+orientada al bien{]}. Como lo que se considera un bien varía entre
+sociedades, el mérito sería contextual. En su formulación clásica, el
+mérito combina talento y esfuerzo, entendido este último como la
+dedicación y el trabajo sostenido hacia un fin
+(\citeproc{ref-clavero_2023}{Clavero García, 2023};
+\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017}). Bajo la
+definición de Clavero, en cambio, el talento sólo sería meritorio en la
+medida en que se ejerce mediante una acción libre y esforzada, y no por
+sí mismo, lo que tensiona la fórmula de Young
+(\citeproc{ref-young_1964}{1964}), que lo incluye como componente
+directo del mérito.
+
+Una primera distinción separa la meritocracia como ideal, es decir, cómo
+deberían distribuirse las recompensas, de la meritocracia como
+descripción de cómo funciona efectivamente la sociedad. Como ideal, la
+meritocracia se defiende porque permite juzgar a las personas por sus
+méritos y no por las ventajas heredadas, el nepotismo o el clientelismo,
+algo que han exigido los sectores históricamente desfavorecidos, por lo
+que sus problemas se resolverían profundizándola
+(\citeproc{ref-wooldridge_aristocracy_2021}{Wooldridge, 2021}). La
+crítica, en cambio, sostiene que el problema no es sólo que la
+meritocracia esté incompleta, sino el principio mismo, ya que hacer
+creer que las posiciones son resultado del esfuerzo y el talento
+individual genera soberbia en quienes triunfan, humillación en quienes
+quedan rezagados y convierte los títulos en una medida del valor de las
+personas (\citeproc{ref-sandel_tirania_2020}{Sandel, 2020}).
+
+El debate normativo no permite responder si la sociedad funciona de
+manera meritocrática, por eso la pregunta iría orientada hacia si las
+sociedades funcionan efectivamente de manera meritoria. Por un lado, la
+promesa de la meritocracia basada en la educación no ha permitido un
+aumento constante en la movilidad social de las clases trabajadoras,
+según la cual las posiciones de clase dependerían cada vez más de las
+credenciales educativas y menos del origen social, mostrando sólo
+cambios leves y discontinuos
+(\citeproc{ref-goldthorpe_myth_2003}{Goldthorpe, 2003, pp. 234-239}). De
+esta manera, las oportunidades para tener mérito dependerían de factores
+no meritocráticos, como los recursos familiares
+(\citeproc{ref-mijs_unfulfillable_2016}{Mijs, 2016}).
+
+Más allá de si la meritocracia se cumple, la sociología crítica
+distingue entre el mérito como criterio de asignación y las ventajas de
+origen, y plantea que el discurso meritocrático opera como un mecanismo
+para legitimar el privilegio. El sistema educativo ejerce una violencia
+simbólica al presentar como méritos individuales diferencias que
+dependen del origen social, con lo que las desigualdades aparecen como
+diferencias naturales entre las personas
+(\citeproc{ref-bourdieu_reproduccion_1998}{Bourdieu \& Passeron, 1998}).
+Este uso del discurso se ha descrito como decir meritocracia y hacer
+privilegio, ya que estudiantes de élite explican su posición por el
+trabajo duro, mientras en la práctica desarrollan una soltura que
+protege las ventajas que heredaron (\citeproc{ref-khan_saying_2013}{Khan
+\& Jerolmack, 2013}). Así, el trabajo duro opera como una cobertura
+retórica de esas ventajas (\citeproc{ref-khan_saying_2013}{Khan \&
+Jerolmack, 2013}). A su vez, la meritocracia no solo ordena a las
+personas en posiciones desiguales, sino que construye órdenes de mérito,
+es decir, jerarquías de estatus basadas en evaluaciones del mérito, el
+logro o el desempeño, que establecen relaciones de superioridad,
+igualdad o inferioridad entre las personas
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026}).
+Estos órdenes moralizan la desigualdad al presentar las diferencias de
+ventajas como diferencias de mérito individual. Además, pueden erosionar
+la cohesión social y la solidaridad distributiva al reintroducir
+jerarquías morales sobre el valor de las personas
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026};
+\citeproc{ref-sandel_tirania_2020}{Sandel, 2020}), y existen como
+esquemas culturales más o menos compartidos, de modo que lo que las
+personas perciben como merecido forma parte de ellos
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026}).
+
+En el estudio de las creencias meritocráticas se distinguen dos
+enfoques, por un lado, las preferencias, que son creencias normativas
+sobre cómo debería funcionar la sociedad, y por otro, las percepciones,
+que son creencias descriptivas sobre cómo funciona efectivamente
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019}).
+Como menciona Castillo et~al.
+(\citeproc{ref-castillo_merit_perc_pref_2019}{2019}), percibir que la
+meritocracia funciona no implica considerarla el mejor sistema ni
+preferirla. Además, las percepciones cumplen una función legitimadora,
+puesto que quienes perciben que la meritocracia funciona también
+perciben menos desigualdad económica
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019, p.
+11}). Estas percepciones no son descripciones neutras de la sociedad,
+sino inferencias que las personas construyen a partir de su propia
+trayectoria y de su entorno social, que permiten entender cómo es la
+meritocracia en la sociedad (\citeproc{ref-dawtry_why_2015}{Dawtry
+et~al., 2015}; \citeproc{ref-mijs_inequality_2018}{J. Mijs, 2018}).
+Además, las personas reconocen factores meritocráticos y no
+meritocráticos, como el origen familiar o los contactos, lo que se ha
+denominado conciencia dual
+(\citeproc{ref-reynolds_perceptions_2014}{Reynolds \& Xian, 2014};
+\citeproc{ref-wiesner_effort_2026}{Wiesner \& Sachweh, 2026}). Por ello,
+las percepciones meritocráticas y no meritocráticas se miden como
+dimensiones distintas
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023}), y la forma en que se combinan varía entre países
+(\citeproc{ref-zhu_meritocratic_2025}{Zhu, 2025}).
+
+Si el discurso meritocrático permite legitimar la posición propia, la
+percepción de que la sociedad recompensa el mérito no es independiente
+del lugar que las personas ocupan en la estructura social, y como el
+esfuerzo y el talento son criterios distintos, ese lugar podría
+asociarse de manera diferente con cada uno.
+
+\subsubsection{Talento y esfuerzo}\label{talento-y-esfuerzo}
+
+El talento y el esfuerzo son los dos componentes del mérito en la
+fórmula de Young (\citeproc{ref-young_1964}{1964}), y son también las
+explicaciones más comunes del éxito y del fracaso
+(\citeproc{ref-weiner_attributional_1985}{Weiner, 1985, p. 549}). Sin
+embargo, no se sostienen en la misma base de merecimiento, ya que el
+esfuerzo se percibe como algo que depende de las personas, mientras que
+el talento ocupa una posición ambigua entre el logro y la herencia. Al
+explicar el éxito escolar, por ejemplo, las personas en Flandes no
+separan los factores meritocráticos de los no meritocráticos, sino lo
+que puede manejar el individuo, el esfuerzo, de lo que viene dado, el
+talento y el origen social
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 104}). Por ello, percibir que la sociedad recompensa el
+esfuerzo implica creer que las recompensas dependen de lo que las
+personas hacen, mientras que percibir que recompensa el talento implica
+creer que dependen de lo que las personas tienen.
+
+Además, las personas pueden percibir el esfuerzo y el talento de
+distintas maneras, ya sea según su importancia para salir adelante, como
+explicación de la pobreza y la riqueza, o como explicación de la propia
+posición. Esta investigación se centra en la percepción de que la
+sociedad recompensa a quienes poseen más talento y a quienes más se
+esfuerzan (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al.,
+2019}; \citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025}).
+A continuación se analizan ambos criterios por separado.
+
+\paragraph{Talento}\label{talento-1}
+
+En esta investigación, el talento se entiende como una noción de sentido
+común sobre las capacidades que las personas tienen, sin pronunciarse
+sobre si estas son innatas o adquiridas. Por ello, interesa qué
+reconocen las personas como talento cuando evalúan si la sociedad lo
+recompensa. De esta manera, se presentan tres distinciones, si este es
+innato o adquirido, si es una capacidad individual o una ventaja de
+origen reconocida como capacidad, y si confiere merecimiento de la misma
+forma que el esfuerzo.
+
+La primera distinción sobre lo innato y lo adquirido, se evidencia que
+existen diferencias genéticas entre las personas que se vinculan con
+resultados como el nivel educativo alcanzado y que otorgan ventajas a
+quienes las heredan, aunque su distribución sea producto del azar
+(\citeproc{ref-harden_2021}{Harden, 2021}). Sin embargo, lo que se
+percibe como talento no siempre es una habilidad innata. Un estudio
+etnográfico sobre nadadores muestra que la excelencia no se explica por
+un don especial, sino por la acumulación de prácticas y hábitos
+cotidianos, de modo que el talento no sería la causa del éxito, sino la
+forma de nombrarlo una vez que ya ocurrió
+(\citeproc{ref-chambliss_mundanity_1989}{Chambliss, 1989}). Además, no
+está claro qué es una habilidad ni cómo identificar las que requiere
+cada tarea, salvo en ámbitos como el arte o el deporte
+(\citeproc{ref-lampert_meritocratic_2013}{Lampert, 2013, p. 53}). Por lo
+tanto, no es preciso discutir si el talento existe, sino qué se reconoce
+como talento y cómo se usa para explicar posiciones y recompensas.
+
+La segunda distinción es entre el talento como capacidad individual y
+como ventaja de origen reconocida como capacidad. Según la ideología del
+don, el éxito escolar de los estudiantes de origen privilegiado se
+percibe como resultado de dotes naturales y no de una herencia cultural
+transmitida por la familia
+(\citeproc{ref-bourdieu_2009_herederos}{Bourdieu \& Passeron, 2009}).
+Esa herencia es el capital cultural incorporado, que se adquiere en la
+familia de origen y se expresa en disposiciones, es decir, en formas de
+hablar, juzgar, percibir y actuar
+(\citeproc{ref-bourdieu_distincion_2006}{Bourdieu, 2006};
+\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 4}). El
+sistema escolar, bajo una apariencia de neutralidad, valora estas
+disposiciones como si fueran habilidades personales, y así transforma un
+privilegio heredado en mérito propio
+(\citeproc{ref-bourdieu_reproduccion_1998}{Bourdieu \& Passeron, 1998};
+\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, pp. 4-5}). Algo
+similar ocurre en el trabajo, ya que en las ocupaciones de élite
+británicas las formas de presentarse de las clases privilegiadas suelen
+reconocerse como talento (\citeproc{ref-friedman_class_2019b}{Friedman
+\& Laurison, 2019}). En Chile, las autoridades de universidades de élite
+asumen que las credenciales y los puntajes de admisión reflejan el
+talento de sus estudiantes, aun cuando esos programas son socialmente
+homogéneos (\citeproc{ref-quaresma_justify_2024}{Quaresma, Villalobos,
+et~al., 2024, pp. 9, 13}). Desde esta perspectiva, lo que se reconoce
+como talento puede ser una ventaja de origen que se naturaliza.
+
+La tercera distinción es si el talento confiere merecimiento de la misma
+forma que el esfuerzo. Como se señaló, si el mérito es una acción libre
+y esforzada, el talento solo es meritorio cuando se ejerce
+(\citeproc{ref-clavero_2023}{Clavero García, 2023}). En Estados Unidos,
+las personas perciben el talento como menos controlable que el esfuerzo,
+pero mucho más que la suerte, y consideran que los ingresos derivados
+del talento son casi tan justos como los del esfuerzo, porque a quien
+usa su talento se le considera dueño de sus resultados
+(\citeproc{ref-bartling_talent_2026}{Bartling et~al., 2026, p. 6}). Aun
+así, como el talento se entiende como una cualidad estable que escapa al
+control de las personas, explicar un resultado por el talento resulta
+más fatalista que culpabilizador
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, pp. 96-97}). Atribuir el éxito a un talento innato puede presentar
+la desigualdad como inevitable
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024}), y
+atribuir una posición baja a la falta de talento la presenta como un
+defecto natural sobre el cual la persona tiene poco control
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020};
+\citeproc{ref-young_1964}{Young, 1964}). En Chile, a diferencia de lo
+que ocurre con el esfuerzo, percibir que se recompensa el talento no se
+asocia, o se asocia negativamente, con legitimar que el acceso a la
+salud, la educación y las pensiones dependa del ingreso
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+
+Las personas también recurren al talento para justificar su propia
+posición, en especial quienes ocupan posiciones de élite. Entre las
+élites británicas predomina una justificación basada en la aptitud
+natural, la inteligencia y el buen juicio innato, mientras que las
+élites danesas destacan el trabajo duro, diferencia que los autores
+vinculan con el papel de las escuelas privadas de élite británicas en
+cultivar la idea de un talento excepcional
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 861}).
+Además, entre las pocas personas de la élite británica que eran mujeres,
+no blancas o de origen de clase trabajadora, se destacaba más el trabajo
+duro que el talento como explicación de su éxito
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 872}).
+De manera similar, estudiantes de Oxford reconocen que otros tienen
+menos acceso a las habilidades que se cultivan en los colegios privados,
+pero atribuyen su propia admisión a una inteligencia que consideran
+inherente (\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr,
+2014, p. 712}). En América Latina, las élites económicas chilenas
+definen el talento como habilidades empresariales y de liderazgo, más
+que como inteligencia, y consideran que está disponible para todos, ya
+que se trata de habilidades que cualquiera podría identificar y
+reproducir (\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria
+et~al., 2020, pp. 10-11}). En Lima, en cambio, profesionales que
+ascendieron socialmente reivindican su talento para distinguirse de sus
+pares privilegiados, estableciendo una frontera simbólica entre el
+privilegio y el talento (\citeproc{ref-renteria_telling_2026}{Rentería,
+2026, pp. 1342, 1354}).
+
+En conjunto, estos relatos muestran que el criterio que se enfatiza para
+justificar la propia posición depende tanto de la posición que se ocupa
+como de la socialización en instituciones como las escuelas de élite o
+el mundo empresarial
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}; \citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024};
+\citeproc{ref-warikoo_legitimating_2014}{Warikoo \& Fuhr, 2014}).
+Además, como muestra el caso de las élites chilenas, lo que se entiende
+por talento varía, por lo que al evaluar si la sociedad lo recompensa
+las personas pueden estar pensando en cualidades distintas, lo que
+constituye una limitación para interpretar esta percepción. Como se
+trata de relatos de personas que ocupan objetivamente posiciones
+aventajadas, se retoman en la sección sobre nivel socioeconómico, y su
+relación con la forma en que las personas se ubican a sí mismas se
+discute en la sección sobre estatus social subjetivo.
+
+\paragraph{Esfuerzo}\label{esfuerzo-1}
+
+El rasgo que distingue al esfuerzo es que se percibe bajo el control de
+las personas. La teoría de la atribución no mide la percepción de que la
+sociedad recompensa el esfuerzo, pero permite entender qué implica
+explicar un resultado por él. Las personas buscan las causas de sus
+éxitos y fracasos para comprender su entorno y orientar sus acciones, y
+suelen atribuir el éxito a una alta capacidad y al trabajo duro, y el
+fracaso a una baja capacidad y a la falta de esfuerzo
+(\citeproc{ref-weiner_attributional_1985}{Weiner, 1985}). Estas causas
+se clasifican según su locus, su estabilidad y su controlabilidad. El
+esfuerzo y la capacidad son causas internas, pero solo el esfuerzo se
+considera controlable, y es esta controlabilidad la que lleva a juzgar a
+una persona como responsable de sus resultados, ya sea al evaluar a
+otros o a uno mismo (\citeproc{ref-davis_learning_2017}{M. L. Davis
+et~al., 2017}; \citeproc{ref-schrader_school_2015}{Schrader \& Helmke,
+2015}). Así, el esfuerzo depende en mayor medida de la voluntad y la
+motivación de las personas
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}),
+y el control es uno de los criterios con que se juzga lo que otros
+merecen (\citeproc{ref-meuleman_desert_carin_2020}{Meuleman et~al.,
+2020}).
+
+Kluegel \& Smith (\citeproc{ref-kluegel_beliefs_1981}{1981}) llevaron
+esta teoría al estudio sociológico de las creencias sobre la desigualdad
+y la combinaron con enfoques culturales, de privación relativa y de
+acción colectiva para explicar cómo se atribuyen la pobreza y la
+riqueza. En ese marco discuten la tesis de la ideología dominante (Huber
+y Form, 1973, citado en Kluegel \& Smith
+(\citeproc{ref-kluegel_beliefs_1981}{1981})). Según esta tesis, las
+oportunidades están disponibles para todos, la posición de cada persona
+depende de su esfuerzo y sus capacidades, y por eso la distribución de
+las recompensas resulta justa. Sin embargo, la mayoría de las personas
+no sostiene solo explicaciones individuales, sino que las combina con
+explicaciones estructurales, en lo que se ha llamado conciencia dual,
+integrando explicaciones
+(\citeproc{ref-reynolds_perceptions_2014}{Reynolds \& Xian, 2014};
+\citeproc{ref-zhu_meritocratic_2025}{Zhu, 2025}). Aun así, el orden
+meritocrático moraliza el éxito a través del esfuerzo, y este se vuelve
+el fundamento para considerar merecidas las recompensas
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020, pp. 41-60}).
+
+Quien se esfuerza merece ser recompensado por su dedicación, pero el
+esfuerzo también se usa para explicar los fracasos, con componentes de
+culpa o desesperanza, porque supone que la situación estaba bajo el
+control de la persona (\citeproc{ref-lampert_meritocratic_2013}{Lampert,
+2013};
+\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 96}). Un fracaso atribuido a la falta de esfuerzo genera enojo
+o rechazo en otros y culpa en uno mismo, mientras que uno atribuido a la
+falta de capacidad genera lástima y vergüenza
+(\citeproc{ref-weiner_attributional_1985}{Weiner, 1985, p. 561}). Esta
+distinción entre culpa y destino también organiza las explicaciones de
+la pobreza. La explicación de culpa individual la atribuye a fallas
+morales o conductuales de los propios pobres, como la pereza, la falta
+de ahorro o las malas costumbres, mientras que la de destino individual
+la atribuye a la mala suerte o a infortunios que están fuera del control
+propio (\citeproc{ref-oorschot_blame_2000}{Oorschot \& Halman, 2000, pp.
+5-7}). Así, una posición baja atribuida a la falta de esfuerzo se
+convierte en una responsabilidad individual
+(\citeproc{ref-sandel_tirania_2020}{Sandel, 2020}).
+
+El esfuerzo, sin embargo, no rinde lo mismo para todos, ya que sus
+límites dependen del origen social. La pequeña burguesía se caracteriza
+por una buena voluntad cultural, es decir, por el esfuerzo de apropiarse
+de la cultura legítima, mientras que las clases dominantes valoran la
+soltura y la naturalidad, que hacen aparecer como innato lo que fue
+adquirido en la familia
+(\citeproc{ref-bourdieu_distincion_2006}{Bourdieu, 2006}). Del mismo
+modo, en contextos escolares se valora el esfuerzo, pero lograr buenos
+resultados sin esfuerzo se celebra como señal de una inteligencia
+auténtica (\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015,
+pp. 393-394}). El esfuerzo que realizan las familias de clase
+trabajadora para compensar su menor capital cultural no siempre tiene
+premio (\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 5}),
+mientras que quienes heredaron mayor capital cultural declaran haberse
+esforzado más que el resto para obtener su posición
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, pp. 15-16}).
+
+En Chile, las trayectorias están marcadas por relatos de esfuerzo, que
+operan como principio justificador, como fuente de autovaloración y como
+una expectativa concreta desde la cual se evalúa la justicia de la
+sociedad y el reconocimiento
+(\citeproc{ref-araujo_y_martuccelli_soc-chilena_2012}{Araujo \&
+Martuccelli, 2012}). En el mundo del trabajo, el esfuerzo se ha
+convertido en el núcleo ético de un mercado laboral individualizado, al
+punto de que ``el esfuerzo y no el mérito es lo que reclama más
+compensación'' (\citeproc{ref-sir_esfuerzo_2017}{Sir, 2017, p. 311}).
+Este esfuerzo excede al mérito, ya que incluye la disponibilidad, la
+personalidad y las relaciones personales, en un contexto de
+desconocimiento generalizado sobre los criterios de evaluación y de
+desprotección laboral, donde se vuelve un requisito para ser reconocido
+(\citeproc{ref-sir_esfuerzo_2017}{Sir, 2017, pp. 313, 319-320}).
+
+Percibir que la sociedad recompensa el esfuerzo se alinea con los
+relatos sobre la responsabilidad individual y el merecimiento moral
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025}). En
+Chile, esta es la percepción que más se asocia con la legitimación de la
+desigualdad, ya que se asocia con aceptar que el acceso a la salud, la
+educación y las pensiones dependa del ingreso
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+Por ser el criterio que permite presentar una posición como obra propia,
+el esfuerzo es el que se espera que se asocie más con la forma en que
+las personas se ubican y con la trayectoria que recorrieron.
+
+\subsection{Factores asociados a la percepción de que se recompensa el
+esfuerzo y el
+talento}\label{factores-asociados-a-la-percepciuxf3n-de-que-se-recompensa-el-esfuerzo-y-el-talento}
+
+\subsubsection{Nivel socioeconómico}\label{nivel-socioeconuxf3mico-1}
+
+El nivel socioeconómico refiere a la posición de una persona según su
+ingreso, su educación y su ocupación
+(\citeproc{ref-li_community_2021}{Li \& Hu, 2021, p. 478}). En este
+estudio se aborda con el ingreso del hogar, y la educación se trata en
+una sección aparte. El ingreso permite identificar a quienes ocupan las
+posiciones más altas, algo que la autoubicación no permite, porque en
+Chile tiende hacia el centro
+(\citeproc{ref-castillo_todos_clase_media_2013}{Castillo et~al., 2013}).
+
+En Chile, el 10\% de mayores ingresos percibe más meritocracia que el
+resto (\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza
+et~al., 2026}, Tablas S1 y S2). Esa medida combina el esfuerzo y el
+talento. Cuando ambos se analizan por separado, el ingreso en deciles no
+se asocia con ninguno de los dos
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3), pero ese análisis no distingue a los hogares de
+mayores ingresos del resto. Por eso, la pregunta es si las posiciones
+altas se asocian de forma distinta con cada criterio.
+
+En las posiciones aventajadas, las ventajas de origen tienden a
+reconocerse como capacidades naturales. La soltura que se aprende en
+instituciones de élite aparece como una cualidad natural
+(\citeproc{ref-khan_saying_2013}{Khan \& Jerolmack, 2013, p. 16}), y las
+formas de presentarse de las clases privilegiadas se reconocen como
+talento en el trabajo (\citeproc{ref-friedman_class_2019b}{Friedman \&
+Laurison, 2019}). De modo similar, los estudiantes de clase media y de
+élite son vistos, y se ven a sí mismos, como naturalmente inteligentes,
+mientras que los de clase trabajadora deben demostrar su esfuerzo
+(\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p. 402}).
+Quienes ocupan posiciones aventajadas tendrían así más experiencias en
+que se les reconoce por lo que tienen y no solo por lo que hacen.
+
+La evidencia chilena también vincula las posiciones aventajadas con el
+talento, donde la élite económica ancla el mérito en el talento
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}), mientras que las clases medias y bajas lo equiparan con el
+esfuerzo (\citeproc{ref-araujo_y_martuccelli_soc-chilena_2012}{Araujo \&
+Martuccelli, 2012};
+\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}). Los hogares de altos ingresos no son la élite económica, que se
+define por ocupar posiciones de poder en grandes empresas
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}). Pero la asociación entre mérito y talento no se limita a ella,
+ya que aparece también entre directivos de universidades de élite
+(\citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid, et~al.,
+2024}) y, como se mencionó, entre estudiantes de clase media
+(\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p. 402}).
+
+Existe una interpretación contraria, según la cual quienes ocupan las
+posiciones más altas podrían narrar sus resultados a partir del esfuerzo
+y las credenciales, y el talento serviría más a la clase intermedia
+(\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{Castillo
+et~al., 2026, pp. 12-13}). Esa interpretación, sin embargo, se refiere a
+la justificación de la desigualdad en las pensiones y no a la percepción
+de que se recompensa cada criterio. Además, este argumento no supone que
+en las posiciones altas desaparezca el esfuerzo, que está presente en
+los relatos de todas las posiciones, incluso en las élites
+(\citeproc{ref-khan_saying_2013}{Khan \& Jerolmack, 2013}). Lo que
+distingue a las posiciones altas es que sus ventajas también se
+reconocen como talento.
+
+De esta manera, en posiciones altas las ventajas tenderían a reconocerse
+como talentos, y las personas infieren cómo funciona la sociedad a
+partir de su experiencia (\citeproc{ref-mijs_inequality_2018}{J. Mijs,
+2018}). Por esto, se espera que los hogares de altos ingresos perciban
+relativamente más que se recompensa el talento. No se espera que
+perciban que se recompensa más el talento que el esfuerzo, sino que la
+diferencia a favor del talento sea mayor que en los hogares de ingresos
+bajos.
+
+\begin{quote}
+\(H_1\): Pertenecer a un hogar de altos ingresos, en comparación con uno
+de ingresos bajos, se asocia de forma más positiva con la percepción de
+que en Chile se recompensa el talento que con la percepción de que se
+recompensa el esfuerzo.
+\end{quote}
+
+\subsubsection{Estatus social
+subjetivo}\label{estatus-social-subjetivo-1}
+
+A diferencia del nivel socioeconómico, el estatus social subjetivo
+refiere a cómo las personas se ubican a sí mismas en la jerarquía
+social, lo que puede no coincidir con su posición objetiva
+(\citeproc{ref-davis_status_1956}{J. A. Davis, 1956, p. 154}). Como las
+personas se comparan con su entorno cercano, la mayoría se ubica en el
+medio (\citeproc{ref-evans_images_1992}{Evans et~al., 1992, p. 465}). En
+Chile, quienes tienen un mayor estatus objetivo tienden a subestimar su
+posición (\citeproc{ref-castillo_todos_clase_media_2013}{Castillo
+et~al., 2013}).
+
+En Chile, un mayor estatus subjetivo se asocia con una mayor percepción
+de meritocracia, incluso al controlar por el ingreso
+(\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo et~al., 2019, p.
+10}; \citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). Esto se ha explicado porque quienes están arriba en la jerarquía
+suelen ser vistos como ganadores merecidos
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 9}). Aun así, con datos de 2016, la asociación con la
+recompensa percibida desaparece al considerar el estatus de la familia
+de origen y el esperado para los hijos
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, p.
+46}).
+
+El estatus subjetivo capta cómo las personas valoran su propia posición,
+más allá de sus recursos. Sentirse merecidamente arriba requiere un
+criterio, y cuál es plausible depende de esos recursos. Cuando la
+autoubicación no está respaldada por ventajas objetivas, presentarla
+como talento es poco plausible, porque el talento se reconoce en las
+posiciones objetivamente aventajadas
+(\citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid, et~al.,
+2024};
+\citeproc{ref-atria_et_al_elites_meritocracia_2020a}{\textbf{atria\_et\_al\_elites\_meritocracia\_2020a?}}).
+El esfuerzo, en cambio, permite presentarla como obra propia en
+cualquier posición. Además, en Chile el esfuerzo es el lenguaje con que
+las personas se valoran a sí mismas
+(\citeproc{ref-araujo_y_martuccelli_soc-chilena_2012}{Araujo \&
+Martuccelli, 2012}). También es la percepción del esfuerzo, y no la del
+talento, la que se asocia de forma consistente con justificar
+desigualdades en salud, educación y pensiones
+(\citeproc{ref-castillo_perceptions_2025}{Castillo et~al., 2025},
+\citeproc{ref-castillo_justification_desigualdades_pensiones_clases_2026}{2026}).
+
+La evidencia sobre se evalúan la propia posición es la siguiente. En
+Chile, quienes se ubican más arriba consideran más justo su propio
+ingreso, y esa diferencia aumenta cuando lo evalúan según su esfuerzo
+por educarse (\citeproc{ref-mac_baroz_merit_des_2024}{Mac-Clure et~al.,
+2024, pp. 16-17}). El esfuerzo está disponible en posiciones
+aventajadas, en estudiantes de la élite estadounidense explican su lugar
+por su trabajo duro (\citeproc{ref-khan_saying_2013}{Khan \& Jerolmack,
+2013, p. 12}), y estudiantes de universidades de élite chilenas explican
+su ingreso por la fuerza de voluntad y el estudio esforzado y constante
+(\citeproc{ref-villalobos_percepciones_2022}{Villalobos et~al., 2022}).
+
+Un mayor estatus subjetivo también podría asociarse más con el talento.
+En las élites chilenas el mérito se asocia al talento
+(\citeproc{ref-atria_et_al_elites_meritocracia_2020}{Atria et~al.,
+2020}; \citeproc{ref-quaresma_merit_u_elites_2024}{Quaresma, Madrid,
+et~al., 2024}), y en Estados Unidos quienes se ubican más arriba creen
+en mayor medida que la clase es algo inherente y biológicamente
+determinado (\citeproc{ref-kraus_social_2013}{Kraus \& Keltner, 2013,
+pp. 252, 254}). Es decir, la autoubicación también puede presentar la
+posición como natural. La evidencia chilena sugiere que esto ocurre
+sobre todo cuando la autoubicación está respaldada por una posición
+objetivamente alta. La autoubicación solo marca diferencias en la
+percepción de meritocracia sobre la mediana del ingreso
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026, p. 6}). Cuando ambas percepciones se analizan por separado, el
+estatus subjetivo se asocia en promedio más con el esfuerzo
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). A partir de esa tabla, en los ingresos bajos el
+estatus subjetivo casi no se asocia con el esfuerzo y tiende a asociarse
+negativamente con el talento. En los ingresos altos se asocia
+positivamente con ambos, y la diferencia casi desaparece. Estas
+diferencias no se han probado formalmente.
+
+De esta manera, la autoubicación se legitima sobre todo mediante el
+esfuerzo, porque es el criterio disponible en cualquier posición. Pero
+cuando está respaldada por ingresos altos, el talento aumenta su
+relevancia. Por ello se espera que el estatus subjetivo se asocie más
+con el esfuerzo que con el talento, y que esta ventaja disminuya a
+medida que aumenta el ingreso.
+
+\begin{quote}
+\(H_{2a}\): El estatus social subjetivo se asocia de forma más positiva
+con la percepción de que en Chile se recompensa el esfuerzo que con la
+percepción de que se recompensa el talento.
+
+\(H_{2b}\): La ventaja del esfuerzo sobre el talento en la asociación
+con el estatus social subjetivo disminuye a medida que aumenta el
+ingreso del hogar.
+\end{quote}
+
+\subsubsection{Movilidad social
+subjetiva}\label{movilidad-social-subjetiva-1}
+
+La movilidad social subjetiva refiere a cómo las personas evalúan su
+posición actual en comparación con la de la familia en la que crecieron.
+Se usa la medida subjetiva y no la objetiva porque la movilidad incide
+en las creencias en la medida en que las personas la experimentan como
+real (\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, pp. 132, 138}).
+
+Quienes ascienden tienen motivos para presentar su éxito como merecido
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p. 133}). Como no
+pueden atribuir su nueva posición a ventajas heredadas, tienden a
+explicarla por lo que hicieron, y el esfuerzo es el criterio que permite
+presentarla como obra propia
+(\citeproc{ref-franetovic_concepciones_2017a}{Franetovic, 2017, p. 5}).
+Además, las personas tienden a generalizar su experiencia de movilidad
+al conjunto de la sociedad
+(\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, p. 4}). Por eso, haber ascendido por el propio esfuerzo
+debería llevar a percibir que en la sociedad se recompensa el esfuerzo.
+
+La relación con una misma posición también cambia según el origen de las
+personas. Quienes la heredan la viven con soltura y son reconocidos como
+naturalmente capaces, mientras que quienes ascienden deben apropiársela
+mediante el esfuerzo (\citeproc{ref-bourdieu_distincion_2006}{Bourdieu,
+2006}; \citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p.
+402}). Por eso, el trabajo duro ocupa un lugar central en los relatos de
+quienes ascienden. En las élites de Reino Unido y Dinamarca, quienes
+ascendieron lo destacan más que el resto
+(\citeproc{ref-friedman_meaning_2024}{Friedman et~al., 2024, p. 875}).
+También estudiantes chinos de clase trabajadora que llegaron a
+universidades de élite ponen el trabajo duro al centro de su relato, y
+sostienen que siempre da frutos (\citeproc{ref-jin_meritocracy_2020}{Jin
+\& Ball, 2020}). El talento también aparece en estos relatos
+(\citeproc{ref-renteria_telling_2026}{Rentería, 2026, p. 1353}), pero
+también se atribuye a quienes heredaron su posición, mientras que el
+esfuerzo es más característico del relato del ascenso. También, se
+vincula el ascenso con el trabajo duro. En Chile y otros 26 países,
+quienes perciben haber ascendido atribuyen más importancia al trabajo
+duro que quienes se mantuvieron en la misma posición
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p. 137};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, pp. 11-12}).
+
+Sin embargo, estos estudios miden la importancia atribuida al trabajo
+duro y no la percepción de que se recompensa, dos dimensiones distintas
+en Chile (\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza,
+2019, p. 35}), y tampoco separan el talento. Además, en Chile quienes
+tuvieron una movilidad ascendente de largo alcance reconocen los
+factores externos que la hicieron posible
+(\citeproc{ref-fercovic_disentanglin_2022}{Fercovic, 2022}).
+
+La movilidad subjetiva está ligada al estatus subjetivo, porque compara
+la posición actual con la de origen, y el estatus de origen es el que
+más pesa en cómo las personas se ubican
+(\citeproc{ref-iturra_status_subj_2019}{Iturra-Sanhueza \& Riffo, 2019,
+p. 19}). Por eso, para distinguir la trayectoria de la posición
+alcanzada, la comparación relevante es entre personas que ocupan una
+misma posición, pero llegaron a ella por caminos distintos. Unas
+ascendieron desde un origen más bajo y otras la heredaron, porque ya
+provenían de ella.
+
+Este argumento debe conciliarse con la evidencia chilena sobre el
+estatus de origen. Entre personas que se ubican en el mismo nivel,
+quienes provienen de familias de mayor estatus perciben en mayor medida
+que en Chile se recompensan el esfuerzo y la inteligencia
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, p.
+46}). Es decir, quienes heredaron su posición perciben más recompensa
+que quienes ascendieron hasta ella. Sin embargo, como esa medida combina
+ambos criterios, esa ventaja podría concentrarse en el talento. De esta
+manera, entre personas que ocupan una misma posición, quienes llegaron a
+ella ascendiendo tienen motivos y experiencias para asociarla al
+esfuerzo. Quienes ya provenían de ella tienen más experiencias en que se
+les reconoce como naturalmente capaces. Por ello se espera que
+experimentar movilidad ascendente, en comparación con no experimentarla,
+se asocie relativamente más con la percepción de que se recompensa el
+esfuerzo. La movilidad descendente, cuya evidencia es menos consistente
+(\citeproc{ref-mijs_belief_2022}{Mijs et~al., 2022, p. 137};
+\citeproc{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}{Traini
+et~al., 2025, p. 12}). Así, se considera sin una hipótesis.
+
+\begin{quote}
+\(H_3\): Experimentar movilidad social subjetiva ascendente, en
+comparación con no experimentar movilidad, se asocia de forma más
+positiva con la percepción de que en Chile se recompensa el esfuerzo que
+con la percepción de que se recompensa el talento.
+\end{quote}
+
+\subsubsection{Nivel educacional}\label{nivel-educacional-1}
+
+La educación ocupa un lugar central en la meritocracia. Según la teoría
+de la meritocracia basada en la educación, la selección social depende
+cada vez más del logro individual y de las credenciales educativas
+(\citeproc{ref-goldthorpe_myth_2003}{Goldthorpe, 2003, p. 234}).
+
+En la educación y las percepciones meritocráticas hay dos hipótesis
+opuestas que pueden operar a la vez, la socialización y la iluminación.
+En la primera, la escuela transmite que el éxito depende del mérito
+individual, por lo que quienes avanzan más en el sistema educativo
+adhieren más a la meritocracia
+(\citeproc{ref-bourdieu_reproduccion_1998}{Bourdieu \& Passeron, 1998};
+\citeproc{ref-lampert_meritocratic_2013}{Lampert, 2013}). Y la segunda,
+la educación aumentaría la sensibilidad frente a las desigualdades, por
+lo que los más educados son más críticos respecto de cómo se distribuyen
+las recompensas (\citeproc{ref-bucca_merit_2016}{Bucca, 2016};
+\citeproc{ref-duru-bellat_variations_2012}{Duru-Bellat \& Tenret, 2012};
+\citeproc{ref-kluegel_beliefs_1981}{Kluegel \& Smith, 1981}). En Chile,
+un mayor nivel educacional se asocia con una menor percepción de
+meritocracia (\citeproc{ref-castillo_merit_perc_pref_2019}{Castillo
+et~al., 2019, p. 9};
+\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}). Las personas más educadas atribuyen más importancia a la
+ambición, la educación y el trabajo duro para salir adelante, como
+menciona la socialización
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, pp.
+41-42}). Pero, y siguiendo la segunda hipótesis, perciben en menor
+medida que se recompensan el esfuerzo y la inteligencia
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, p.
+45}). En la percepción de recompensa, entonces, predomina la
+iluminación. La pregunta es si lo hace con la misma fuerza para el
+esfuerzo y para el talento.
+
+La iluminación afectaría ambas percepciones, porque los más educados
+reconocen las barreras que impiden que el mérito se traduzca en
+recompensas y la socialización debería pesar más en el talento. La
+escuela traduce las ventajas de origen en capacidades individuales
+(\citeproc{ref-accominotti_making_2026}{Accominotti \& Sauder, 2026}) y
+valora como mérito propio lo que es un habitus de clase
+(\citeproc{ref-grau-grau_ilusion_2022}{Grau-Grau, 2022, p. 4}). Así,
+quienes avanzan en el sistema educativo reciben credenciales que
+certifican su capacidad, y tienen más experiencias en que su talento es
+reconocido. Por eso, en el caso del talento, la socialización
+compensaría en parte la crítica que produce la iluminación.
+
+La evidencia para ambos criterios es limitada. Cuando se mide la
+percepción de que se recompensa cada talento y esfuerzo, la educación se
+asocia negativamente con ambos, con magnitudes similares, aunque algo
+menos para el talento en tres de cuatro niveles educacionales
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). En cambio, en Flandes, son los más educados quienes
+recurren menos al talento para explicar éxito escolar
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015}). En Chile, la educación universitaria de los padres se asocia con
+una menor importancia del talento para obtener buenas notas
+(\citeproc{ref-retamales_rol_2024}{Retamales, 2024, pp. 44-45}). Pero en
+ambos países se estudian las explicaciones de éxito escolar, no las
+percepciones de recompensa según los dos criterios.
+
+Entonces, se plantea que la educación haría más crítica ambas
+percepciones, pero que la certificación escolar de las capacidades
+atenuaría esa crítica en el caso del talento. Por esto, se espera que la
+educación se asocie negativamente con ambas percepciones, pero en menor
+medida con la de talento.
+
+\begin{quote}
+\(H_4\): La asociación negativa del nivel educacional es más débil con
+la percepción de que en Chile se recompensa el talento que con la
+percepción de que se recompensa el esfuerzo.
+\end{quote}
+
+\subsubsection{Sexo y edad}\label{sexo-y-edad}
+
+Respecto del sexo, no existe consenso sobre su relación con la
+percepción de meritocracia. Los hombres creen en mayor medida que se
+recompensan los logros
+(\citeproc{ref-duru-bellat_variations_2012}{Duru-Bellat \& Tenret, 2012,
+p. 233}), pero en Chile la evidencia no es consistente, con datos de
+2016, las mujeres perciben menos meritocracia
+(\citeproc{ref-plaza_networked_2026}{Plaza et~al., 2026, p. 35}) o no se
+diferencian de los hombres
+(\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra Sanhueza, 2019, p.
+70}). Con datos de 2018, perciben más que se recompensan tanto el
+esfuerzo como el talento
+(\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza et~al.,
+2026}, Tabla S3). De todas maneras, en la escuela, los docentes tienden
+a atribuir el éxito de los niños a su capacidad y el de las niñas a su
+esfuerzo
+(\citeproc{ref-fennema_teachers_1990}{\textbf{fennema\_teachers\_1990?}};
+\citeproc{ref-espinoza_attributional_2014}{\textbf{espinoza\_attributional\_2014?}}).
+El logro sin esfuerzo aparente, también se asocia con la masculinidad
+(\citeproc{ref-jackson_smart_2015}{Jackson \& Nyström, 2015, p. 402};
+\citeproc{ref-jackson_dempster_2009}{\textbf{jackson\_dempster\_2009?}}).
+Entre estudiantes chilenos, los hombres dan más importancia al talento y
+menos al esfuerzo que las mujeres para obtener buenas notas
+(\citeproc{ref-retamales_rol_2024}{Retamales, 2024, pp. 40, 46}). Si las
+personas infieren cómo funciona la sociedad a partir de su experiencia,
+los hombres podrían percibir relativamente más que se recompensa el
+talento. Sin embargo, entre adultos de Flandes, hombres y mujeres no se
+diferencian en cómo explican el éxito escolar
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 106}).
+
+Respecto de la edad, las personas mayores creen en mayor medida que se
+recompensan los logros
+(\citeproc{ref-duru-bellat_variations_2012}{Duru-Bellat \& Tenret, 2012,
+p. 233}). En Chile, la edad se asocia levemente con una mayor percepción
+de meritocracia (\citeproc{ref-iturrasanhueza_estatus_2019}{Iturra
+Sanhueza, 2019, p. 70}; \citeproc{ref-plaza_networked_2026}{Plaza
+et~al., 2026, p. 36}), o no se asocia con ninguna de las dos
+percepciones (\citeproc{ref-iturra-sanhueza_social_2026}{Iturra-Sanhueza
+et~al., 2026}). Sin embargo, podría marcar una diferencia entre ambos
+criterios. En Flandes, las personas mayores explican el éxito escolar
+mucho más por el talento, pero casi no se diferencian en el esfuerzo
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015}). Spruyt
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{2015})
+sugiere que estas generaciones fueron a la escuela cuando la educación
+recién se masificaba, y luego vieron ampliarse las oportunidades. Por
+eso creerían que hoy el éxito depende sobre todo del talento
+(\citeproc{ref-spruyt_talent_esfuerzo_social_background_2015}{Spruyt,
+2015, p. 105}). Así, las personas mayores podrían percibir relativamente
+más que se recompensa el talento.
+
+Dado que la evidencia no es concluyente, el sexo y la edad se incluyen
+en el análisis sin una hipótesis específica.
+
+\bookmarksetup{startatroot}
+
+\chapter{Metodología}\label{metodologuxeda-1}
+
+\section{Datos}\label{datos-1}
+
+En el presente estudio, se utilizarán los datos de la encuesta
+``Economía Moral de la Meritocracia y Preferencias Redistributivas''
+parte del proyecto Fondecyt 1160921, llevada a cabo en abril 2016 -
+marzo 2020. Los análisis se basan en datos de la primera ola,
+recopilados entre el 25 de noviembre de 2019 y el 8 de enero de 2020. La
+muestra no es probabilística. Se construyó con cuotas de sexo, edad y
+nivel educacional, basadas en la encuesta CEP de 2019
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023, p. 461}). Esta encuesta tiene una muestra de N = 2.236,
+incluyendo residentes de 54 comunas. La base no incluye ponderadores. Y,
+contempla un cuestionario de 37 preguntas aplicado de manera online
+mediante Qualtrics. Los encuestados responden preguntas sobre temas como
+tolerancia a la desigualdad, importancia para surgir en la vida,
+igualitarismo, percepciones y preferencias en meritocracia, entre otros.
+Al ser aplicado de manera online no probabilístico, excluye a personas
+que no usan internet, y subrepresenta a las personas de menor nivel
+educacional. Por esto, los resultados no se generalizan a la población
+chilena y se interpretan como asociaciones dentro de la muestra.
+
+La encuesta tiene dos puntos fuertes en relación con la investigación de
+meritocracia. Incluye percepciones y preferencias meritocráticas y junto
+a este, factores no meritocráticos, lo que permite dimensionar el
+concepto más allá de las creencias y también separa el concepto en sus
+dos dimensiones, el talento y esfuerzo. También, se utiliza la primera
+ola, ya que es la única que incluye ingresos del hogar, y se responde a
+preguntas de meritocracia.
+
+\section{Variables dependientes: Percepciones de esfuerzo y
+talento}\label{variables-dependientes-percepciones-de-esfuerzo-y-talento-1}
+
+Las variables dependientes son la percepción de que en Chile se
+recompensa el esfuerzo y la percepción de que se recompensa el talento.
+Cada una se mide con un ítem tipo Likert de 1 (totalmente en desacuerdo)
+a 5 (totalmente de acuerdo), en que valores más altos indican una mayor
+percepción de que se recompensa ese criterio.
+
+\section{Variables independientes}\label{variables-independientes-1}
+
+El nivel socioeconómico se mide con el ingreso líquido mensual del
+hogar, en 14 tramos. Se recodificará siguiendo la estrategia de estimar
+diferencias entre grupos de ingreso en lugar de un coeficiente único
+(\citeproc{ref-mac_baroz_merit_des_2024}{Mac-Clure et~al., 2024, p.
+13}), porque no se puede construir quintiles de ingreso per cápita al no
+preguntar por el número de integrantes del hogar. Los tramos se agrupan
+en cuatro categorías: ingresos bajos (hasta \$448.000, referencia),
+medio-bajos (\$448.001 a \$1.000.000), medio-altos (\$1.000.001 a
+\$2.000.000) y altos (más de \$2.000.000). Esta última se aproxima al
+10\% de mayores ingresos que distinguen Iturra-Sanhueza et~al.
+(\citeproc{ref-iturra-sanhueza_social_2026}{2026}).
+
+El estatus social subjetivo que se mide como una escala de autoubicación
+de 11 puntos donde se pregunta: `En Chile, hay grupos que tienden a
+ubicarse en los niveles más altos y grupos que tienden a ubicarse en los
+niveles más bajos de la sociedad. Usando la escala presentada, donde 0
+es el nivel más bajo y 10 el nivel más alto, ¿dónde se ubicaría usted en
+la sociedad chilena?'. En la cual valores más altos significan mayor
+estatus social percibido.
+
+La movilidad social subjetiva se construye con la variable de estatus
+subjetivo propio y el de la familia de origen, el ítem menciona: `\,``Y
+pensando en la familia en la que usted creció, ¿dónde se ubicarían ellos
+en esta escala?'', de 0 a 10'. Siguiendo a Mijs et~al.
+(\citeproc{ref-mijs_belief_2022}{2022, p. 134}) y Kwon \& Erola
+(\citeproc{ref-kwon_access_2026}{2026, p. 1008}), ambas escalas se
+agruparán en bajo (0 a 3), medio (4 a 6) y alto (7 a 10) y se cruzan.
+Quienes quedan en un nivel superior al de su familia se clasifican como
+ascendentes, quienes quedan en uno inferior como descendentes y quienes
+se mantienen como inmóviles.
+
+El nivel educacional se mide con el mayor nivel alcanzado, en 10
+categorías. Se recodifica según el último nivel completado, con base en
+la Clasificación Internacional Normalizada de la Educación
+(\citeproc{ref-statistics_clasificacion_2013}{Instituto de Estadística
+de la UNESCO, 2013}), como en Iturra-Sanhueza et~al.
+(\citeproc{ref-iturra-sanhueza_social_2026}{2026}). Las categorías son
+secundaria alta o menos (hasta media completa, además de la educación
+técnica o universitaria incompleta) de referencia, terciaria de ciclo
+corto (técnica completa) y terciaria o más (universitaria completa o
+postgrado). Los niveles inferiores a la secundaria alta se agrupan con
+ella por poca cantidad de casos (8,8\% en total). Se trata como variable
+categórica, porque la distancia entre niveles no es necesariamente la
+misma.
+
+\section{Variables de control}\label{variables-de-control-2}
+
+La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer, se
+recodifica a variable dummy, donde (0) es hombre, la cual se utilizará
+como categoría de referencia y (1) es mujer. La edad se utilizará como
+una variable continua. Además, se incluye la versión de la batería de
+meritocracia, que se presentó en tres órdenes distintos asignados al
+azar
+(\citeproc{ref-castillo_et_al_multidimensional_merit_beliefs_2023}{Castillo
+et~al., 2023, p. 462}).
+
+La Tabla~\ref{tbl-descriptivos} presenta los estadísticos descriptivos
+de todas las variables del estudio.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tabla\_desc }\OtherTok{\textless{}{-}} \FunctionTok{readRDS}\NormalTok{(}\FunctionTok{here}\NormalTok{(}\StringTok{"input"}\NormalTok{, }\StringTok{"data{-}proc"}\NormalTok{, }\StringTok{"tabla\_desc.rds"}\NormalTok{))}
+\FunctionTok{kable}\NormalTok{(tabla\_desc,}
+      \AttributeTok{col.names =} \FunctionTok{c}\NormalTok{(}\StringTok{"Variable"}\NormalTok{, }\StringTok{"Categoría"}\NormalTok{, }\StringTok{"n o media"}\NormalTok{, }\StringTok{"\% o DE"}\NormalTok{, }\StringTok{"Rango"}\NormalTok{),}
+      \AttributeTok{align =} \FunctionTok{c}\NormalTok{(}\StringTok{"l"}\NormalTok{, }\StringTok{"l"}\NormalTok{, }\StringTok{"r"}\NormalTok{, }\StringTok{"r"}\NormalTok{, }\StringTok{"c"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+{
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3978}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3333}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1075}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0753}}
+  >{\centering\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0860}}@{}}
+
+\caption{\label{tbl-descriptivos}Estadísticos descriptivos de las
+variables del estudio (N = 2.079)}
+
+\tabularnewline
+
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Categoría
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n o media
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\% o DE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Rango
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Percepción de recompensa al esfuerzo & & 3.20 & 1.38 & 1 a 5 \\
+Percepción de recompensa al talento & & 3.03 & 1.16 & 1 a 5 \\
+Ingreso del hogar & Bajos (ref.) & 686 & 33.0 & \\
+& Medio-bajos & 744 & 35.8 & \\
+& Medio-altos & 419 & 20.2 & \\
+& Altos & 230 & 11.1 & \\
+Nivel educacional & Secundaria alta o menos (ref.) & 1409 & 67.8 & \\
+& Terciaria de ciclo corto & 249 & 12.0 & \\
+& Terciaria o más & 421 & 20.3 & \\
+Estatus social subjetivo & & 4.37 & 1.79 & 0 a 10 \\
+Movilidad social subjetiva & Ascendente & 539 & 25.9 & \\
+& Descendente & 194 & 9.3 & \\
+& NA & 1346 & 64.7 & \\
+Sexo & Hombre (0) & 1041 & 50.1 & \\
+& Mujer (1) & 1038 & 49.9 & \\
+Edad & 18-24 (ref.) & 387 & 18.6 & \\
+& 25-34 & 389 & 18.7 & \\
+& 35-44 & 395 & 19.0 & \\
+& 45-54 & 374 & 18.0 & \\
+& 55 o más & 534 & 25.7 & \\
+Versión de la batería & A & 693 & 33.3 & \\
+& B & 700 & 33.7 & \\
+& C & 686 & 33.0 & \\
+
+\end{longtable}
+
+}
+
+\section{Métodos}\label{muxe9todos-1}
+
+\textbf{Breve descripción de los procedimientos aplicados para procesar
+y analizar la información.}
+
+Se estima una regresión lineal multivariante en la que ambas
+percepciones son variables dependientes simultáneas, con las mismas
+variables independientes. Esto permite estimar si los factores asociados
+de ambas variables dependientes afectan de igual manera. Test de Wald.
+Los análisis se realizan en R.
+
+\textbf{La movilidad, el estatus subjetivo propio y el de origen están
+relacionados por construcción, por lo que no pueden separarse por
+completo. Por eso, \(H_3\) se contrasta en dos especificaciones. En la
+primera, sin el estatus subjetivo propio, el coeficiente de la movilidad
+compara a quienes ascendieron con quienes se mantuvieron, e incluye el
+hecho de que quienes ascienden tienden a ubicarse más arriba. En la
+segunda, que incluye el estatus propio, el coeficiente compara a
+personas que se ubican en el mismo nivel pero provienen de orígenes
+distintos, es decir, refleja sobre todo la diferencia de origen. \(H_3\)
+se considera respaldada si la diferencia a favor del esfuerzo aparece en
+ambas especificaciones. La colinealidad entre la movilidad y el estatus
+propio se revisa con el factor de inflación de la varianza.}
+
+\bookmarksetup{startatroot}
+
+\chapter{Resultados}\label{resultados}
+
+\section{Analisis descriptivo}\label{analisis-descriptivo}
+
+Resumen de las estadisticas descriptivas clave y visualizaciones de
+apoyo.
+
+\section{Modelos}\label{modelos}
+
+Presentacion de los resultados de los modelos propuestos, con
+interpretacion y conclusiones.
+
+\bookmarksetup{startatroot}
+
+\chapter{Discusión}\label{discusiuxf3n}
+
+Interpreta resultados, limitaciones y aportes.
+
+\bookmarksetup{startatroot}
+
+\chapter{Conclusiones}\label{conclusiones}
+
+Síntesis y proyecciones futuras.
+
+\bookmarksetup{startatroot}
+
+\chapter{Referencias}\label{referencias}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-accominotti_making_2026}
+Accominotti, F., \& Sauder, M. (2026). The {Making} of {Meritocratic
+Status Orders}. \emph{Annual Review of Sociology}, \emph{52}(1),
+301-318. \url{https://doi.org/10.1146/annurev-soc-090225-014158}
+
+\bibitem[\citeproctext]{ref-araujo_y_martuccelli_soc-chilena_2012}
+Araujo, K., \& Martuccelli, D. (2012). \emph{{Desafíos comunes: retrato
+de la sociedad chilena y sus individuos}} (1a. ed). LOM Ediciones.
+
+\bibitem[\citeproctext]{ref-atria_et_al_elites_meritocracia_2020}
+Atria, J., Castillo, J., Maldonado, L., \& Ramirez, S. (2020). Economic
+{Elites}' {Attitudes Toward Meritocracy} in {Chile}: {A Moral Economy
+Perspective}. \emph{American Behavioral Scientist}, \emph{64}(9),
+1219-1241. \url{https://doi.org/10.1177/0002764220941214}
+
+\bibitem[\citeproctext]{ref-bartling_talent_2026}
+Bartling, B., Cappelen, A. W., Skarpeid, I. L., Sørensen, E. Ø., \&
+Tungodden, B. (2026). The Talent Paradox: {Why} Is It Fair to Reward
+Talent but Not Luck? \emph{European Economic Review}, \emph{185},
+105268. \url{https://doi.org/10.1016/j.euroecorev.2026.105268}
+
+\bibitem[\citeproctext]{ref-bourdieu_distincion_2006}
+Bourdieu, P. (2006). \emph{{La distinción: criterios y bases sociales
+del gusto}} (3. ed). Taurus.
+
+\bibitem[\citeproctext]{ref-bourdieu_reproduccion_1998}
+Bourdieu, P., \& Passeron, J.-C. (1998). \emph{La Reproducción Elementos
+Para Una Teoría Del Sistema de Enseñanza} (3a. ed). La Fontamara.
+
+\bibitem[\citeproctext]{ref-bourdieu_2009_herederos}
+Bourdieu, P., \& Passeron, J.-C. (2009). \emph{Los Herederos: Los
+Estudiantes y La Cultura} (M. Mayer, Trad.; 2.ª ed., p. 216). Siglo XXI
+Editores.
+
+\bibitem[\citeproctext]{ref-bucca_merit_2016}
+Bucca, M. (2016). Merit and Blame in Unequal Societies: {Explaining
+Latin Americans}' Beliefs about Wealth and Poverty. \emph{Research in
+Social Stratification and Mobility}, \emph{44}, 98-112.
+\url{https://doi.org/10.1016/j.rssm.2016.02.005}
+
+\bibitem[\citeproctext]{ref-castillo_justification_desigualdades_pensiones_clases_2026}
+Castillo, J. C., Canales-Sellés, R., Laffert, A., \& Urzúa, T. (2026).
+Justification Trajectories for Pension Inequality in {Chile}
+(2016--2023): The Role of Social Class and Beliefs in Meritocracy.
+\emph{Front. Sociol.}, \emph{11}.
+\url{https://doi.org/10.3389/fsoc.2026.1771856}
+
+\bibitem[\citeproctext]{ref-castillo_et_al_multidimensional_merit_beliefs_2023}
+Castillo, J. C., Iturra, J., Maldonado, L., Atria, J., \& Meneses, F.
+(2023). A {Multidimensional Approach} for {Measuring Meritocratic
+Beliefs}: {Advantages}, {Limitations} and {Alternatives} to the {ISSP
+Social Inequality Survey}. \emph{International Journal of Sociology},
+\emph{53}(6), 448-472.
+\url{https://doi.org/10.1080/00207659.2023.2274712}
+
+\bibitem[\citeproctext]{ref-castillo_perceptions_2025}
+Castillo, J. C., Laffert, A., Carrasco, K., \& Iturra-Sanhueza, J.
+(2025). Perceptions of Inequality and Meritocracy: Their Interplay in
+Shaping Preferences for Market Justice in {Chile} (2016--2023).
+\emph{Front. Sociol.}, \emph{10}.
+\url{https://doi.org/10.3389/fsoc.2025.1634219}
+
+\bibitem[\citeproctext]{ref-castillo_todos_clase_media_2013}
+Castillo, J. C., Miranda, D., \& Cabib, I. M. (2013). Todos Somos de
+Clase Media: {Sobre} El Estatus Social Subjetivo En {Chile}. \emph{Latin
+American Research Review}, \emph{48}(1), 155-173.
+\url{https://muse.jhu.edu/pub/101/article/504733}
+
+\bibitem[\citeproctext]{ref-castillo_percepcion_2012}
+Castillo, J. C., Miranda, D., \& Carrasco, D. (2012). Percepción de
+{Desigualdad Económica} En {Chile}: {Medición}, {Diferencias} y
+{Determinantes}. \emph{Psykhe (Santiago)}, \emph{21}(1), 99-114.
+\url{https://doi.org/10.4067/S0718-22282012000100007}
+
+\bibitem[\citeproctext]{ref-castillo_merit_perc_pref_2019}
+Castillo, J. C., Torres, A., Atria, J., \& Maldonado, L. (2019).
+{Meritocracia y desigualdad económica: Percepciones, preferencias e
+implicancias}. \emph{Rev. int. sociol.}, \emph{77}(1), e117.
+\url{https://doi.org/10.3989/ris.2019.77.1.17.114}
+
+\bibitem[\citeproctext]{ref-chambliss_mundanity_1989}
+Chambliss, D. F. (1989). The {Mundanity} of {Excellence}: {An
+Ethnographic Report} on {Stratification} and {Olympic Swimmers}.
+\emph{Sociological Theory}, \emph{7}(1), 70-86.
+\url{https://doi.org/10.2307/202063}
+
+\bibitem[\citeproctext]{ref-clavero_2023}
+Clavero García, S. R. (2023). The {Idea} of {Merit}: {Delineation} and
+{Challenges}. \emph{Philosophia}, \emph{51}(3), 1175-1191.
+\url{https://doi.org/10.1007/s11406-023-00628-x}
+
+\bibitem[\citeproctext]{ref-davis_status_1956}
+Davis, J. A. (1956). Status {Symbols} and the {Measurement} of {Status
+Perception}. \emph{Sociometry}, \emph{19}(3), 154.
+\url{https://doi.org/10.2307/2785629}
+
+\bibitem[\citeproctext]{ref-davis_est_1970}
+Davis, K., \& Moore, W. E. (1970). {Algunos principios de la teor{ı́}a de
+la estratificación}. En R. Bendix \& S. M. Lipset (Eds.), \emph{{La
+estructura de clases}}. Editorial Tiempo Nuevo.
+
+\bibitem[\citeproctext]{ref-davis_learning_2017}
+Davis, M. L., Witcraft, S. M., Baird, S. O., \& Smits, J. A. J. (2017).
+Learning {Principles} in {CBT}. En \emph{The {Science} of {Cognitive
+Behavioral Therapy}} (pp. 51-76). Elsevier.
+\url{https://doi.org/10.1016/B978-0-12-803457-6.00003-9}
+
+\bibitem[\citeproctext]{ref-dawtry_why_2015}
+Dawtry, R. J., Sutton, R. M., \& Sibley, C. G. (2015). Why {Wealthier
+People Think People Are Wealthier}, and {Why It Matters}: {From Social
+Sampling} to {Attitudes} to {Redistribution}. \emph{Psychol Sci},
+\emph{26}(9), 1389-1400. \url{https://doi.org/10.1177/0956797615586560}
+
+\bibitem[\citeproctext]{ref-dubet_nuevo_2023}
+Dubet, F. (2023). \emph{{El Nuevo Régimen de Las Desigualdades
+Solitarias: Qué Hacer Cuando la Injusticia Social Se Sufre Como un
+Problema Individual}} (1st ed). Siglo XXI Editores.
+
+\bibitem[\citeproctext]{ref-duru-bellat_variations_2012}
+Duru-Bellat, M., \& Tenret, E. (2012). Who's for {Meritocracy}?
+{Individual} and {Contextual Variations} in the {Faith}.
+\emph{Comparative Education Review}, \emph{56}(2), 223-247.
+\url{https://doi.org/10.1086/661290}
+
+\bibitem[\citeproctext]{ref-ehmes_paradox_2026}
+Ehmes, S., \& Gangl, M. (2026). The Paradox of Inequality That Isn't:
+Rising Economic Inequality Depresses and Polarizes Citizens' Belief in
+Meritocracy. \emph{Socio-Economic Review}, \emph{24}(3), 1643-1663.
+\url{https://doi.org/10.1093/ser/mwag016}
+
+\bibitem[\citeproctext]{ref-evans_images_1992}
+Evans, M. D. R., Kelley, J., \& Kolosi, T. (1992). Images of {Class}:
+{Public Perceptions} in {Hungary} and {Australia}. \emph{American
+Sociological Review}, \emph{57}(4), 461.
+\url{https://doi.org/10.2307/2096095}
+
+\bibitem[\citeproctext]{ref-fercovic_disentanglin_2022}
+Fercovic, M. (2022). Disentangling {Meritocracy Among} the {Long-Range
+Upwardly Mobile}: {The Chilean Case}. \emph{Sociological Research
+Online}, \emph{27}(1), 118-135.
+\url{https://doi.org/10.1177/1360780420963395}
+
+\bibitem[\citeproctext]{ref-franetovic_concepciones_2017a}
+Franetovic, G. (2017). \emph{Concepciones de Mérito y Meritocracia}
+{[}Working Paper{]}. Pontificia Universidad Católica de Chile.
+\url{https://doi.org/10.13140/RG.2.2.14983.42401/1}
+
+\bibitem[\citeproctext]{ref-friedman_meaning_2024}
+Friedman, S., Ellersgaard, C., Reeves, A., \& Larsen, A. G. (2024). The
+{Meaning} of {Merit}: {Talent} versus {Hard Work Legitimacy}. \emph{Soc
+Forces}, \emph{102}(3), 861-879.
+\url{https://doi.org/10.1093/sf/soad131}
+
+\bibitem[\citeproctext]{ref-friedman_class_2019b}
+Friedman, S., \& Laurison, D. (2019). The Class Pay Gap: Why It Pays to
+Be Privileged. \emph{The Guardian}.
+\url{https://www.theguardian.com/society/2019/feb/07/the-class-pay-gap-why-it-pays-to-be-privileged}
+
+\bibitem[\citeproctext]{ref-friedman_deflecting_2021a}
+Friedman, S., O'Brien, D., \& McDonald, I. (2021). Deflecting
+{Privilege}: {Class Identity} and the {Intergenerational Self}.
+\emph{Sociology}, \emph{55}(4), 716-733.
+\url{https://doi.org/10.1177/0038038520982225}
+
+\bibitem[\citeproctext]{ref-gogescu_meritocracy_2025}
+Gogescu, F. (2025). Meritocracy Seen through the Eyes of Its Champions:
+A Comparative Study of Educational Elites. \emph{British Journal of
+Sociology of Education}, \emph{46}(1), 34-53.
+\url{https://doi.org/10.1080/01425692.2024.2418097}
+
+\bibitem[\citeproctext]{ref-goldthorpe_myth_2003}
+Goldthorpe, J. (2003). The Myth of Education-based Meritocracy.
+\emph{New Economy}, \emph{10}(4), 234-239.
+\url{https://doi.org/10.1046/j.1468-0041.2003.00324.x}
+
+\bibitem[\citeproctext]{ref-grau-grau_ilusion_2022}
+Grau-Grau, M. (2022). La Ilusión Del Mérito. {Capital} Cultural y
+Reproducción. \emph{RES}, \emph{31}(3), a124.
+\url{https://doi.org/10.22325/fes/res.2022.124}
+
+\bibitem[\citeproctext]{ref-harden_2021}
+Harden, K. P. (2021). \emph{{La lotería genética}}. Deusto.
+
+\bibitem[\citeproctext]{ref-hauhart_davis_2003}
+Hauhart, R. C. (2003). The {Davis}--{Moore} Theory of Stratification:
+{The} Life Course of a Socially Constructed Classic. \emph{The American
+Sociologist}, \emph{34}, 5-24.
+\url{https://doi.org/10.1007/s12108-003-1013-y}
+
+\bibitem[\citeproctext]{ref-cfps_data}
+Institute of Social Science Survey, Peking University. (2015).
+\emph{China {Family Panel Studies} ({CFPS})}. Peking University Open
+Research Data Platform. \url{https://doi.org/10.18170/DVN/45LCSO}
+
+\bibitem[\citeproctext]{ref-statistics_clasificacion_2013}
+Instituto de Estadística de la UNESCO. (2013). \emph{Clasificación
+Internacional Normalizada de La Educación, {CINE} 2011}. UNESCO.
+\url{https://unesdoc.unesco.org/ark:/48223/pf0000220782}
+
+\bibitem[\citeproctext]{ref-issp_data}
+ISSP Research Group. (2002). \emph{International {Social Survey
+Programme}: {Social Inequality III} - {ISSP 1999International Social
+Survey Programme}: {Social Inequality III} - {ISSP} 1999}. GESIS Data
+Archive. \url{https://doi.org/10.4232/1.3430}
+
+\bibitem[\citeproctext]{ref-iturrasanhueza_estatus_2019}
+Iturra Sanhueza, J. C. (2019). \emph{{Estatus social subjetivo y
+percepción de meritocracia: el caso de Chile}} {[}\{Tesis de
+mag\textbackslash\textquotesingle ister\}, Pontificia Universidad
+Católica de Chile{]}. \url{https://doi.org/10.7764/tesisUC/SOC/65873}
+
+\bibitem[\citeproctext]{ref-iturra-sanhueza_social_2026}
+Iturra-Sanhueza, J., Castillo, J. C., \& García-Castro, J. D. (2026).
+Social Hierarchies and Meritocracy: Objective Status and the Moderating
+Role of Subjective Social Status on Perceived Meritocracy. \emph{Front.
+Sociol.}, \emph{11}, 1750965.
+\url{https://doi.org/10.3389/fsoc.2026.1750965}
+
+\bibitem[\citeproctext]{ref-iturra_status_subj_2019}
+Iturra-Sanhueza, J., \& Riffo, D. M. (2019). \emph{Subjective Social
+Status in Three {Latin American} Countries: {The} Case of {Argentina},
+{Chile} and {Venezuela}.} SocArXiv.
+\url{https://doi.org/10.31235/osf.io/yp3wm}
+
+\bibitem[\citeproctext]{ref-jackson_smart_2015}
+Jackson, C., \& Nyström, A.-S. (2015). {«{Smart} Students Get Perfect
+Scores in Tests without Studying Much»}: Why Is an Effortless Achiever
+Identity Attractive, and for Whom Is It Possible? \emph{Research Papers
+in Education}, \emph{30}(4), 393-410.
+\url{https://doi.org/10.1080/02671522.2014.970226}
+
+\bibitem[\citeproctext]{ref-jin_meritocracy_2020}
+Jin, J., \& Ball, S. J. (2020). Meritocracy, Social Mobility and a New
+Form of Class Domination. \emph{British Journal of Sociology of
+Education}, \emph{41}(1), 64-79.
+\url{https://doi.org/10.1080/01425692.2019.1665496}
+
+\bibitem[\citeproctext]{ref-kelley_subjective_2008}
+Kelley, S. M. C., \& Kelley, C. G. E. (2008). \emph{Subjective {Social
+Mobility}: {Data} from 30 {Nations}} (\{\{SSRN Scholarly Paper\}\} No.
+1306242). Social Science Research Network.
+\url{https://papers.ssrn.com/abstract=1306242}
+
+\bibitem[\citeproctext]{ref-khan_saying_2013}
+Khan, S., \& Jerolmack, C. (2013). Saying {Meritocracy} and {Doing
+Privilege}. \emph{The Sociological Quarterly}, \emph{54}(1), 9-19.
+\url{https://doi.org/10.1111/tsq.12008}
+
+\bibitem[\citeproctext]{ref-kluegel_beliefs_1981}
+Kluegel, J. R., \& Smith, E. R. (1981). Beliefs about {Stratification}.
+\emph{Annu. Rev. Sociol.}, \emph{7}(1), 29-56.
+\url{https://doi.org/10.1146/annurev.so.07.080181.000333}
+
+\bibitem[\citeproctext]{ref-kraus_social_2013}
+Kraus, M. W., \& Keltner, D. (2013). Social Class Rank, Essentialism,
+and Punitive Judgment. \emph{Journal of Personality and Social
+Psychology}, \emph{105}(2), 247-261.
+\url{https://doi.org/10.1037/a0032895}
+
+\bibitem[\citeproctext]{ref-kwon_access_2026}
+Kwon, H., \& Erola, J. (2026). Access to {Higher Education} and
+{Support} for {Meritocracy}: {Effort}, {Skill}, and {Education} as
+{Components} of {Merit}. \emph{SocScience}, \emph{13}, 997-1017.
+\url{https://doi.org/10.15195/v13.a38}
+
+\bibitem[\citeproctext]{ref-lampert_meritocratic_2013}
+Lampert, K. (2013). \emph{Meritocratic {Education} and {Social
+Worthlessness}}. Palgrave Macmillan UK.
+\url{https://doi.org/10.1057/9781137324894}
+
+\bibitem[\citeproctext]{ref-li_community_2021}
+Li, A., \& Hu, A. (2021). Community Contexts, Socioeconomic Status, and
+Meritocratic Beliefs and Perceptions in {China}. \emph{Chinese Journal
+of Sociology}, \emph{7}(3), 470-493.
+\url{https://doi.org/10.1177/2057150X211023235}
+
+\bibitem[\citeproctext]{ref-lierse_des_redi_2022}
+Lierse, H., Sachweh, P., \& Waitkus, N. (2022). Introduction: {Wealth},
+{Inequality} and {Redistribution} in {Capitalist Societies}. \emph{Soc
+Just Res}, \emph{35}(4), 367-378.
+\url{https://doi.org/10.1007/s11211-022-00402-6}
+
+\bibitem[\citeproctext]{ref-mac_baroz_merit_des_2024}
+Mac-Clure, O., Barozet, E., \& Franetovic, G. (2024). {Justicia
+distributiva y posición social subjetiva: \textquestiondown la
+meritocracia justifica la desigualdad de ingresos?} \emph{Convergencia
+Revista de Ciencias Sociales}, \emph{31}, 1-34.
+\url{https://doi.org/10.29101/crcs.v31i0.22258}
+
+\bibitem[\citeproctext]{ref-melli_uncovering_2025}
+Melli, G., \& Azzollini, L. (2025). Uncovering Misperceptions of Social
+Inequalities: What Matters Most, Objective Class or Subjective Social
+Status? \emph{Front. Sociol.}, \emph{10}.
+\url{https://doi.org/10.3389/fsoc.2025.1617413}
+
+\bibitem[\citeproctext]{ref-merton_social_1938}
+Merton, R. K. (1938). Social {Structure} and {Anomie}. \emph{American
+Sociological Review}, \emph{3}(5), 672.
+\url{https://doi.org/10.2307/2084686}
+
+\bibitem[\citeproctext]{ref-merton_selffulfilling_1948}
+Merton, R. K. (1948). The {Self-Fulfilling Prophecy}. \emph{The Antioch
+Review}, \emph{8}(2), 193. \url{https://doi.org/10.2307/4609267}
+
+\bibitem[\citeproctext]{ref-meuleman_desert_carin_2020}
+Meuleman, B., Roosma, F., \& Abts, K. (2020). Welfare Deservingness
+Opinions from Heuristic to Measurable Concept: {The CARIN} Deservingness
+Principles Scale. \emph{Social Science Research}, \emph{85}, 102352.
+\url{https://doi.org/10.1016/j.ssresearch.2019.102352}
+
+\bibitem[\citeproctext]{ref-mijs_inequality_2018}
+Mijs, J. (2018). Inequality {Is} a {Problem} of {Inference}: {How People
+Solve} the {Social Puzzle} of {Unequal Outcomes}. \emph{Societies},
+\emph{8}(3), 64. \url{https://doi.org/10.3390/soc8030064}
+
+\bibitem[\citeproctext]{ref-mijs_unfulfillable_2016}
+Mijs, J. J. B. (2016). The {Unfulfillable Promise} of {Meritocracy}:
+{Three Lessons} and {Their Implications} for {Justice} in {Education}.
+\emph{Soc Just Res}, \emph{29}(1), 14-34.
+\url{https://doi.org/10.1007/s11211-014-0228-0}
+
+\bibitem[\citeproctext]{ref-mijs_paradox_2021}
+Mijs, J. J. B. (2021). The Paradox of Inequality: Income Inequality and
+Belief in Meritocracy Go Hand in Hand. \emph{Socio-Economic Review},
+\emph{19}(1), 7-35. \url{https://doi.org/10.1093/ser/mwy051}
+
+\bibitem[\citeproctext]{ref-mijs_belief_2022}
+Mijs, J. J. B., Daenekindt, S., De Koster, W., \& Van Der Waal, J.
+(2022). Belief in {Meritocracy Reexamined}: {Scrutinizing} the {Role} of
+{Subjective Social Mobility}. \emph{Soc Psychol Q}, \emph{85}(2),
+131-141. \url{https://doi.org/10.1177/01902725211063818}
+
+\bibitem[\citeproctext]{ref-mulligan_meritocracy_2023a}
+Mulligan, T. (2023). Meritocracy. En E. N. Zalta \& U. Nodelman (Eds.),
+\emph{The {Stanford Encyclopedia} of {Philosophy}} (Fall 2023).
+Metaphysics Research Lab, Stanford University.
+\url{https://plato.stanford.edu/archives/fall2023/entries/meritocracy/}
+
+\bibitem[\citeproctext]{ref-oorschot_blame_2000}
+Oorschot, W. V., \& Halman, L. (2000). {BLAME OR FATE}, {INDIVIDUAL OR
+SOCIAL}? \emph{European Societies}, \emph{2}(1), 1-28.
+\url{https://doi.org/10.1080/146166900360701}
+
+\bibitem[\citeproctext]{ref-parsons_class_1953}
+Parsons, T. (1953). A {Revised Analytical Approach} to the {Theory} of
+{Social Stratification}. En R. Bendix \& S. M. Lipset (Eds.),
+\emph{Class, Status, and Power : A Reader in Social Stratification}.
+Glencoe, Ill. : Free Press.
+\url{http://archive.org/details/classstatuspower00bendrich}
+
+\bibitem[\citeproctext]{ref-pavel_merit_2024}
+Pavel, S. M. (2024). Merit as a {Distributive Justice Principle}. En M.
+Sardoč (Ed.), \emph{Handbook of {Equality} of {Opportunity}} (pp.
+259-273). Springer International Publishing.
+\url{https://doi.org/10.1007/978-3-031-55897-9_93}
+
+\bibitem[\citeproctext]{ref-plaza_networked_2026}
+Plaza, A., Beck, G., Iturra-Sanhueza, J., Otero, G., \& Muñoz, B.
+(2026). Networked Inequality: {The} Role of Changes in Network
+Heterogeneity and Network Size in Attitudes towards Inequality.
+\emph{Social Networks}, \emph{84}, 27-45.
+\url{https://doi.org/10.1016/j.socnet.2025.07.008}
+
+\bibitem[\citeproctext]{ref-quaresma_merit_u_elites_2024}
+Quaresma, M. L., Madrid, S., \& Molina, F. (2024). {Entre el esfuerzo y
+el talento: concepciones sobre el mérito de directivos en universidades
+de élite y de masas en Chile}. \emph{Revista de la educación superior},
+\emph{53}(209), 105-123.
+\url{https://doi.org/10.36857/resu.2024.209.2752}
+
+\bibitem[\citeproctext]{ref-quaresma_justify_2024}
+Quaresma, M. L., Villalobos, C., Fergnani, M., \& Diaz, B. (2024). I
+{Justify Myself}, {Therefore I} Am. {Regimes Of Justification In Chilean
+Elite Universities}. \emph{RISE}, 1-19.
+\url{https://doi.org/10.17583/rise.7851}
+
+\bibitem[\citeproctext]{ref-renteria_telling_2026}
+Rentería, M. (2026). Telling an Exceptional Story: {Meritocratic}
+Accounts of Upwardly Mobile {Limeños}. \emph{The Sociological Review},
+\emph{74}(6), 1342-1362. \url{https://doi.org/10.1177/00380261251396456}
+
+\bibitem[\citeproctext]{ref-elsoc_data}
+Reproducible Research, Centre for Social Conflict and Cohesion Studies
+COES. (2024). \emph{Estudio {Longitudinal Social} de {Chile} 2016-2023}
+(pp. 5321976, 7154454, 39662924, 179249687, 126465108, 181309930,
+179249687, 5332008, 181309930, 7166551, 126607870, 39703925, 7195475,
+5332008, 179249687, 181309930, 126679314, 39796123). Harvard Dataverse.
+\url{https://doi.org/10.7910/DVN/LD4BPH}
+
+\bibitem[\citeproctext]{ref-retamales_rol_2024}
+Retamales, M. (2024). \emph{{El Rol de La Socialización Familiar y
+Escolar En La Percepción de Meritocracia En Las Notas: Un Estudio
+Multinivel de Estudiantes En Chile}} {[}\{Tesis de Magister\},
+Universidad de Chile{]}.
+\url{https://jc-castillo.com/references/thesis/posts/2024_el_rol_de_la_sociali}
+
+\bibitem[\citeproctext]{ref-reynolds_perceptions_2014}
+Reynolds, J., \& Xian, H. (2014). Perceptions of Meritocracy in the Land
+of Opportunity. \emph{Research in Social Stratification and Mobility},
+\emph{36}, 121-137. \url{https://doi.org/10.1016/j.rssm.2014.03.001}
+
+\bibitem[\citeproctext]{ref-sandel_tirania_2020}
+Sandel, M. J. (2020). \emph{La Tiranía Del Mérito:
+\textquestiondown{{Qu\'e}} Ha Sido Del Bien Común?} Debate.
+
+\bibitem[\citeproctext]{ref-sardoc_rise_2024}
+Sardoč, M. (2024). The {Rise} of the {Meritocracy}: {The Genealogy} of
+an {Idea}. En \emph{Handbook of {Equality} of {Opportunity}} (pp.
+329-341). Springer, Cham.
+\url{https://doi.org/10.1007/978-3-031-55897-9_7}
+
+\bibitem[\citeproctext]{ref-schrader_school_2015}
+Schrader, F.-W., \& Helmke, A. (2015). School {Achievement}:
+{Motivational Determinants} and {Processes}. En \emph{International
+{Encyclopedia} of the {Social} \& {Behavioral Sciences}} (pp. 48-54).
+Elsevier. \url{https://doi.org/10.1016/B978-0-08-097086-8.26055-8}
+
+\bibitem[\citeproctext]{ref-sen_merit_justice_2000}
+Sen, A. (2000). Merit and Justice. En \emph{Meritocracy and {Economic
+Inequality}}. Princeton University Press.
+
+\bibitem[\citeproctext]{ref-sir_esfuerzo_2017}
+Sir, H. (2017). {Más que mérito, esfuerzo. Aproximación crítica al
+núcleo ético del mercado del trabajo individualizado en Chile}.
+\emph{Trabajo y Sociedad}, \emph{29}, 307-326.
+\url{https://www.redalyc.org/articulo.oa?id=387352369016}
+
+\bibitem[\citeproctext]{ref-sonhing_merit_2011}
+Son Hing, L. S., Bobocel, D. R., Zanna, M. P., Garcia, D. M., Gee, S.
+S., \& Orazietti, K. (2011). The Merit of Meritocracy. \emph{Journal of
+Personality and Social Psychology}, \emph{101}(3), 433-450.
+\url{https://doi.org/10.1037/a0024618}
+
+\bibitem[\citeproctext]{ref-spruyt_talent_esfuerzo_social_background_2015}
+Spruyt, B. (2015). Talent, {Effort} or {Social Background}?
+\emph{European Societies}, \emph{17}(1), 94-114.
+\url{https://doi.org/10.1080/14616696.2014.977323}
+
+\bibitem[\citeproctext]{ref-tejero-peregrina_perceived_2025}
+Tejero-Peregrina, L., Willis, G., Sánchez-Rodríguez, Á., \&
+Rodríguez-Bailón, R. (2025). From {Perceived Economic Inequality} to
+{Support} for {Redistribution}: {The Role} of {Meritocracy Perception}.
+\emph{International Review of Social Psychology}, \emph{38}(1), 4.
+\url{https://doi.org/10.5334/irsp.1013}
+
+\bibitem[\citeproctext]{ref-traini_et_al_mov_social_percepciones_meritocracia_2025}
+Traini, C., Ehmes, S., \& Gangl, M. (2025). \emph{Climbing the Ladder or
+Falling behind: {How} Social Mobility Shapes Perceptions of Meritocracy
+in the Wake of Rising Inequality} (Polar \{\{Working\}\} Paper No. 7).
+Goethe University.
+\url{https://polar-project.org/wp-content/uploads/2025/09/polar_wp7_v250912.pdf}
+
+\bibitem[\citeproctext]{ref-villalobos_percepciones_2022}
+Villalobos, C., Kuzmanic, D., Valenzuela, J. P., \& Quaresma, M. L.
+(2022). {Percepciones Sociales de los Estudiantes de Educación Superior
+de Élite: Un Estudio del Caso Chileno}. \emph{psykhe}, \emph{31}(2).
+\url{https://doi.org/10.7764/psykhe.2020.22549}
+
+\bibitem[\citeproctext]{ref-warikoo_legitimating_2014}
+Warikoo, N. K., \& Fuhr, C. (2014). Legitimating Status: Perceptions of
+Meritocracy and Inequality among Undergraduates at an Elite {British}
+University. \emph{British Educational Res J}, \emph{40}(4), 699-717.
+\url{https://doi.org/10.1002/berj.3108}
+
+\bibitem[\citeproctext]{ref-weber_etica_2001}
+Weber, M. (2001). \emph{{La ética protestante y el {«esp{ı́}ritu»} del
+capitalismo}} (J. Abellán, Trad.; 1.ª ed.). Alianza Editorial.
+
+\bibitem[\citeproctext]{ref-weiner_attributional_1985}
+Weiner, B. (1985). An Attributional Theory of Achievement Motivation and
+Emotion. \emph{Psychological Review}, \emph{92}(4), 548-573.
+\url{https://doi.org/10.1037/0033-295X.92.4.548}
+
+\bibitem[\citeproctext]{ref-wiesner_knowing_2026}
+Wiesner, T., \& Iturra-Sanhueza, J. (2026). Knowing One's Place? {The}
+Role of Income Inequality in Shaping Positioning Bias across 29
+Countries. \emph{Front. Sociol.}, \emph{10}.
+\url{https://doi.org/10.3389/fsoc.2025.1617014}
+
+\bibitem[\citeproctext]{ref-wiesner_effort_2026}
+Wiesner, T., \& Sachweh, P. (2026). Effort versus {Advantage}:
+{Visualizing} ({Relative}) {Belief} in {Meritocracy}, 1930 to 2022---{A
+Comment} on {Mijs} (2018). \emph{Socius: Sociological Research for a
+Dynamic World}, \emph{12}, 23780231261425841.
+\url{https://doi.org/10.1177/23780231261425841}
+
+\bibitem[\citeproctext]{ref-wooldridge_aristocracy_2021}
+Wooldridge, A. (2021). \emph{The Aristocracy of Talent: How Meritocracy
+Made the Modern World}. Skyhorse Publishing.
+
+\bibitem[\citeproctext]{ref-wright_preguntas_2010}
+Wright, E. O. (2010). \emph{{Preguntas a la desigualdad: ensayos sobre
+análisis de clase, socialismo y marxismo}} (1. ed). Editorial
+Universidad del Rosario.
+
+\bibitem[\citeproctext]{ref-young_1964}
+Young, M. (1964). \emph{{El triunfo de la meritocracia : 1870-2034 :
+ensayo sobre la educación y la igualdad}}. Editorial Tecnos.
+
+\bibitem[\citeproctext]{ref-young_2001}
+Young, M. (2001). Down with Meritocracy. \emph{The Guardian}.
+\url{https://www.theguardian.com/politics/2001/jun/29/comment}
+
+\bibitem[\citeproctext]{ref-zhu_meritocratic_2025}
+Zhu, L. (2025). Meritocratic Beliefs in the {United States}, {Finland},
+and {China}: {A} Multidimensional Approach Using Latent Class Analysis.
+\emph{British Journal of Sociology}, \emph{76}(1), 153-172.
+\url{https://doi.org/10.1111/1468-4446.13152}
+
+\end{CSLReferences}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Apéndices}
+\appendix
+
+\chapter{Instrumentos de
+levantamiento}\label{instrumentos-de-levantamiento}
+
+Incluye cuestionarios, guias de entrevista, etc.
+
+\chapter{Tablas adicionales}\label{tablas-adicionales}
+
+Tablas extendidas, tests de robustez, etc.
+
+
+\backmatter
+
+% --- Cuerpo del libro (capítulos) en arábigos ---
+\mainmatter
+\pagestyle{scrheadings}
+
+% --- (Opcional) Estilo del índice general ---
+% \addtocontents{toc}{\protect\thispagestyle{plain}}
+
+
+\end{document}
