@@ -112,8 +112,10 @@ execute:
 lang: es
 
 crossref:
-  appendix-title: Anexo
-  appendix-delim: " - "
+  tbl-title: Tabla
+  lot-title: Lista de tablas
+  fig-title: Figura
+  lof-title: Lista de figuras
 
 metadata-files:
   - _metadata.yml               # Ajustes adicionales (palabras clave, portada, etc.)

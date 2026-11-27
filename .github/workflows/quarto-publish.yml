@@ -38,6 +38,7 @@ jobs:
           packages: |
             any::knitr
             any::rmarkdown
+            any::here
 
       - name: Render
         run: quarto render
