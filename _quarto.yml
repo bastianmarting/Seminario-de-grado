@@ -116,10 +116,8 @@ crossref:
   eq-prefix: Ecuación
   fig-prefix: Figura
   fig-title: Figura
-  lof-title: Lista de figuras
   tbl-prefix: Tabla
   tbl-title: Tabla
-  lot-title: Lista de tablas
 
 metadata-files:
   - _metadata.yml               # Ajustes adicionales (palabras clave, portada, etc.)
