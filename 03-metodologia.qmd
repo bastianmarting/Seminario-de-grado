@@ -1,6 +1,24 @@
 ﻿---
 title: "Metodología"
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r}
+#| label: setup
+#| include: false
+library(knitr)
+library(here)
+
+knitr::opts_chunk$set(
+  fig.align = "center",
+  fig.width = 8,
+  fig.height = 5,
+  out.width = "80%"
+)
+```
 
 ## Datos
 En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral de la Meritocracia y Preferencias Redistributivas" parte del proyecto Fondecyt 1160921, llevada a cabo en abril 2016 - marzo 2020. Los análisis se basan en datos de la primera ola, recopilados entre el 25 de noviembre de 2019 y el 8 de enero de 2020. La muestra no es probabilística. Se construyó con cuotas de sexo, edad y nivel educacional, basadas en la encuesta CEP de 2019 [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 461]. Esta encuesta tiene una muestra de N = 2.236, incluyendo residentes de 54 comunas. La base no incluye ponderadores. Y, contempla un cuestionario de 37 preguntas aplicado de manera online mediante Qualtrics. Los encuestados responden preguntas sobre temas como tolerancia a la desigualdad, importancia para surgir en la vida, igualitarismo, percepciones y preferencias en meritocracia, entre otros. Al ser aplicado de manera online no probabilístico, excluye a personas que no usan internet, y subrepresenta a las personas de menor nivel educacional. Por esto, los resultados no se generalizan a la población chilena y se interpretan como asociaciones dentro de la muestra.
@@ -8,13 +26,11 @@ En el presente estudio, se utilizarán los datos de la encuesta "Economía Moral
 La encuesta tiene dos puntos fuertes en relación con la investigación de meritocracia. Incluye percepciones y preferencias meritocráticas y junto a este, factores no meritocráticos, lo que permite dimensionar el concepto más allá de las creencias y también separa el concepto en sus dos dimensiones, el talento y esfuerzo. También, se utiliza la primera ola, ya que es la única que incluye ingresos del hogar, y se responde a preguntas de meritocracia.
 
 ## Variables dependientes: Percepciones de esfuerzo y talento
-Las variables dependientes son la percepción de que en Chile se recompensa el esfuerzo y la percepción de que se recompensa el talento. Cada una se mide con un ítem tipo Likert de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo), en que valores más altos indican una mayor percepción de que se recompensa ese criterio (@tbl-medicion).
+Las variables dependientes son la percepción de que en Chile se recompensa el esfuerzo y la percepción de que se recompensa el talento. Cada una se mide con un ítem tipo Likert de 1 (totalmente en desacuerdo) a 5 (totalmente de acuerdo), en que valores más altos indican una mayor percepción de que se recompensa ese criterio.
 
 ## Variables independientes
 
-El nivel socioeconómico se mide con el ingreso líquido mensual del hogar, en 14 tramos. 
-
-La variable será recodificada siguiendo la estrategia de estimar diferencias entre grupos de ingreso en lugar de un coeficiente único [@mac_baroz_merit_des_2024, p. 13], porque no se puede construir quintiles de ingreso per cápita al no preguntar por el número de integrantes del hogar. Los tramos se agrupan en cuatro categorías: ingresos bajos (hasta $448.000, referencia), medio-bajos ($448.001 a $1.000.000), medio-altos ($1.000.001 a $2.000.000) y altos (más de $2.000.000). Esta última se aproxima al 10% de mayores ingresos que distinguen @iturra-sanhueza_social_2026 [Tabla S1].
+El nivel socioeconómico se mide con el ingreso líquido mensual del hogar, en 14 tramos. Se recodificará siguiendo la estrategia de estimar diferencias entre grupos de ingreso en lugar de un coeficiente único [@mac_baroz_merit_des_2024, p. 13], porque no se puede construir quintiles de ingreso per cápita al no preguntar por el número de integrantes del hogar. Los tramos se agrupan en cuatro categorías: ingresos bajos (hasta $448.000, referencia), medio-bajos ($448.001 a $1.000.000), medio-altos ($1.000.001 a $2.000.000) y altos (más de $2.000.000). Esta última se aproxima al 10% de mayores ingresos que distinguen @iturra-sanhueza_social_2026.
 
 El estatus social subjetivo que se mide como una escala de autoubicación de 11 puntos donde se pregunta: 'En Chile, hay grupos que tienden a ubicarse en los niveles más altos y grupos que tienden a ubicarse en los niveles más bajos de la sociedad. Usando la escala presentada, donde 0 es el nivel más bajo y 10 el nivel más alto, ¿dónde se ubicaría usted en la sociedad chilena?'. En la cual valores más altos significan mayor estatus social percibido. 
 
@@ -23,20 +39,16 @@ La movilidad social subjetiva se construye con la variable de estatus subjetivo 
 El nivel educacional se mide con el mayor nivel alcanzado, en 10 categorías. Se recodifica según el último nivel completado, con base en la Clasificación Internacional Normalizada de la Educación [@statistics_clasificacion_2013], como en @iturra-sanhueza_social_2026. Las categorías son secundaria alta o menos (hasta media completa, además de la educación técnica o universitaria incompleta) de referencia, terciaria de ciclo corto (técnica completa) y terciaria o más (universitaria completa o postgrado). Los niveles inferiores a la secundaria alta se agrupan con ella por poca cantidad de casos (8,8% en total). Se trata como variable categórica, porque la distancia entre niveles no es necesariamente la misma.
 
 ## Variables de control
-La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer, se recodifica a variable dummy, donde (0) es hombre, la cual se utilizará como categoría de referencia y (1) es mujer. 
+La variable de sexo es dicotómica donde (1) es hombre y (2) es mujer, se recodifica a variable dummy, donde (0) es hombre, la cual se utilizará como categoría de referencia y (1) es mujer. La edad se utilizará como una variable continua. Además, se incluye la versión de la batería de meritocracia, que se presentó en tres órdenes distintos asignados al azar [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 462].
 
-La edad se utilizará como una variable continua.
-
-### Variables independientes
-
-El nivel socioeconómico se mide con el ingreso líquido mensual del hogar, en 14 tramos. El nivel educacional se mide con el mayor nivel alcanzado, en 10 categorías. El estatus social subjetivo se mide con una escala de autoubicación de 0 (nivel más bajo) a 10 (nivel más alto). La movilidad social subjetiva se construye comparando esa autoubicación con la ubicación de la familia de origen en la misma escala.
-
-### Variables de control
-
-Se incluyen el sexo y la edad, que se preguntó en cinco tramos. Además, se incluye la versión de la batería de meritocracia, que se presentó en tres órdenes distintos asignados al azar [@castillo_et_al_multidimensional_merit_beliefs_2023, p. 462].
-
-
-
+```{r}
+#| label: tbl-descriptivos
+#| tbl-cap: "Estadísticos descriptivos de las variables del estudio (N = 2.079)"
+tabla_desc <- readRDS(here("input", "data-proc", "tabla_desc.rds"))
+kable(tabla_desc,
+      col.names = c("Variable", "Categoría", "n o media", "% o DE", "Rango"),
+      align = c("l", "l", "r", "r", "c"))
+```
 
 ## Métodos
 **Breve descripción de los procedimientos aplicados para procesar y analizar la información.**

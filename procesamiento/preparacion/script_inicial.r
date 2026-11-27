@@ -1,5 +1,4 @@
 # Cargar librerías y datos -----------------------------------------------------------
-# Cargar librerías y datos -----------------------------------------------------------
 pacman::p_load(tidyverse,
                sjmisc,
                knitr,
@@ -222,6 +221,47 @@ tabla_df <- df_rec1 %>%
 
 summarytools::view(summarytools::dfSummary(tabla_df, headings = FALSE))
 
+## d tabla descriptiva para la tesis ---------------------------
+
+cont <- df_rec1 %>%
+  dplyr::select("Percepción de recompensa al esfuerzo" = per_effort,
+                "Percepción de recompensa al talento"  = per_talent,
+                "Estatus social subjetivo"             = estat_subj) %>%
+  pivot_longer(everything(), names_to = "variable") %>%
+  group_by(variable) %>%
+  summarise(est1  = sprintf("%.2f", mean(value)),
+            est2  = sprintf("%.2f", sd(value)),
+            rango = paste(min(value), "a", max(value)), .groups = "drop") %>%
+  mutate(categoria = "")
+
+cat_vars <- c("Ingreso del hogar"          = "ingresos_f",
+              "Nivel educacional"          = "educ_f",
+              "Movilidad social subjetiva" = "movilidad",
+              "Sexo"                       = "sexo_f",
+              "Edad"                       = "edad_f",
+              "Versión de la batería"      = "version_f")
+
+categ <- bind_rows(lapply(names(cat_vars), function(lab) {
+  df_rec1 %>%
+    count(categoria = .data[[cat_vars[[lab]]]]) %>%
+    mutate(variable  = lab,
+           categoria = as.character(categoria),
+           est1      = as.character(n),
+           est2      = sprintf("%.1f", 100 * n / sum(n)),
+           rango     = "") %>%
+    dplyr::select(-n)
+}))
+
+orden <- c("Percepción de recompensa al esfuerzo", "Percepción de recompensa al talento",
+           "Ingreso del hogar", "Nivel educacional", "Estatus social subjetivo",
+           "Movilidad social subjetiva", "Sexo", "Edad", "Versión de la batería")
+
+tabla_desc <- bind_rows(cont, categ) %>%
+  arrange(factor(variable, levels = orden)) %>%
+  dplyr::select(variable, categoria, est1, est2, rango) %>%
+  mutate(variable = ifelse(duplicated(variable), "", variable))
+
+tabla_desc   # revisa que se vea bien: 23 filas
 
 
 
@@ -232,6 +272,16 @@ sessionInfo()
 
 # Guardar BBDD limpia y procesada ----------------------------------------------
 saveRDS(df_rec1, file = "input/data-proc/base_proc_ola1.rds")
+
+df_proc <- df_rec1
+saveRDS(df_proc,    file = "input/data-proc/base_proc_ola1.rds")
+saveRDS(tabla_desc, file = "input/data-proc/tabla_desc.rds")
+
+
+
+
+
+
 
 
 
