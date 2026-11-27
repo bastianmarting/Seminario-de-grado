@@ -38,7 +38,9 @@ jobs:
           packages: |
             any::knitr
             any::rmarkdown
-            any::here
+              any::here
+            any::tidyverse
+            any::summarytools
 
       - name: Render
         run: quarto render
