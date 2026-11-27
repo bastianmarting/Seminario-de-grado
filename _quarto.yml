@@ -8,7 +8,7 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: "Percepciones meritocráticas: percepciones de esfuerzo y talento en la distribución de recompensas sus factores asociados"
+  title: "Percepciones meritocráticas: percepciones de esfuerzo y talento en la distribución de recompensas y sus factores asociados"
   subtitle: Seminario de Grado 1 2026
   output-file: reportes-seminario
   repo-url: https://github.com/bastianmarting/Seminario-de-grado  #URL del repositorio del libro (cambia segun tu repo)
@@ -32,7 +32,7 @@ book:
   page-navigation: true    # Controla flechas siguiente/anterior en la cabecera
   favicon: assets/favicon-2025-20251031.svg  # Apunta al favicon versionado para romper cache
   chapters:
-    - 000-informe-avance.qmd
+    #- 000-informe-avance.qmd
     - index.qmd            # Capitulo inicial o resumen ejecutivo
     - 00-prefacio.qmd
     - 01-introduccion.qmd
@@ -112,10 +112,13 @@ execute:
 lang: es
 
 crossref:
-  tbl-title: Tabla
-  lot-title: Lista de tablas
+  eq-prefix: Ecuación
+  fig-prefix: Figura
   fig-title: Figura
   lof-title: Lista de figuras
+  tbl-prefix: Tabla
+  tbl-title: Tabla
+  lot-title: Lista de tablas
 
 metadata-files:
   - _metadata.yml               # Ajustes adicionales (palabras clave, portada, etc.)

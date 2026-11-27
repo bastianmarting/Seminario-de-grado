@@ -181,7 +181,9 @@ mutate(
       as.numeric(niv_subj) > as.numeric(niv_fam) ~ "Ascendente",
       as.numeric(niv_subj) < as.numeric(niv_fam) ~ "Descendente",
       TRUE                                       ~ "Inmóvil"
-    ), movilidad = factor(movilidad, levels = c("Inmóvil(ref.)", "Ascendente", "Descendente")))
+    ), movilidad = factor(movilidad,  
+    levels = c("Inmóvil", "Ascendente", "Descendente"),
+                       labels = c("Inmóvil (ref.)", "Ascendente", "Descendente")))
 
 table(df_rec1$movilidad)                  # INMOVIL 1346, ascendente 539, descendente 194
 table(df_rec1$niv_fam, df_rec1$niv_subj)   
