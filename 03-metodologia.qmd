@@ -49,6 +49,8 @@ La @tbl-descriptivos presenta los estadísticos descriptivos de todas las variab
 ```{r}
 #| label: tbl-descriptivos
 #| tbl-cap: "Estadísticos descriptivos de las variables del estudio (N = 2.079)"
+#| echo: false
+
 tabla_desc <- readRDS(here("input", "data-proc", "tabla_desc.rds"))
 kable(tabla_desc,
       col.names = c("Variable", "Categoría", "n o media", "% o DE", "Rango"),
