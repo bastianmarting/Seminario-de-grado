@@ -254,3 +254,8 @@ La movilidad social subjetiva se construye con la variable de estatus subjetivo 
 
 El nivel educacional se mide como una escala de  de 10 categorías del nivel que se cursa actualmente o el último aprobado, donde se pregunta: '¿Cuál es su mayor nivel educacional alcanzado?' La escala va desde (1) No estudió, (2) Educación básica incompleta, (3) Educación básica completa, (4) Educación media incompleta, (5)Educación media completa, (6) Educación superior no universitaria incompleta, (7) Educación superior no universitaria completa, (8) Educación universitaria incompleta, (9) Educación universitaria completa, y (10) Estudios de postgrado, master, doctorado. Donde valores más altos significan mayor nivel educacional alcanzado. **ver si codifico según oit, mctp o CINE antigua de 1997**
 
+
+
+###  Metodos
+
+La movilidad, el estatus subjetivo propio y el de origen están relacionados por construcción, por lo que no pueden separarse por completo. Por eso, $H_3$ se contrasta en dos maneras. En la primera, sin el estatus subjetivo propio, el coeficiente de la movilidad compara a quienes ascendieron con quienes se mantuvieron, e incluye el hecho de que quienes ascienden tienden a ubicarse más arriba. En la segunda, que incluye el estatus propio, el coeficiente compara a personas que se ubican en el mismo nivel, pero provienen de orígenes distintos, es decir, refleja sobre todo la diferencia de origen. $H_3$ se considera respaldada si la diferencia a favor del esfuerzo aparece en ambas especificaciones. La colinealidad entre la movilidad y el estatus propio se revisa con el factor de inflación de la varianza.
