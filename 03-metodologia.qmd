@@ -49,6 +49,7 @@ Las variables dependientes son la percepción de que en Chile se recompensa el e
 #| label: tbl-dependientes
 #| tbl-cap: "Estadísticos descriptivos: Variables Dependientes"
 #| echo: false
+#| results: asis
 
 df_dependientes <- df_proc %>%
   dplyr::select(
